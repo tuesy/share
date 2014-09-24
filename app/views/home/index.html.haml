@@ -1,7 +1,5 @@
 - @heroes = [1]
 - @featured = Array.new(6, 1)
-- @categories = Array.new(5, 1)
-- @genres = Array.new(5, 1)
 - @top_rated = Array.new(5, 1)
 - @newest = Array.new(5, 1)
 - content_for :home do
@@ -9,17 +7,20 @@
     .shadow.sidebarWrap
       .sidebar
         .sidebarHeader Categories
-        .sidebarBody.appcategories.jspScrollable{style: 'overflow: hidden; padding: 0px; width: 218px;'}
+        .sidebarBody.appcategories.jspScrollable{style: 'overflow: scroll; height: 148px;'}
           %ul
             - @categories.each do |x|
-              %li= link_to 'All', '#'
+              - if x.kind_of?(Category)
+                %li= link_to x.title, category_path(x)
+              - else
+                %li= link_to x, '#'
     .shadow.sidebarWrap
       .sidebar
         .sidebarHeader Genres
-        .sidebarBody.appcategories.jspScrollable{style: 'overflow: hidden; padding: 0px; width: 218px;'}
+        .sidebarBody.appcategories.jspScrollable{style: 'height: 148px; overflow: scroll'}
           %ul
             - @genres.each do |x|
-              %li= link_to 'Action', '#'
+              %li= link_to x.title, genre_path(x)
     .shadow.sidebarWrap
       .sidebar
         .sidebarHeader Platforms

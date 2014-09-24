@@ -9,7 +9,7 @@
 # TODO: create a rake task to dynamically update categories
 
 Category.destroy_all
-%w(DK2\ Compatible Full\ Game Experience Tech\ Demo Pre=Release Official\ Mod).each do |x|
+%w(DK2\ Compatible Full\ Game Experience Tech\ Demo Pre-Release Official\ Mod).each do |x|
   c = Category.new
   c.title = x
   c.save!
@@ -21,3 +21,4 @@ Genre.destroy_all
   g = Genre.new
   g.title = x
   g.save!
+end

@@ -53,19 +53,26 @@ ActiveRecord::Schema.define(version: 20140924035635) do
     t.datetime "updated_at"
   end
 
-  create_table "category", force: true do |t|
+  create_table "apps_genres", id: false, force: true do |t|
+    t.integer  "app_id"
+    t.integer  "genre_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", force: true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "genre", force: true do |t|
+  create_table "genres", force: true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "user", force: true do |t|
+  create_table "users", force: true do |t|
     t.string   "name"
     t.string   "submitter"
     t.string   "phone"

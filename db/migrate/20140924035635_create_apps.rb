@@ -26,7 +26,7 @@ class CreateApps < ActiveRecord::Migration
       t.text :disclaimers
       t.timestamps
     end
-    create_table :user do |t|
+    create_table :users do |t|
       t.string :name
       t.string :submitter
       t.string :phone
@@ -34,17 +34,17 @@ class CreateApps < ActiveRecord::Migration
       t.string :email
       t.timestamps
     end
-    create_table :genre do |t|
+    create_table :genres do |t|
       t.string :title
       t.timestamps
     end
-    create_table :category do |t|
+    create_table :categories do |t|
       t.string :title
       t.timestamps
     end
-    create_table :app_genres do |t|
-      t.integer :app_id
-      t.integer :genre_id
+    create_table :apps_genres, id: false do |t|
+      t.belongs_to :app
+      t.belongs_to :genre
       t.timestamps
     end
   end
