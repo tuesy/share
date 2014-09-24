@@ -47,7 +47,8 @@
       #mainWrap
         #innerWrap
           .innerPad
-            #contentWrap{class: 'sixCol'}= yield
+            / TODO: make separate layouts for default
+            #contentWrap{class: params[:controller] == 'home' ? 'sixCol' : nil}= yield
             = yield :home
     #footer
       #footerInner

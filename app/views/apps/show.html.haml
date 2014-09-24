@@ -1,0 +1,123 @@
+#appsOuterWrap
+  .appsHeader.eightCol
+    %h1.shadow= @app.title
+    .clearfix
+  .appWrap.sixCol
+    .mediaOuterWrap
+      .mediaInnerWrap.shadow#mediaVideosWrap{'data-type' => 'videos'}
+        <img id=​"videoLoaderImage" src=​"https:​/​/​img.youtube.com/​vi/​ej7wHJ7k4Mk/​0.jpg" style=​"display:​ none;​">​
+        / <iframe id=​"ytapiplayer" class=​"videoWrap" frameborder=​"0" allowfullscreen=​"1" title=​"YouTube video player" width=​"700" height=​"394" src=​"https:​/​/​www.youtube.com/​embed/​ej7wHJ7k4Mk?autoplay=0&modestbranding=1&…e=light&wmode=opaque&enablejsapi=1&origin=https%3A%2F%2Fshare.oculusvr.com">​</iframe>​
+      .mediaInnerWrap.hide{'data-type' => 'images'}
+        .appScreens.shadow
+    #screenPreviewsWrap.sixCol.pullLeft.shadow{style: 'display: block; overflow: hidden; padding: 0px; width: 700px;', tabindex: 0}
+      .jspContainer
+        .jspPane
+          #screenPreviews
+            .videoPreview
+              <a href title=​"Επιλογή in Crisis (Choice in Crisis)​ with Oculus Rift" class=​"active">
+              %span.ui-icon.ui-icon-play
+              <img src=​"https:​/​/​img.youtube.com/​vi/​ej7wHJ7k4Mk/​0.jpg" data-type=​"video" data-videoid=​"ej7wHJ7k4Mk">​
+              </a>​
+            - [@app.screenshot1, @app.screenshot2, @app.screenshot3, @app.screenshot4, @app.screenshot5].each do |x|
+              - next if x.blank?
+              = link_to image_tag(x), '#', 'data-type' => 'screen'
+    .clearfix
+  .navSidebar.twoCol
+    #appThumbWrap.shadow
+      = image_tag @app.primary_screenshot
+    .sidebarWrap
+      .sidebar.download.shadow
+        .sidebarHeader Download
+        .sidebarBody
+          .pad
+            #downloadPlatforms
+            = link_to 'Download Now', download_app_path(@app), class: 'button', id: 'platformDownloadButton'
+            %p.totalDownloads
+              %span.downloadCount= rand(200000) # just an example...looks like it's done async today
+            %p#versionWrap
+              %span#version= @app.version_and_notes
+              Version:
+    .sidebarWrap
+      .sidebar.shadow.developer
+        .sidebarHeader Developer
+        .sidebarBody
+          .pad
+            = link_to content_tag(:span, '', class: 'sprite sprite-rift', id: 'submitterAvatar'), user_path(@user)
+            %p.displayName
+              = link_to @user.name, user_path(@user)
+          .clearfix
+          .pad.contactWrap
+            = link_to content_tag(:span, '', class: 'ui-icon ui-icon-home') + 'Website', @user.website, target: '_blank'
+            = link_to content_tag(:span, '', class: 'ui-icon ui-icon-mail-closed') + 'Email', '#', id: 'emailDeveloperTrigger'
+  .clearfix
+  .eightCol
+    %hr.sectionDivider
+  .appWrap.sixCol
+    .appDesc.shadow= @app.long_description.html_safe
+    %nav#techNav.tabs{'data-target' => 'techBoxes'}
+      %ul
+        %li= link_to 'Minimum System Requirements', '#', class: 'active', 'data-box' => 'minSysReqs'
+        %li= link_to 'Setup Instructions', '#', 'data-box' => 'setup'
+    .clearfix
+    #techBoxes.techWrap.shadow
+      .tabBox.jaspScrolable{'data-box' => 'minSysReqs', style: 'overflow: hidden; padding: 0px; width: 698px;', tabindex: 0}
+        .jspContainer{style: 'width: 698px; height: 200px;'}
+          .jspPane{style: 'padding: 0px; width: 686px; top: 0px;'}
+            .tabBoxInner= @app.minimum_system_requirements.html_safe
+      .tabBox.hide{'data-box' => 'setup'}
+        .tabBoxInner= @app.setup_instructions.html_safe
+    .clearfix
+    %h3 Credits
+    .appCredits.shadow= @app.credits.html_safe
+    .clear_fix
+    #socialwidgets
+    %h3#commentTotal
+      = rand(20)
+      comments
+    .clearfix
+    #appCopyrightWrap= @app.copyrights
+  .navSidebar.twoCol
+    .sidebarWrap.notSelectable
+      .sidebar.rateApp.shadow
+        .sidebarheader Rate
+        .sidebarBody
+          .pad
+            .scoreWrap
+              %span.score
+                %span.scoreLive= rand(5)
+                %span.outOf /5
+              Average User Rating:
+              %p.info
+                Based on
+                %span#ratingTotal= rand(20)
+                %span.ratingWord ratings
+              .clearfix
+            .ratingStarsWrap.hide{style: 'display:none'}
+              %hr
+    .sidebarWrap.notSelectable
+      .sidebar.comfortrateApp.shadow
+        .sidebarHeader Comfort Level
+        .sidebarBody
+          .pad
+          .comfortScoreWrap
+            %span.comfortScoreIcon.sprite.sprite-comfort_4_l
+            %span.comfortScoreExplanation A moderately comfortable VR experience.
+            .clearfix
+          .comfortIconWrap.hide{style: 'display:none'}
+            %hr
+    .sidebarWrap
+      .sidebar.shadow
+        .sidebarHeader Information
+        .sidebarBody.metaData
+          %table
+          %p.innerTitle Category
+          %ul
+          %p.innerTitle Genres
+          %ul
+          %p.innerTitle Supported Rift Versions
+          .pad= @app.rift_versions
+          %p.innerTitle Supported Controllers
+          .pad= @app.controllers
+          %p.innerTitle Game Modes
+          .pad= @app.modes
+    .sidebarWrap

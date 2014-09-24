@@ -7,6 +7,7 @@ unless Rails.env == 'production'
     task :app_urls, [] => :environment do |task, args|
       Sharer.app_urls
     end
+    # parse data for each app
     desc 'bundle exec rake -t import:app_details'
     task :app_details, [] => :environment do |task, args|
       Sharer.app_details
