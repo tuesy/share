@@ -22,3 +22,4 @@ Genre.destroy_all
   g.title = x
   g.save!
 end
+

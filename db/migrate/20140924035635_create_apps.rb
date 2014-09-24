@@ -2,6 +2,8 @@ class CreateApps < ActiveRecord::Migration
   def change
     create_table :apps do |t|
       t.string :title
+      t.string :youtube_embed_url
+      t.string :primary_screenshot
       t.string :screenshot1, :screenshot2, :screenshot3, :screenshot4, :screenshot5
       t.string :platforms
       t.text :long_description
@@ -16,7 +18,6 @@ class CreateApps < ActiveRecord::Migration
       t.integer :user_id
       t.date :released_at
       t.string :publisher
-      t.string :website
       t.string :support_email
       t.string :paypal_id
       t.string :donation_email
@@ -24,6 +25,8 @@ class CreateApps < ActiveRecord::Migration
       t.text :credits
       t.text :copyrights
       t.text :disclaimers
+      t.string :rift_versions
+      t.string :developer
       t.timestamps
     end
     create_table :users do |t|
@@ -32,6 +35,7 @@ class CreateApps < ActiveRecord::Migration
       t.string :phone
       t.text :address
       t.string :email
+      t.string :website
       t.timestamps
     end
     create_table :genres do |t|

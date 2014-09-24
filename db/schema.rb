@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20140924035635) do
 
   create_table "apps", force: true do |t|
     t.string   "title"
+    t.string   "youtube_embed_url"
+    t.string   "primary_screenshot"
     t.string   "screenshot1"
     t.string   "screenshot2"
     t.string   "screenshot3"
@@ -36,7 +38,6 @@ ActiveRecord::Schema.define(version: 20140924035635) do
     t.integer  "user_id"
     t.date     "released_at"
     t.string   "publisher"
-    t.string   "website"
     t.string   "support_email"
     t.string   "paypal_id"
     t.string   "donation_email"
@@ -49,6 +50,8 @@ ActiveRecord::Schema.define(version: 20140924035635) do
     t.text     "credits"
     t.text     "copyrights"
     t.text     "disclaimers"
+    t.string   "rift_versions"
+    t.string   "developer"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -78,6 +81,7 @@ ActiveRecord::Schema.define(version: 20140924035635) do
     t.string   "phone"
     t.text     "address"
     t.string   "email"
+    t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
