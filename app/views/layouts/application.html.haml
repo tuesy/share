@@ -1,0 +1,75 @@
+!!! 5
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %title= content_for?(:title) ? yield(:title) : "Share"
+    = csrf_meta_tags
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"
+    = stylesheet_link_tag "application", :media => "all"
+    = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
+    = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
+    = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+    = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+    = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
+    = javascript_include_tag "application"
+    %link{rel: 'stylesheet', type: 'text/css', href: "https:​/​/​fonts.googleapis.com/​css?family=Cabin:​400,700,400italic"}
+
+
+  %body
+    #outerWrap
+      #header
+        #headerInner
+          .pull-left= link_to '', '/', class: 'sprite sprite-oculus-vr-logo', id: 'homeLink'
+          %p.homeLinkText.pull-left Share (Rails)
+          #headerRight
+            #langSwitch{class: 'f16'}
+              = link_to '', 'https://share.oculusvr.com', class: 'flag en'
+              = link_to '', 'https://ko.share.oculusvr.com', class: 'flag ko'
+            .clearfix
+            #name-and-search
+              #name.pull-left{style: 'margin-right: 30px; margin-top: 3px;'}= link_to 'Jimmy Zhang', '#'
+              #appSearchWrap
+                = text_field_tag nil, 'Search'
+          .clearfix
+        // TODO: put this in CSS
+        #headerSubNav{style: "display:block;height:29px"}
+          #headerSubNavInner
+            = link_to 'Oculus VR Homepage', '#'
+            = link_to 'Oculus VR Homepage', '#'
+            = link_to 'Developer', '#'
+            = link_to 'Forums', '#'
+            = link_to 'Order a Rift', '#'
+            .pull-right= link_to 'Support', 'http://support.oculusvr.com', class: 'supportNavItem'
+    #footer
+      #footerInner
+        #footerNav
+          %ul
+            %li= link_to 'Oculus VR', 'http://www.oculusvr.com/'
+            %li= '|'
+            %li= link_to 'Developer Center', '#'
+            %li= '|'
+            %li= link_to 'Privacy Policy', '#'
+            %li= '|'
+            %li= link_to 'Terms of Service', '#'
+            %li= '|'
+            %li= link_to 'Terms & Conditions', '#'
+            %li= '|'
+            %li= link_to 'Distribution Agreement', '#'
+            %li= '|'
+            %li= link_to 'Submit a bug', '#'
+        .clearfix
+        #footerRight
+          #social
+            = link_to '', '#', class: 'sprite sprite-social_facebook'
+            = link_to '', '#', class: 'sprite sprite-social_twitter'
+            = link_to '', '#', class: 'sprite sprite-social_googlePlus'
+            = link_to '', '#', class: 'sprite sprite-social_linkedIn'
+            = link_to '', '#', class: 'sprite sprite-social_youtube'
+            = link_to '', '#', class: 'sprite sprite-social_kickstarter'
+        #copyrightWrap
+          %p{class: 'copyright'} Oculus VR® &amp; © 2013 Oculus VR, Inc. All Rights Reserved.
+        .clearfix

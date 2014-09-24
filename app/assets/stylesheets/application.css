@@ -13,3 +13,7305 @@
  *= require_tree .
  *= require_self
  */
+blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,select,td,textarea,th,ul {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,img {
+    border: 0
+}
+
+address,caption,cite,code,dfn,em,th,var {
+    font-style: normal;
+    font-weight: 400
+}
+
+ol,ul {
+    list-style: none
+}
+
+caption,th {
+    text-align: left
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+q:after,q:before {
+    content: ''
+}
+
+abbr,acronym {
+    border: 0
+}
+
+:focus {
+    outline: 0
+}
+
+body,html {
+    height: 100%;
+    font-family: Cabin,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5;
+    background: #f1f1f1
+}
+
+body {
+    height: 100%;
+    width: 100%
+}
+
+body:before {
+    content: ''
+}
+
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+    color: #0084cc
+}
+
+a:visited {
+    color: #0084cc
+}
+
+a:hover {
+    color: #999
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #333
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 700
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333
+}
+
+h4 {
+    font-size: 11px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    color: #333
+}
+
+table tr th {
+    vertical-align: top;
+    text-align: left
+}
+
+table tr td,table tr th {
+    padding: 5px;
+    font-weight: 400
+}
+
+p {
+    padding: 5px 0
+}
+
+em {
+    font-style: italic
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #cdcdcd;
+    margin: 10px 0
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: block
+}
+
+.subtext {
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 400
+}
+
+.bodyXopy ul {
+    list-style-type: disc;
+    margin-bottom: 10px
+}
+
+.bodyXopy ol {
+    list-style-type: decimal;
+    margin-bottom: 10px
+}
+
+.bodyXopy ol.lowerLetters {
+    list-style-type: lower-latin
+}
+
+.bodyXopy ol.upperLetters {
+    list-style-type: upper-latin
+}
+
+.bodyXopy li {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.bodyXopy li li,.bodyXopy p,.bodyXopy span {
+    font-weight: 400;
+    font-size: 13px
+}
+
+.bodyXopy p.center,.bodyXopy span.center {
+    text-align: center
+}
+
+.bodyXopy p.bold,.bodyXopy span.bold {
+    font-weight: 700
+}
+
+.bodyXopy p.underline,.bodyXopy span.underline {
+    text-decoration: underline
+}
+
+.sprite {
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/sprite_v8.png) no-repeat top left;
+    display: block
+}
+
+.sprite-account {
+    background-position: 0 0;
+    width: 16px;
+    height: 15px
+}
+
+.sprite-alert {
+    background-position: -17px 0;
+    width: 16px;
+    height: 15px
+}
+
+.sprite-android {
+    background-position: -34px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-bannerArrow {
+    background-position: -60px 0;
+    width: 17px;
+    height: 18px
+}
+
+.sprite-cart {
+    background-position: -78px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-cat {
+    background-position: -95px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-checkbox-checked {
+    background-position: -112px 0;
+    width: 13px;
+    height: 14px
+}
+
+.sprite-checkbox-unchecked {
+    background-position: -126px 0;
+    width: 13px;
+    height: 14px
+}
+
+.sprite-chrome {
+    background-position: -140px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-comfort_0_l {
+    background-position: -166px 0;
+    width: 30px;
+    height: 27px
+}
+
+.sprite-comfort_0_s {
+    background-position: -197px 0;
+    width: 20px;
+    height: 18px
+}
+
+.sprite-comfort_1_l {
+    background-position: -218px 0;
+    width: 31px;
+    height: 27px
+}
+
+.sprite-comfort_1_s {
+    background-position: -250px 0;
+    width: 20px;
+    height: 18px
+}
+
+.sprite-comfort_2_l {
+    background-position: -271px 0;
+    width: 28px;
+    height: 27px
+}
+
+.sprite-comfort_2_s {
+    background-position: -300px 0;
+    width: 20px;
+    height: 18px
+}
+
+.sprite-comfort_3_l {
+    background-position: -321px 0;
+    width: 31px;
+    height: 27px
+}
+
+.sprite-comfort_3_s {
+    background-position: -353px 0;
+    width: 20px;
+    height: 18px
+}
+
+.sprite-comfort_4_l {
+    background-position: -374px 0;
+    width: 30px;
+    height: 27px
+}
+
+.sprite-comfort_4_s {
+    background-position: -405px 0;
+    width: 20px;
+    height: 18px
+}
+
+.sprite-comfort_5_l {
+    background-position: -426px 0;
+    width: 30px;
+    height: 27px
+}
+
+.sprite-comfort_5_s {
+    background-position: -457px 0;
+    width: 20px;
+    height: 18px
+}
+
+.sprite-diff {
+    background-position: -478px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-exclamaition_icon {
+    background-position: -495px 0;
+    width: 28px;
+    height: 28px
+}
+
+.sprite-files {
+    background-position: -524px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-firefox {
+    background-position: -541px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-flag_en {
+    background-position: -567px 0;
+    width: 14px;
+    height: 10px
+}
+
+.sprite-flag_ko {
+    background-position: -582px 0;
+    width: 14px;
+    height: 11px
+}
+
+.sprite-hero {
+    background-position: -597px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-ie {
+    background-position: -623px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-linux {
+    background-position: -649px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-login {
+    background-position: -675px 0;
+    width: 12px;
+    height: 15px
+}
+
+.sprite-mac {
+    background-position: -688px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-nav-down-off {
+    background-position: -714px 0;
+    width: 9px;
+    height: 5px
+}
+
+.sprite-nav-down-on {
+    background-position: -724px 0;
+    width: 9px;
+    height: 5px
+}
+
+.sprite-oculus-vr-logo {
+    background-position: -734px 0;
+    width: 260px;
+    height: 48px
+}
+
+.sprite-package {
+    background-position: -995px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-pc {
+    background-position: -1012px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-rift {
+    background-position: -1038px 0;
+    width: 52px;
+    height: 52px
+}
+
+.sprite-rss {
+    background-position: -1091px 0;
+    width: 32px;
+    height: 32px
+}
+
+.sprite-safari {
+    background-position: -1124px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-screenshot {
+    background-position: -1150px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-signout {
+    background-position: -1167px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-social_facebook {
+    background-position: -1184px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-social_googlePlus {
+    background-position: -1210px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-social_kickstarter {
+    background-position: -1236px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-social_linkedIn {
+    background-position: -1262px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-social_twitter {
+    background-position: -1288px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-social_youtube {
+    background-position: -1314px 0;
+    width: 25px;
+    height: 25px
+}
+
+.sprite-star-off-grey {
+    background-position: -1340px 0;
+    width: 16px;
+    height: 17px
+}
+
+.sprite-star-off {
+    background-position: -1357px 0;
+    width: 16px;
+    height: 17px
+}
+
+.sprite-star-on-grey {
+    background-position: -1374px 0;
+    width: 16px;
+    height: 17px
+}
+
+.sprite-star-on {
+    background-position: -1391px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-tableSorter_asc {
+    background-position: -1408px 0;
+    width: 21px;
+    height: 4px
+}
+
+.sprite-tableSorter_bg {
+    background-position: -1430px 0;
+    width: 21px;
+    height: 9px
+}
+
+.sprite-tableSorter_desc {
+    background-position: -1452px 0;
+    width: 21px;
+    height: 4px
+}
+
+.sprite-thumbnail {
+    background-position: -1474px 0;
+    width: 12px;
+    height: 12px
+}
+
+.sprite-thumbs_down {
+    background-position: -1487px 0;
+    width: 23px;
+    height: 23px
+}
+
+.sprite-thumbs_up {
+    background-position: -1511px 0;
+    width: 23px;
+    height: 23px
+}
+
+.sprite-upload {
+    background-position: -1535px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-video {
+    background-position: -1552px 0;
+    width: 16px;
+    height: 16px
+}
+
+.sprite-warning {
+    background-position: -1569px 0;
+    width: 248px;
+    height: 67px
+}
+
+.fieldWrap {
+    margin: 0 0 10px
+}
+
+.fieldWrap label {
+    display: block;
+    font-weight: 700;
+    margin: 0 0 3px
+}
+
+.fieldWrap label.error,.fieldWrap label.error a {
+    color: #cb2d36
+}
+
+.fieldWrap .input.error,.fieldWrap .select.error,.fieldWrap .textarea.error {
+    border-color: #cb2d36
+}
+
+.fieldWrap#generalErrors {
+    border: 1px solid #cb2d36;
+    padding: 5px;
+    display: none
+}
+
+.fieldWrap span.error {
+    display: block;
+    color: #cb2d36;
+    font-weight: 700
+}
+
+.required {
+    color: #cb2d36;
+    font-weight: 700;
+    margin-left: 5px
+}
+
+.input,.textarea {
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    color: #666;
+    background: #f7f7f7;
+    box-shadow: #999 0 -1px 1px 0
+}
+
+.input:focus,.textarea:focus {
+    outline: 0;
+    background: #e0f4ff;
+    color: #000
+}
+
+.textarea {
+    font-family: Cabin,Arial,sans-serif;
+    font-size: 13px;
+    height: 200px;
+    width: 300px;
+    resize: none
+}
+
+.input[readonly],.textarea[readonly] {
+    color: #000!important;
+    cursor: default;
+    background-color: #cdcdcd!important
+}
+
+a.button:hover {
+    color: #fff!important
+}
+
+.button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #0076a3;
+    outline: 0;
+    background: #999;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#00adee),to(#0078a5));
+    background-image: -webkit-linear-gradient(top,#00adee,#0078a5);
+    background-image: -moz-linear-gradient(top,#00adee,#0078a5);
+    background-image: -ms-linear-gradient(top,#00adee,#0078a5);
+    background-image: -o-linear-gradient(top,#00adee,#0078a5);
+    background-image: linear-gradient(to bottom,#00adee,#0078a5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00ADEE', endColorstr='#FF0078A5', GradientType=0)
+}
+
+.button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#0095cc),to(#00678e));
+    background-image: -webkit-linear-gradient(top,#0095cc,#00678e);
+    background-image: -moz-linear-gradient(top,#0095cc,#00678e);
+    background-image: -ms-linear-gradient(top,#0095cc,#00678e);
+    background-image: -o-linear-gradient(top,#0095cc,#00678e);
+    background-image: linear-gradient(to bottom,#0095cc,#00678e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0095CC', endColorstr='#FF00678E', GradientType=0)
+}
+
+.button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#0078a5),to(#00adee));
+    background-image: -webkit-linear-gradient(top,#0078a5,#00adee);
+    background-image: -moz-linear-gradient(top,#0078a5,#00adee);
+    background-image: -ms-linear-gradient(top,#0078a5,#00adee);
+    background-image: -o-linear-gradient(top,#0078a5,#00adee);
+    background-image: linear-gradient(to bottom,#0078a5,#00adee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0078A5', endColorstr='#FF00ADEE', GradientType=0)
+}
+
+.button.disabled,.button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+.button:visited {
+    color: #fff
+}
+
+.button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+.select {
+    padding: 4px;
+    border: 1px solid #cdcdcd;
+    color: #666;
+    background: #fff
+}
+
+.select:focus {
+    outline: 0;
+    outline: 1px solid #70bde7
+}
+
+.select option {
+    border: none
+}
+
+.checkbox {
+    cursor: pointer
+}
+
+.checkbox.checked {
+    background-position: -51px 0
+}
+
+.checkbox:focus {
+    outline: 1px solid #70bde7
+}
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/ui-theme-blue.png)
+}
+
+.ui-icon-success {
+    background-image: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/ui-theme-green.png)!important
+}
+
+.ui-icon-error {
+    background-image: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/ui-theme-red.png)!important
+}
+
+.ui-icon-carat-1-n {
+    background-position: 0 0
+}
+
+.ui-icon-carat-1-ne {
+    background-position: -16px 0
+}
+
+.ui-icon-carat-1-e {
+    background-position: -32px 0
+}
+
+.ui-icon-carat-1-se {
+    background-position: -48px 0
+}
+
+.ui-icon-carat-1-s {
+    background-position: -64px 0
+}
+
+.ui-icon-carat-1-sw {
+    background-position: -80px 0
+}
+
+.ui-icon-carat-1-w {
+    background-position: -96px 0
+}
+
+.ui-icon-carat-1-nw {
+    background-position: -112px 0
+}
+
+.ui-icon-carat-2-n-s {
+    background-position: -128px 0
+}
+
+.ui-icon-carat-2-e-w {
+    background-position: -144px 0
+}
+
+.ui-icon-triangle-1-n {
+    background-position: 0 -16px
+}
+
+.ui-icon-triangle-1-ne {
+    background-position: -16px -16px
+}
+
+.ui-icon-triangle-1-e {
+    background-position: -32px -16px
+}
+
+.ui-icon-triangle-1-se {
+    background-position: -48px -16px
+}
+
+.ui-icon-triangle-1-s {
+    background-position: -64px -16px
+}
+
+.ui-icon-triangle-1-sw {
+    background-position: -80px -16px
+}
+
+.ui-icon-triangle-1-w {
+    background-position: -96px -16px
+}
+
+.ui-icon-triangle-1-nw {
+    background-position: -112px -16px
+}
+
+.ui-icon-triangle-2-n-s {
+    background-position: -128px -16px
+}
+
+.ui-icon-triangle-2-e-w {
+    background-position: -144px -16px
+}
+
+.ui-icon-arrow-1-n {
+    background-position: 0 -32px
+}
+
+.ui-icon-arrow-1-ne {
+    background-position: -16px -32px
+}
+
+.ui-icon-arrow-1-e {
+    background-position: -32px -32px
+}
+
+.ui-icon-arrow-1-se {
+    background-position: -48px -32px
+}
+
+.ui-icon-arrow-1-s {
+    background-position: -64px -32px
+}
+
+.ui-icon-arrow-1-sw {
+    background-position: -80px -32px
+}
+
+.ui-icon-arrow-1-w {
+    background-position: -96px -32px
+}
+
+.ui-icon-arrow-1-nw {
+    background-position: -112px -32px
+}
+
+.ui-icon-arrow-2-n-s {
+    background-position: -128px -32px
+}
+
+.ui-icon-arrow-2-ne-sw {
+    background-position: -144px -32px
+}
+
+.ui-icon-arrow-2-e-w {
+    background-position: -160px -32px
+}
+
+.ui-icon-arrow-2-se-nw {
+    background-position: -176px -32px
+}
+
+.ui-icon-arrowstop-1-n {
+    background-position: -192px -32px
+}
+
+.ui-icon-arrowstop-1-e {
+    background-position: -208px -32px
+}
+
+.ui-icon-arrowstop-1-s {
+    background-position: -224px -32px
+}
+
+.ui-icon-arrowstop-1-w {
+    background-position: -240px -32px
+}
+
+.ui-icon-arrowthick-1-n {
+    background-position: 0 -48px
+}
+
+.ui-icon-arrowthick-1-ne {
+    background-position: -16px -48px
+}
+
+.ui-icon-arrowthick-1-e {
+    background-position: -32px -48px
+}
+
+.ui-icon-arrowthick-1-se {
+    background-position: -48px -48px
+}
+
+.ui-icon-arrowthick-1-s {
+    background-position: -64px -48px
+}
+
+.ui-icon-arrowthick-1-sw {
+    background-position: -80px -48px
+}
+
+.ui-icon-arrowthick-1-w {
+    background-position: -96px -48px
+}
+
+.ui-icon-arrowthick-1-nw {
+    background-position: -112px -48px
+}
+
+.ui-icon-arrowthick-2-n-s {
+    background-position: -128px -48px
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+    background-position: -144px -48px
+}
+
+.ui-icon-arrowthick-2-e-w {
+    background-position: -160px -48px
+}
+
+.ui-icon-arrowthick-2-se-nw {
+    background-position: -176px -48px
+}
+
+.ui-icon-arrowthickstop-1-n {
+    background-position: -192px -48px
+}
+
+.ui-icon-arrowthickstop-1-e {
+    background-position: -208px -48px
+}
+
+.ui-icon-arrowthickstop-1-s {
+    background-position: -224px -48px
+}
+
+.ui-icon-arrowthickstop-1-w {
+    background-position: -240px -48px
+}
+
+.ui-icon-arrowreturnthick-1-w {
+    background-position: 0 -64px
+}
+
+.ui-icon-arrowreturnthick-1-n {
+    background-position: -16px -64px
+}
+
+.ui-icon-arrowreturnthick-1-e {
+    background-position: -32px -64px
+}
+
+.ui-icon-arrowreturnthick-1-s {
+    background-position: -48px -64px
+}
+
+.ui-icon-arrowreturn-1-w {
+    background-position: -64px -64px
+}
+
+.ui-icon-arrowreturn-1-n {
+    background-position: -80px -64px
+}
+
+.ui-icon-arrowreturn-1-e {
+    background-position: -96px -64px
+}
+
+.ui-icon-arrowreturn-1-s {
+    background-position: -112px -64px
+}
+
+.ui-icon-arrowrefresh-1-w {
+    background-position: -128px -64px
+}
+
+.ui-icon-arrowrefresh-1-n {
+    background-position: -144px -64px
+}
+
+.ui-icon-arrowrefresh-1-e {
+    background-position: -160px -64px
+}
+
+.ui-icon-arrowrefresh-1-s {
+    background-position: -176px -64px
+}
+
+.ui-icon-arrow-4 {
+    background-position: 0 -80px
+}
+
+.ui-icon-arrow-4-diag {
+    background-position: -16px -80px
+}
+
+.ui-icon-extlink {
+    background-position: -32px -80px
+}
+
+.ui-icon-newwin {
+    background-position: -48px -80px
+}
+
+.ui-icon-refresh {
+    background-position: -64px -80px
+}
+
+.ui-icon-shuffle {
+    background-position: -80px -80px
+}
+
+.ui-icon-transfer-e-w {
+    background-position: -96px -80px
+}
+
+.ui-icon-transferthick-e-w {
+    background-position: -112px -80px
+}
+
+.ui-icon-folder-collapsed {
+    background-position: 0 -96px
+}
+
+.ui-icon-folder-open {
+    background-position: -16px -96px
+}
+
+.ui-icon-document {
+    background-position: -32px -96px
+}
+
+.ui-icon-document-b {
+    background-position: -48px -96px
+}
+
+.ui-icon-note {
+    background-position: -64px -96px
+}
+
+.ui-icon-mail-closed {
+    background-position: -80px -96px
+}
+
+.ui-icon-mail-open {
+    background-position: -96px -96px
+}
+
+.ui-icon-suitcase {
+    background-position: -112px -96px
+}
+
+.ui-icon-comment {
+    background-position: -128px -96px
+}
+
+.ui-icon-person {
+    background-position: -144px -96px
+}
+
+.ui-icon-print {
+    background-position: -160px -96px
+}
+
+.ui-icon-trash {
+    background-position: -176px -96px
+}
+
+.ui-icon-locked {
+    background-position: -192px -96px
+}
+
+.ui-icon-unlocked {
+    background-position: -208px -96px
+}
+
+.ui-icon-bookmark {
+    background-position: -224px -96px
+}
+
+.ui-icon-tag {
+    background-position: -240px -96px
+}
+
+.ui-icon-home {
+    background-position: 0 -112px
+}
+
+.ui-icon-flag {
+    background-position: -16px -112px
+}
+
+.ui-icon-calendar {
+    background-position: -32px -112px
+}
+
+.ui-icon-cart {
+    background-position: -48px -112px
+}
+
+.ui-icon-edit {
+    background-position: -64px -112px
+}
+
+.ui-icon-clock {
+    background-position: -80px -112px
+}
+
+.ui-icon-disk {
+    background-position: -96px -112px
+}
+
+.ui-icon-calculator {
+    background-position: -112px -112px
+}
+
+.ui-icon-zoomin {
+    background-position: -128px -112px
+}
+
+.ui-icon-zoomout {
+    background-position: -144px -112px
+}
+
+.ui-icon-search {
+    background-position: -160px -112px
+}
+
+.ui-icon-wrench {
+    background-position: -176px -112px
+}
+
+.ui-icon-gear {
+    background-position: -192px -112px
+}
+
+.ui-icon-heart {
+    background-position: -208px -112px
+}
+
+.ui-icon-star {
+    background-position: -224px -112px
+}
+
+.ui-icon-link {
+    background-position: -240px -112px
+}
+
+.ui-icon-cancel {
+    background-position: 0 -128px
+}
+
+.ui-icon-plus {
+    background-position: -16px -128px
+}
+
+.ui-icon-plusthick {
+    background-position: -32px -128px
+}
+
+.ui-icon-minus {
+    background-position: -48px -128px
+}
+
+.ui-icon-minusthick {
+    background-position: -64px -128px
+}
+
+.ui-icon-close {
+    background-position: -80px -128px
+}
+
+.ui-icon-closethick {
+    background-position: -96px -128px
+}
+
+.ui-icon-key {
+    background-position: -112px -128px
+}
+
+.ui-icon-lightbulb {
+    background-position: -128px -128px
+}
+
+.ui-icon-scissors {
+    background-position: -144px -128px
+}
+
+.ui-icon-clipboard {
+    background-position: -160px -128px
+}
+
+.ui-icon-copy {
+    background-position: -176px -128px
+}
+
+.ui-icon-contact {
+    background-position: -192px -128px
+}
+
+.ui-icon-image {
+    background-position: -208px -128px
+}
+
+.ui-icon-video {
+    background-position: -224px -128px
+}
+
+.ui-icon-script {
+    background-position: -240px -128px
+}
+
+.ui-icon-alert {
+    background-position: 0 -144px
+}
+
+.ui-icon-info {
+    background-position: -16px -144px
+}
+
+.ui-icon-notice {
+    background-position: -32px -144px
+}
+
+.ui-icon-help {
+    background-position: -48px -144px
+}
+
+.ui-icon-check {
+    background-position: -64px -144px
+}
+
+.ui-icon-bullet {
+    background-position: -80px -144px
+}
+
+.ui-icon-radio-on {
+    background-position: -96px -144px
+}
+
+.ui-icon-radio-off {
+    background-position: -112px -144px
+}
+
+.ui-icon-pin-w {
+    background-position: -128px -144px
+}
+
+.ui-icon-pin-s {
+    background-position: -144px -144px
+}
+
+.ui-icon-play {
+    background-position: 0 -160px
+}
+
+.ui-icon-pause {
+    background-position: -16px -160px
+}
+
+.ui-icon-seek-next {
+    background-position: -32px -160px
+}
+
+.ui-icon-seek-prev {
+    background-position: -48px -160px
+}
+
+.ui-icon-seek-end {
+    background-position: -64px -160px
+}
+
+.ui-icon-seek-first,.ui-icon-seek-start {
+    background-position: -80px -160px
+}
+
+.ui-icon-stop {
+    background-position: -96px -160px
+}
+
+.ui-icon-eject {
+    background-position: -112px -160px
+}
+
+.ui-icon-volume-off {
+    background-position: -128px -160px
+}
+
+.ui-icon-volume-on {
+    background-position: -144px -160px
+}
+
+.ui-icon-power {
+    background-position: 0 -176px
+}
+
+.ui-icon-signal-diag {
+    background-position: -16px -176px
+}
+
+.ui-icon-signal {
+    background-position: -32px -176px
+}
+
+.ui-icon-battery-0 {
+    background-position: -48px -176px
+}
+
+.ui-icon-battery-1 {
+    background-position: -64px -176px
+}
+
+.ui-icon-battery-2 {
+    background-position: -80px -176px
+}
+
+.ui-icon-battery-3 {
+    background-position: -96px -176px
+}
+
+.ui-icon-circle-plus {
+    background-position: 0 -192px
+}
+
+.ui-icon-circle-minus {
+    background-position: -16px -192px
+}
+
+.ui-icon-circle-close {
+    background-position: -32px -192px
+}
+
+.ui-icon-circle-triangle-e {
+    background-position: -48px -192px
+}
+
+.ui-icon-circle-triangle-s {
+    background-position: -64px -192px
+}
+
+.ui-icon-circle-triangle-w {
+    background-position: -80px -192px
+}
+
+.ui-icon-circle-triangle-n {
+    background-position: -96px -192px
+}
+
+.ui-icon-circle-arrow-e {
+    background-position: -112px -192px
+}
+
+.ui-icon-circle-arrow-s {
+    background-position: -128px -192px
+}
+
+.ui-icon-circle-arrow-w {
+    background-position: -144px -192px
+}
+
+.ui-icon-circle-arrow-n {
+    background-position: -160px -192px
+}
+
+.ui-icon-circle-zoomin {
+    background-position: -176px -192px
+}
+
+.ui-icon-circle-zoomout {
+    background-position: -192px -192px
+}
+
+.ui-icon-circle-check {
+    background-position: -208px -192px
+}
+
+.ui-icon-circlesmall-plus {
+    background-position: 0 -208px
+}
+
+.ui-icon-circlesmall-minus {
+    background-position: -16px -208px
+}
+
+.ui-icon-circlesmall-close {
+    background-position: -32px -208px
+}
+
+.ui-icon-squaresmall-plus {
+    background-position: -48px -208px
+}
+
+.ui-icon-squaresmall-minus {
+    background-position: -64px -208px
+}
+
+.ui-icon-squaresmall-close {
+    background-position: -80px -208px
+}
+
+.ui-icon-grip-dotted-vertical {
+    background-position: 0 -224px
+}
+
+.ui-icon-grip-dotted-horizontal {
+    background-position: -16px -224px
+}
+
+.ui-icon-grip-solid-vertical {
+    background-position: -32px -224px
+}
+
+.ui-icon-grip-solid-horizontal {
+    background-position: -48px -224px
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background-position: -64px -224px
+}
+
+.ui-icon-grip-diagonal-se {
+    background-position: -80px -224px
+}
+
+nav:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+nav.subTabs a.active {
+    background: #e0f4ff!important
+}
+
+nav ul li {
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    margin-right: 3px
+}
+
+nav ul li.first {
+    height: 30px;
+    display: block
+}
+
+nav ul li.first:hover {
+    background: #70bde7
+}
+
+nav ul li.first:hover a {
+    color: #fff
+}
+
+nav ul.vertical li {
+    float: none!important;
+    border: none!important;
+    border-bottom: 1px solid #cdcdcd!important;
+    margin-right: 0
+}
+
+nav ul.vertical li:last-child {
+    border-bottom: none
+}
+
+nav ul li:hover li a {
+    color: #999!important
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px 15px
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 60px
+}
+
+nav ul li ul li {
+    background: #fff;
+    width: 99%
+}
+
+nav ul li ul li:last-child {
+    border-bottom: 1px solid #cdcdcd
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 5px
+}
+
+nav ul li ul li:hover a {
+    background: #f7f7f7
+}
+
+nav ul li:hover ul.fallback {
+    display: block
+}
+
+.clear_fix {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    zoom: 1
+}
+
+.clear_fix:after,.clear_fix:before {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.clear_fix:after {
+    clear: both
+}
+
+.pad {
+    padding: 10px
+}
+
+.notSelectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.loader {
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/load.gif) no-repeat 0 0;
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin: 5px 0 0 15px;
+    display: none
+}
+
+.message {
+    background: #F5E9BE;
+    border: 1px solid #CDCDCD;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: none;
+    font-weight: 700
+}
+
+.shadow {
+    -moz-box-shadow: 0 0 3px rgba(57,113,191,.3);
+    -webkit-box-shadow: 0 0 3px rgba(57,113,191,.3);
+    box-shadow: 0 0 3px rgba(57,113,191,.3);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#888888, Direction=135, Strength=10)
+}
+
+.shadowSmall {
+    box-shadow: #888 2px 2px 4px 0
+}
+
+.noFloat {
+    float: none!important
+}
+
+.noChrome #footer,.noChrome #header,.noChrome h1 {
+    display: none
+}
+
+.noChrome .innerPad {
+    padding: 10px 0 0!important
+}
+
+.noChrome #mainWrap {
+    padding-bottom: 0!important
+}
+
+.notFixed #header {
+    position: relative!important;
+    top: auto!important;
+    left: auto!important;
+    width: 960px!important;
+    margin: 0 auto!important
+}
+
+.notFixed .innerPad {
+    padding-top: 40px!important
+}
+
+#outerWrap {
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+#outerWrap #header {
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    height: 71px;
+    background: #fff;
+    border-bottom: 1px solid #cdcdcd;
+    box-shadow: 0 0 10px #999;
+    opacity: .95;
+    filter: alpha(opacity=40)
+}
+
+#outerWrap #header #headerInner {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px
+}
+
+#outerWrap #header #headerInner #homeLink {
+    float: left;
+    margin-top: 12px
+}
+
+#outerWrap #mainWrap {
+    width: 960px;
+    min-width: 960px;
+    position: relative;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-bottom: 130px
+}
+
+#outerWrap #mainWrap #innerWrap {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    width: 100%
+}
+
+#outerWrap #mainWrap #innerWrap .innerPad {
+    padding: 110px 0 60px
+}
+
+#outerWrap #mainWrap #innerWrap .eightCol,#outerWrap #mainWrap #innerWrap .fiveCol,#outerWrap #mainWrap #innerWrap .fourCol,#outerWrap #mainWrap #innerWrap .oneCol,#outerWrap #mainWrap #innerWrap .sevenCol,#outerWrap #mainWrap #innerWrap .sixCol,#outerWrap #mainWrap #innerWrap .threeCol,#outerWrap #mainWrap #innerWrap .twoCol {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#outerWrap #mainWrap #innerWrap .oneCol {
+    width: 100px
+}
+
+#outerWrap #mainWrap #innerWrap .twoCol {
+    width: 220px
+}
+
+#outerWrap #mainWrap #innerWrap .threeCol {
+    width: 340px
+}
+
+#outerWrap #mainWrap #innerWrap .fourCol {
+    width: 460px
+}
+
+#outerWrap #mainWrap #innerWrap .fiveCol {
+    width: 580px
+}
+
+#outerWrap #mainWrap #innerWrap .sixCol {
+    width: 700px
+}
+
+#outerWrap #mainWrap #innerWrap .sevenCol {
+    width: 820px
+}
+
+#outerWrap #mainWrap #innerWrap .eightCol {
+    width: 940px
+}
+
+#outerWrap #mainWrap #innerWrap .pullLeft {
+    margin-left: 0
+}
+
+#outerWrap #mainWrap #innerWrap .pullRight {
+    margin-right: 0
+}
+
+#footer {
+    background: #404040;
+    color: #999;
+    height: 130px;
+    width: 100%;
+    min-width: 960px;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    clear: both;
+    margin-top: -130px
+}
+
+#footer #footerInner {
+    margin: 0 auto
+}
+
+.jspContainer {
+    overflow: hidden;
+    position: relative
+}
+
+.jspPane {
+    position: absolute
+}
+
+.jspVerticalBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%
+}
+
+.jspHorizontalBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: #ececec
+}
+
+.jspHorizontalBar *,.jspVerticalBar * {
+    margin: 0;
+    padding: 0
+}
+
+.jspCap {
+    display: none
+}
+
+.jspHorizontalBar .jspCap {
+    float: left
+}
+
+.jspTrack {
+    position: relative;
+    background: #ececec
+}
+
+.jspDrag {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #cdcdcd
+}
+
+.jspDrag .jspDragBottom,.jspDrag .jspDragTop {
+    background: red;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: none
+}
+
+.jspDrag .jsDragTop {
+    top: 0
+}
+
+.jspDrag .jspDragBottom {
+    bottom: 0
+}
+
+.jspHorizontalBar .jspDrag,.jspHorizontalBar .jspTrack {
+    float: left;
+    height: 100%
+}
+
+.jspArrow {
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/ui-theme-blue.png) no-repeat;
+    height: 15px;
+    width: 15px;
+    display: block;
+    cursor: pointer
+}
+
+.jspArrow:hover,.jspVerticalBar>.jspActive {
+    background-image: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/ui-theme-blue.png)
+}
+
+.jspHorizontalBar>.jspDisabled,.jspHorizontalBar>.jspDisabled:hover,.jspVerticalBar>.jspDisabled,.jspVerticalBar>.jspDisabled:hover {
+    background-color: transparent;
+    background-image: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/ui-theme-blue.png);
+    cursor: default
+}
+
+.jspArrowUp {
+    background-position: 0 0
+}
+
+.jspArrowDown {
+    background-position: -64px 0!important
+}
+
+.jspArrowLeft {
+    background-position: -96px 0!important;
+    float: left
+}
+
+.jspArrowRight {
+    background-position: -32px 0!important;
+    float: left
+}
+
+.jspCorner {
+    background: #eeeef4;
+    float: left;
+    height: 100%
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    zoom: 1;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    -ms-filter: alpha(opacity=50);
+    background: #000
+}
+
+#modal {
+    position: absolute;
+    z-index: 1001;
+    display: none
+}
+
+#modal #modalContent {
+    min-height: 100%;
+    background: #fff;
+    box-shadow: 6px 6px 12px #333
+}
+
+#modal #modalContent h3 {
+    background: #ececec;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 0 2px 10px;
+    margin-bottom: 0
+}
+
+#modal #modalContent .modalInner {
+    padding: 10px
+}
+
+#modal #modalClose {
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    display: block;
+    top: 10px;
+    right: 10px;
+    color: #888;
+    border: 1px solid #888;
+    line-height: 14px;
+    font-size: 19px;
+    background: #ddd;
+    text-align: center;
+    float: right
+}
+
+#modal #modalClose:hover {
+    background: #fff;
+    border-color: #666;
+    color: #666
+}
+
+.f16 .flag {
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/flags16.png) no-repeat
+}
+
+.f16 ._African_Union {
+    background-position: 0 -16px
+}
+
+.f16 ._Arab_League {
+    background-position: 0 -32px
+}
+
+.f16 ._ASEAN {
+    background-position: 0 -48px
+}
+
+.f16 ._CARICOM {
+    background-position: 0 -64px
+}
+
+.f16 ._CIS {
+    background-position: 0 -80px
+}
+
+.f16 ._Commonwealth {
+    background-position: 0 -96px
+}
+
+.f16 ._England {
+    background-position: 0 -112px
+}
+
+.f16 ._European_Union {
+    background-position: 0 -128px
+}
+
+.f16 ._Islamic_Conference {
+    background-position: 0 -144px
+}
+
+.f16 ._Kosovo {
+    background-position: 0 -160px
+}
+
+.f16 ._NATO {
+    background-position: 0 -176px
+}
+
+.f16 ._Northern_Cyprus {
+    background-position: 0 -192px
+}
+
+.f16 ._Northern_Ireland {
+    background-position: 0 -208px
+}
+
+.f16 ._Olimpic_Movement {
+    background-position: 0 -224px
+}
+
+.f16 ._OPEC {
+    background-position: 0 -240px
+}
+
+.f16 ._Red_Cross {
+    background-position: 0 -256px
+}
+
+.f16 ._Scotland {
+    background-position: 0 -272px
+}
+
+.f16 ._Somaliland {
+    background-position: 0 -288px
+}
+
+.f16 ._Tibet {
+    background-position: 0 -304px
+}
+
+.f16 ._United_Nations {
+    background-position: 0 -320px
+}
+
+.f16 ._Wales {
+    background-position: 0 -336px
+}
+
+.f16 .ad {
+    background-position: 0 -352px
+}
+
+.f16 .ae {
+    background-position: 0 -368px
+}
+
+.f16 .af {
+    background-position: 0 -384px
+}
+
+.f16 .ag {
+    background-position: 0 -400px
+}
+
+.f16 .ai {
+    background-position: 0 -416px
+}
+
+.f16 .al {
+    background-position: 0 -432px
+}
+
+.f16 .am {
+    background-position: 0 -448px
+}
+
+.f16 .an {
+    background-position: 0 -464px
+}
+
+.f16 .ao {
+    background-position: 0 -480px
+}
+
+.f16 .aq {
+    background-position: 0 -496px
+}
+
+.f16 .ar {
+    background-position: 0 -512px
+}
+
+.f16 .as {
+    background-position: 0 -528px
+}
+
+.f16 .at {
+    background-position: 0 -544px
+}
+
+.f16 .au {
+    background-position: 0 -560px
+}
+
+.f16 .aw {
+    background-position: 0 -576px
+}
+
+.f16 .az {
+    background-position: 0 -592px
+}
+
+.f16 .ba {
+    background-position: 0 -608px
+}
+
+.f16 .bb {
+    background-position: 0 -624px
+}
+
+.f16 .bd {
+    background-position: 0 -640px
+}
+
+.f16 .be {
+    background-position: 0 -656px
+}
+
+.f16 .bf {
+    background-position: 0 -672px
+}
+
+.f16 .bg {
+    background-position: 0 -688px
+}
+
+.f16 .bh {
+    background-position: 0 -704px
+}
+
+.f16 .bi {
+    background-position: 0 -720px
+}
+
+.f16 .bj {
+    background-position: 0 -736px
+}
+
+.f16 .bm {
+    background-position: 0 -752px
+}
+
+.f16 .bn {
+    background-position: 0 -768px
+}
+
+.f16 .bo {
+    background-position: 0 -784px
+}
+
+.f16 .br {
+    background-position: 0 -800px
+}
+
+.f16 .bs {
+    background-position: 0 -816px
+}
+
+.f16 .bt {
+    background-position: 0 -832px
+}
+
+.f16 .bw {
+    background-position: 0 -848px
+}
+
+.f16 .by {
+    background-position: 0 -864px
+}
+
+.f16 .bz {
+    background-position: 0 -880px
+}
+
+.f16 .ca {
+    background-position: 0 -896px
+}
+
+.f16 .cg {
+    background-position: 0 -912px
+}
+
+.f16 .cf {
+    background-position: 0 -928px
+}
+
+.f16 .cd {
+    background-position: 0 -944px
+}
+
+.f16 .ch {
+    background-position: 0 -960px
+}
+
+.f16 .ci {
+    background-position: 0 -976px
+}
+
+.f16 .ck {
+    background-position: 0 -992px
+}
+
+.f16 .cl {
+    background-position: 0 -1008px
+}
+
+.f16 .cm {
+    background-position: 0 -1024px
+}
+
+.f16 .cn {
+    background-position: 0 -1040px
+}
+
+.f16 .co {
+    background-position: 0 -1056px
+}
+
+.f16 .cr {
+    background-position: 0 -1072px
+}
+
+.f16 .cu {
+    background-position: 0 -1088px
+}
+
+.f16 .cv {
+    background-position: 0 -1104px
+}
+
+.f16 .cy {
+    background-position: 0 -1120px
+}
+
+.f16 .cz {
+    background-position: 0 -1136px
+}
+
+.f16 .de {
+    background-position: 0 -1152px
+}
+
+.f16 .dj {
+    background-position: 0 -1168px
+}
+
+.f16 .dk {
+    background-position: 0 -1184px
+}
+
+.f16 .dm {
+    background-position: 0 -1200px
+}
+
+.f16 .do {
+    background-position: 0 -1216px
+}
+
+.f16 .dz {
+    background-position: 0 -1232px
+}
+
+.f16 .ec {
+    background-position: 0 -1248px
+}
+
+.f16 .ee {
+    background-position: 0 -1264px
+}
+
+.f16 .eg {
+    background-position: 0 -1280px
+}
+
+.f16 .eh {
+    background-position: 0 -1296px
+}
+
+.f16 .er {
+    background-position: 0 -1312px
+}
+
+.f16 .es {
+    background-position: 0 -1328px
+}
+
+.f16 .et {
+    background-position: 0 -1344px
+}
+
+.f16 .fi {
+    background-position: 0 -1360px
+}
+
+.f16 .fj {
+    background-position: 0 -1376px
+}
+
+.f16 .fm {
+    background-position: 0 -1392px
+}
+
+.f16 .fo {
+    background-position: 0 -1408px
+}
+
+.f16 .fr {
+    background-position: 0 -1424px
+}
+
+.f16 .ga {
+    background-position: 0 -1440px
+}
+
+.f16 .gb {
+    background-position: 0 -1456px
+}
+
+.f16 .gd {
+    background-position: 0 -1472px
+}
+
+.f16 .ge {
+    background-position: 0 -1488px
+}
+
+.f16 .gg {
+    background-position: 0 -1504px
+}
+
+.f16 .gh {
+    background-position: 0 -1520px
+}
+
+.f16 .gi {
+    background-position: 0 -1536px
+}
+
+.f16 .gl {
+    background-position: 0 -1552px
+}
+
+.f16 .gm {
+    background-position: 0 -1568px
+}
+
+.f16 .gn {
+    background-position: 0 -1584px
+}
+
+.f16 .gp {
+    background-position: 0 -1600px
+}
+
+.f16 .gq {
+    background-position: 0 -1616px
+}
+
+.f16 .gr {
+    background-position: 0 -1632px
+}
+
+.f16 .gt {
+    background-position: 0 -1648px
+}
+
+.f16 .gu {
+    background-position: 0 -1664px
+}
+
+.f16 .gw {
+    background-position: 0 -1680px
+}
+
+.f16 .gy {
+    background-position: 0 -1696px
+}
+
+.f16 .hk {
+    background-position: 0 -1712px
+}
+
+.f16 .hn {
+    background-position: 0 -1728px
+}
+
+.f16 .hr {
+    background-position: 0 -1744px
+}
+
+.f16 .ht {
+    background-position: 0 -1760px
+}
+
+.f16 .hu {
+    background-position: 0 -1776px
+}
+
+.f16 .id,.f16 .mc {
+    background-position: 0 -1792px
+}
+
+.f16 .ie {
+    background-position: 0 -1808px
+}
+
+.f16 .il {
+    background-position: 0 -1824px
+}
+
+.f16 .im {
+    background-position: 0 -1840px
+}
+
+.f16 .in {
+    background-position: 0 -1856px
+}
+
+.f16 .iq {
+    background-position: 0 -1872px
+}
+
+.f16 .ir {
+    background-position: 0 -1888px
+}
+
+.f16 .is {
+    background-position: 0 -1904px
+}
+
+.f16 .it {
+    background-position: 0 -1920px
+}
+
+.f16 .je {
+    background-position: 0 -1936px
+}
+
+.f16 .jm {
+    background-position: 0 -1952px
+}
+
+.f16 .jo {
+    background-position: 0 -1968px
+}
+
+.f16 .jp {
+    background-position: 0 -1984px
+}
+
+.f16 .ke {
+    background-position: 0 -2000px
+}
+
+.f16 .kg {
+    background-position: 0 -2016px
+}
+
+.f16 .kh {
+    background-position: 0 -2032px
+}
+
+.f16 .ki {
+    background-position: 0 -2048px
+}
+
+.f16 .km {
+    background-position: 0 -2064px
+}
+
+.f16 .kn {
+    background-position: 0 -2080px
+}
+
+.f16 .kp {
+    background-position: 0 -2096px
+}
+
+.f16 .ko {
+    background-position: 0 -2112px
+}
+
+.f16 .kw {
+    background-position: 0 -2128px
+}
+
+.f16 .ky {
+    background-position: 0 -2144px
+}
+
+.f16 .kz {
+    background-position: 0 -2160px
+}
+
+.f16 .la {
+    background-position: 0 -2176px
+}
+
+.f16 .lb {
+    background-position: 0 -2192px
+}
+
+.f16 .lc {
+    background-position: 0 -2208px
+}
+
+.f16 .li {
+    background-position: 0 -2224px
+}
+
+.f16 .lk {
+    background-position: 0 -2240px
+}
+
+.f16 .lr {
+    background-position: 0 -2256px
+}
+
+.f16 .ls {
+    background-position: 0 -2272px
+}
+
+.f16 .lt {
+    background-position: 0 -2288px
+}
+
+.f16 .lu {
+    background-position: 0 -2304px
+}
+
+.f16 .lv {
+    background-position: 0 -2320px
+}
+
+.f16 .ly {
+    background-position: 0 -2336px
+}
+
+.f16 .ma {
+    background-position: 0 -2352px
+}
+
+.f16 .md {
+    background-position: 0 -2368px
+}
+
+.f16 .me {
+    background-position: 0 -2384px
+}
+
+.f16 .mg {
+    background-position: 0 -2400px
+}
+
+.f16 .mh {
+    background-position: 0 -2416px
+}
+
+.f16 .mk {
+    background-position: 0 -2432px
+}
+
+.f16 .ml {
+    background-position: 0 -2448px
+}
+
+.f16 .mm {
+    background-position: 0 -2464px
+}
+
+.f16 .mn {
+    background-position: 0 -2480px
+}
+
+.f16 .mo {
+    background-position: 0 -2496px
+}
+
+.f16 .mq {
+    background-position: 0 -2512px
+}
+
+.f16 .mr {
+    background-position: 0 -2528px
+}
+
+.f16 .ms {
+    background-position: 0 -2544px
+}
+
+.f16 .mt {
+    background-position: 0 -2560px
+}
+
+.f16 .mu {
+    background-position: 0 -2576px
+}
+
+.f16 .mv {
+    background-position: 0 -2592px
+}
+
+.f16 .mw {
+    background-position: 0 -2608px
+}
+
+.f16 .mx {
+    background-position: 0 -2624px
+}
+
+.f16 .my {
+    background-position: 0 -2640px
+}
+
+.f16 .mz {
+    background-position: 0 -2656px
+}
+
+.f16 .na {
+    background-position: 0 -2672px
+}
+
+.f16 .nc {
+    background-position: 0 -2688px
+}
+
+.f16 .ne {
+    background-position: 0 -2704px
+}
+
+.f16 .ng {
+    background-position: 0 -2720px
+}
+
+.f16 .ni {
+    background-position: 0 -2736px
+}
+
+.f16 .nl {
+    background-position: 0 -2752px
+}
+
+.f16 .no {
+    background-position: 0 -2768px
+}
+
+.f16 .np {
+    background-position: 0 -2784px
+}
+
+.f16 .nr {
+    background-position: 0 -2800px
+}
+
+.f16 .nz {
+    background-position: 0 -2816px
+}
+
+.f16 .om {
+    background-position: 0 -2832px
+}
+
+.f16 .pa {
+    background-position: 0 -2848px
+}
+
+.f16 .pe {
+    background-position: 0 -2864px
+}
+
+.f16 .pf {
+    background-position: 0 -2880px
+}
+
+.f16 .pg {
+    background-position: 0 -2896px
+}
+
+.f16 .ph {
+    background-position: 0 -2912px
+}
+
+.f16 .pk {
+    background-position: 0 -2928px
+}
+
+.f16 .pl {
+    background-position: 0 -2944px
+}
+
+.f16 .pr {
+    background-position: 0 -2960px
+}
+
+.f16 .ps {
+    background-position: 0 -2976px
+}
+
+.f16 .pt {
+    background-position: 0 -2992px
+}
+
+.f16 .pw {
+    background-position: 0 -3008px
+}
+
+.f16 .py {
+    background-position: 0 -3024px
+}
+
+.f16 .qa {
+    background-position: 0 -3040px
+}
+
+.f16 .re {
+    background-position: 0 -3056px
+}
+
+.f16 .ro {
+    background-position: 0 -3072px
+}
+
+.f16 .rs {
+    background-position: 0 -3088px
+}
+
+.f16 .ru {
+    background-position: 0 -3104px
+}
+
+.f16 .rw {
+    background-position: 0 -3120px
+}
+
+.f16 .sa {
+    background-position: 0 -3136px
+}
+
+.f16 .sb {
+    background-position: 0 -3152px
+}
+
+.f16 .sc {
+    background-position: 0 -3168px
+}
+
+.f16 .sd {
+    background-position: 0 -3184px
+}
+
+.f16 .se {
+    background-position: 0 -3200px
+}
+
+.f16 .sg {
+    background-position: 0 -3216px
+}
+
+.f16 .si {
+    background-position: 0 -3232px
+}
+
+.f16 .sk {
+    background-position: 0 -3248px
+}
+
+.f16 .sl {
+    background-position: 0 -3264px
+}
+
+.f16 .sm {
+    background-position: 0 -3280px
+}
+
+.f16 .sn {
+    background-position: 0 -3296px
+}
+
+.f16 .so {
+    background-position: 0 -3312px
+}
+
+.f16 .sr {
+    background-position: 0 -3328px
+}
+
+.f16 .st {
+    background-position: 0 -3344px
+}
+
+.f16 .sv {
+    background-position: 0 -3360px
+}
+
+.f16 .sy {
+    background-position: 0 -3376px
+}
+
+.f16 .sz {
+    background-position: 0 -3392px
+}
+
+.f16 .tc {
+    background-position: 0 -3408px
+}
+
+.f16 .td {
+    background-position: 0 -3424px
+}
+
+.f16 .tg {
+    background-position: 0 -3440px
+}
+
+.f16 .th {
+    background-position: 0 -3456px
+}
+
+.f16 .tj {
+    background-position: 0 -3472px
+}
+
+.f16 .tl {
+    background-position: 0 -3488px
+}
+
+.f16 .tm {
+    background-position: 0 -3504px
+}
+
+.f16 .tn {
+    background-position: 0 -3520px
+}
+
+.f16 .to {
+    background-position: 0 -3536px
+}
+
+.f16 .tr {
+    background-position: 0 -3552px
+}
+
+.f16 .tt {
+    background-position: 0 -3568px
+}
+
+.f16 .tv {
+    background-position: 0 -3584px
+}
+
+.f16 .tw {
+    background-position: 0 -3600px
+}
+
+.f16 .tz {
+    background-position: 0 -3616px
+}
+
+.f16 .ua {
+    background-position: 0 -3632px
+}
+
+.f16 .ug {
+    background-position: 0 -3648px
+}
+
+.f16 .en,.f16 .us {
+    background-position: 0 -3664px
+}
+
+.f16 .uy {
+    background-position: 0 -3680px
+}
+
+.f16 .uz {
+    background-position: 0 -3696px
+}
+
+.f16 .va {
+    background-position: 0 -3712px
+}
+
+.f16 .vc {
+    background-position: 0 -3728px
+}
+
+.f16 .ve {
+    background-position: 0 -3744px
+}
+
+.f16 .vg {
+    background-position: 0 -3760px
+}
+
+.f16 .vi {
+    background-position: 0 -3776px
+}
+
+.f16 .vn {
+    background-position: 0 -3792px
+}
+
+.f16 .vu {
+    background-position: 0 -3808px
+}
+
+.f16 .ws {
+    background-position: 0 -3824px
+}
+
+.f16 .ye {
+    background-position: 0 -3840px
+}
+
+.f16 .za {
+    background-position: 0 -3856px
+}
+
+.f16 .zm {
+    background-position: 0 -3872px
+}
+
+.f16 .zw {
+    background-position: 0 -3888px
+}
+
+html {
+    overflow-y: -moz-scrollbars-vertical!important;
+    overflow-y: scroll!important
+}
+
+.ie7 .shadow,.ie7 h1,.ie8 .shadow,.ie8 h1 {
+    filter: progid:DXImageTransform.Microsoft.Shadow(enabled=false)!important
+}
+
+#outerWrap .error {
+    color: #cb2d36
+}
+
+#outerWrap #header #headerInner .homeLinkText {
+    float: left;
+    margin: 26px 0 0 15px;
+    font-size: 16px
+}
+
+#outerWrap #header #headerInner .sprite-login {
+    float: left;
+    margin-right: 5px
+}
+
+#outerWrap #header #headerInner .sprite-account,#outerWrap #header #headerInner .sprite-cart,#outerWrap #header #headerInner .sprite-signout,#outerWrap #header #headerInner .sprite-upload {
+    float: left;
+    margin-right: 10px
+}
+
+#outerWrap #header #headerInner #headerRight {
+    float: right;
+    margin: 8px 15px 0 0
+}
+
+#outerWrap #header #headerInner #headerRight #signup {
+    float: right;
+    margin: 7px 20px 0 0;
+    display: none
+}
+
+#outerWrap #header #headerInner #headerRight #login {
+    float: right;
+    margin: 7px 15px 0 0;
+    display: none
+}
+
+#outerWrap #header #headerInner #headerRight.standalone #login,#outerWrap #header #headerInner #headerRight.standalone #signup {
+    display: block
+}
+
+#outerWrap #header #headerInner #headerRight #signoutAccount {
+    float: right;
+    margin: 0 10px 0 0;
+    display: none;
+    height: 32px
+}
+
+#outerWrap #header #headerInner #headerRight #signoutAccount .first {
+    border: none!important
+}
+
+#outerWrap #header #headerInner #headerRight #signoutAccount .first .nameWrap {
+    display: block;
+    float: left
+}
+
+#outerWrap #header #headerInner #headerRight #signoutAccount .first .imageWrap {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap {
+    float: right;
+    margin-top: 2px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .fieldWrap {
+    position: relative
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .input {
+    width: 188px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .button {
+    float: right
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .loader {
+    position: absolute;
+    top: -2px;
+    right: 4px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .suggestedResult {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 6px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #cdcdcd;
+    width: 200px;
+    background: #fff;
+    top: 61px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a {
+    padding: 5px 0 5px 5px;
+    border-bottom: 1px solid #cdcdcd;
+    cursor: pointer;
+    display: block;
+    color: #666
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a:hover {
+    color: #666!important
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a .dataWrap {
+    display: inline-block;
+    overflow: hidden;
+    width: 107px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    margin-bottom: 2px
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a .dataWrap .devWrap {
+    font-size: 11px;
+    font-style: italic;
+    display: block;
+    font-weight: 400
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a img {
+    width: 75px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #cdcdcd
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a.active {
+    background: #ececec
+}
+
+#outerWrap #header #headerInner #headerRight #appSearchWrap .searchResults a:last-child {
+    border-bottom: none
+}
+
+#outerWrap #header #headerInner #headerRight #langSwitch {
+    height: 22px;
+    float: right
+}
+
+#outerWrap #header #headerInner #headerRight #langSwitch #langSelectedText {
+    padding: 2px 0;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 90px
+}
+
+#outerWrap #header #headerInner #headerRight #langSwitch .flag {
+    display: block;
+    height: 16px;
+    width: 16px;
+    float: left
+}
+
+#outerWrap #header #headerInner #headerRight #langSwitch .flag.en {
+    margin-right: 5px
+}
+
+#outerWrap #header #headerSubNav {
+    background: #404040;
+    margin-top: 2px;
+    background-image: -webkit-linear-gradient(top,#333 0,#404040 100%)
+}
+
+#outerWrap #header #headerSubNav #headerSubNavInner {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px
+}
+
+#outerWrap #header #headerSubNav #headerSubNavInner a {
+    color: #cdcdcd;
+    padding: 5px 8px;
+    margin-right: 10px;
+    float: left
+}
+
+#outerWrap #header #headerSubNav #headerSubNavInner a:hover {
+    color: #0084cc
+}
+
+#outerWrap #header #headerSubNav #headerSubNavInner a#supportNavItem {
+    float: right
+}
+
+#outerWrap #mainWrap #innerWrap h1 {
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    padding: 5px 10px;
+    color: #333
+}
+
+#outerWrap #mainWrap #innerWrap .tabs {
+    height: 30px;
+    border-bottom: 1px solid #cdcdcd;
+    position: relative;
+    margin-top: 20px
+}
+
+#outerWrap #mainWrap #innerWrap .tabs ul li {
+    float: left;
+    border: 1px solid #cdcdcd;
+    margin-right: 3px;
+    border-bottom: none;
+    cursor: pointer;
+    background: #fff
+}
+
+#outerWrap #mainWrap #innerWrap .tabs ul li a {
+    display: block;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: #666
+}
+
+#outerWrap #mainWrap #innerWrap .tabs ul li a.active,#outerWrap #mainWrap #innerWrap .tabs ul li a:hover {
+    background: #e0f4ff
+}
+
+#outerWrap #mainWrap #innerWrap #socialWidgets {
+    float: right;
+    width: 245px;
+    height: 25px
+}
+
+#outerWrap #mainWrap #innerWrap #socialWidgets .shareButton {
+    float: right
+}
+
+#outerWrap #mainWrap #innerWrap #socialWidgets .shareButton.facebookLikeButton {
+    width: 74px;
+    margin-right: 15px
+}
+
+#outerWrap #mainWrap #innerWrap #socialWidgets .shareButton.twitterShareButton {
+    width: 80px;
+    overflow-x: hidden
+}
+
+#outerWrap #mainWrap #innerWrap #socialWidgets .shareButton.googlePlusButton {
+    width: 73px;
+    overflow-x: hidden
+}
+
+#outerWrap #mainWrap #innerWrap #contentWrap .mainContentWrap {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #cdcdcd
+}
+
+#outerWrap #mainWrap #innerWrap #contentWrap .pod {
+    background: #fff;
+    margin-bottom: 20px
+}
+
+#outerWrap #mainWrap #innerWrap #contentWrap .pod .podHead {
+    background: #ececec;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    padding: 5px;
+    font-weight: 700;
+    background-image: linear-gradient(#f7f7f7,#cdcdcd)
+}
+
+#outerWrap #mainWrap #innerWrap #contentWrap .pod .podBody {
+    padding: 10px;
+    border: 1px solid #cdcdcd
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps {
+    margin-bottom: 10px
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul {
+    overflow: hidden;
+    font-weight: 700;
+    height: 46px;
+    background-clip: padding-box;
+    background-color: #f1f1f1
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li {
+    padding: 6px 0 10px 62px;
+    background: #cdcdcd;
+    position: relative;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 131px
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li span {
+    outline-color: #70bde7;
+    display: block;
+    margin-top: 7px;
+    margin-left: 13px
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li span a {
+    color: #666
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 40px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: 10px;
+    left: 100%;
+    z-index: 1
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 40px solid #cdcdcd;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    left: 100%;
+    z-index: 2
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li:first-child {
+    padding-left: 25px
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li.active {
+    background: #0084cc!important;
+    color: #fff!important
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li.active:after {
+    border-left-color: #0084cc!important
+}
+
+#outerWrap #mainWrap #innerWrap #submissionSteps ul li.active a {
+    color: #fff
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar {
+    margin-bottom: 20px
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button {
+    padding: 8px!important;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    font-size: 16px!important
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar a.button:hover {
+    color: #fff!important
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #e16724;
+    outline: 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8a406),to(#f67d0c));
+    background-image: -webkit-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: -moz-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: -ms-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: -o-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: linear-gradient(to bottom,#f8a406,#f67d0c);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF8A406', endColorstr='#FFF67D0C', GradientType=0)
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fe9102),to(#f67d0c));
+    background-image: -webkit-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: -moz-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: -ms-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: -o-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: linear-gradient(to bottom,#fe9102,#f67d0c);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFE9102', endColorstr='#FFF67D0C', GradientType=0)
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f67d0c),to(#f8a406));
+    background-image: -webkit-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: -moz-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: -ms-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: -o-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: linear-gradient(to bottom,#f67d0c,#f8a406);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF67D0C', endColorstr='#FFF8A406', GradientType=0)
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button.disabled,#outerWrap #mainWrap #innerWrap .submitAppSidebar .button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button:visited {
+    color: #fff
+}
+
+#outerWrap #mainWrap #innerWrap .submitAppSidebar .button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar {
+    border: 1px solid #cdcdcd;
+    background: #f7f7f7;
+    margin-bottom: 10px
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarHeader {
+    background: #ececec;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 2px 5px;
+    font-weight: 700;
+    background-image: linear-gradient(#f7f7f7,#ececec)
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody {
+    background: #fff
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody li a {
+    display: block;
+    padding: 2px 3px 2px 8px
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody li a.selected,#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody li a:hover {
+    background: #e0f4ff;
+    color: #333
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appCategories,#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appGenres {
+    height: 140px;
+    overflow-y: auto
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appCategories .jspVerticalBar,#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appGenres .jspVerticalBar {
+    width: 8px
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appPlatforms .appPlatformsCenter {
+    width: 159px;
+    margin: 0 auto
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appPlatforms .appPlatformsCenter a {
+    float: left;
+    margin: 5px 7px;
+    padding: 5px 7px
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appPlatforms .appPlatformsCenter a:nth-child(4) {
+    padding-right: 20px
+}
+
+#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appPlatforms .appPlatformsCenter a.selected,#outerWrap #mainWrap #innerWrap .sidebarWrap .sidebar .sidebarBody.appPlatforms .appPlatformsCenter a:hover {
+    background-color: #e0f4ff
+}
+
+#footer #footerInner {
+    padding-left: 10px;
+    width: 950px
+}
+
+#footer #footerNav {
+    float: left;
+    height: 25px;
+    margin-top: 20px
+}
+
+#footer #footerNav li {
+    float: left;
+    margin-right: 24px
+}
+
+#footer #footerNav li:last-child {
+    margin-right: 0
+}
+
+#footer #footerNav li a {
+    display: block;
+    color: #fff
+}
+
+#footer #footerNav li a:hover {
+    color: #999
+}
+
+#footer #rss {
+    float: right
+}
+
+#footer #footerRight {
+    float: right;
+    margin: 0 10px 0 0
+}
+
+#footer #footerRight #social {
+    height: 36px;
+    margin-top: 20px
+}
+
+#footer #footerRight #social a {
+    display: block;
+    float: left;
+    margin-right: 4px
+}
+
+#footer #footerRight #social a:last-child {
+    margin-right: 0
+}
+
+#footer #copyrightWrap {
+    float: left;
+    width: 335px;
+    margin-top: 25px
+}
+
+#accountWrap #accountNav {
+    margin-top: 0!important;
+    margin-bottom: 5px
+}
+
+#accountWrap .userInfo .emailChange {
+    margin-left: 10px;
+    color: #cb2d36
+}
+
+#accountWrap .pod .button {
+    float: left
+}
+
+#accountWrap .pod #email {
+    width: 200px
+}
+
+#accountWrap .pod.favorites p {
+    border-bottom: 1px solid #cdcdcd
+}
+
+#accountWrap .pod.favorites p:last-child {
+    border-bottom: none
+}
+
+#accountWrap .pod #bbLegend {
+    overflow-y: auto;
+    max-height: 200px;
+    background: #f7f7f7;
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    margin-top: 10px
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead {
+    padding: 5px;
+    background: #f7f7f7;
+    cursor: pointer
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead:hover {
+    background: #e0f4ff
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .appName {
+    float: left;
+    display: block;
+    margin-top: 5px;
+    font-weight: 700
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .appName .ui-icon {
+    float: left;
+    margin: 1px 2px 0 0
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .statusColor {
+    font-weight: 700;
+    margin-left: 10px;
+    float: right;
+    border: 1px solid #cdcdcd;
+    padding: 4px 5px;
+    background: #fff
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .New {
+    color: #fe9102
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .Edited {
+    color: #e16724
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .Submitted,#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .Tested {
+    color: #80d4f6
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .Approved {
+    color: #60b044
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionHead .Rejected {
+    color: red
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData {
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #cdcdcd;
+    background: #fff
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData .linksPod {
+    float: left
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData .linksPod .error {
+    margin-left: 20px
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData .subtext {
+    float: left
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData table {
+    float: right
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData .sprite-package,#accountWrap .pod.userSubmissions .submissionWrap .submissionData .ui-icon-arrowthick-1-n,#accountWrap .pod.userSubmissions .submissionWrap .submissionData .ui-icon-check,#accountWrap .pod.userSubmissions .submissionWrap .submissionData .ui-icon-edit,#accountWrap .pod.userSubmissions .submissionWrap .submissionData .ui-icon-image,#accountWrap .pod.userSubmissions .submissionWrap .submissionData .ui-icon-search {
+    margin-right: 5px;
+    margin-top: 1px;
+    float: left
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData .sprite-alert {
+    float: left;
+    margin: 2px 0 0 5px
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData td {
+    padding: 5px
+}
+
+#accountWrap .pod.userSubmissions .submissionWrap .submissionData td:first-child {
+    font-weight: 700
+}
+
+#accountWrap .pod.userProfile .podHead a {
+    float: right;
+    font-weight: 400
+}
+
+#accountWrap .pod.userProfile hr {
+    border: 0;
+    height: 1px;
+    background: #cdcdcd;
+    margin: 20px 0
+}
+
+#accountWrap .pod.userProfile .checkbox {
+    float: left;
+    margin: 2px 10px 0 0
+}
+
+#accountWrap .pod.userProfile #headline,#accountWrap .pod.userProfile #url {
+    width: 300px
+}
+
+#accountWrap .pod.userProfile #company {
+    width: 200px
+}
+
+#accountWrap .pod.userProfile .formLeft,#accountWrap .pod.userProfile .formRight {
+    float: left
+}
+
+#accountWrap .pod.userProfile .formLeft {
+    border-right: 1px solid #CDCDCD;
+    padding-right: 20px
+}
+
+#accountWrap .pod.userProfile .formLeft .textarea {
+    width: 400px
+}
+
+#accountWrap .pod.userProfile .formRight {
+    width: 49%;
+    margin-left: 20px
+}
+
+#accountWrap .pod.favorites .favoriteItem {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+    padding: 5px
+}
+
+#accountWrap .pod.favorites .favoriteItem .imageWrap {
+    width: 202px;
+    float: left
+}
+
+#accountWrap .pod.favorites .favoriteItem .imageWrap img {
+    display: block;
+    width: 200px;
+    height: 113px;
+    border: 1px solid #cdcdcd
+}
+
+#accountWrap .pod.favorites .favoriteItem .infoWrap {
+    float: left;
+    margin-left: 20px;
+    width: 670px;
+    height: 113px;
+    position: relative
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+    padding: 5px
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .imageWrap {
+    width: 202px;
+    float: left
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .imageWrap img {
+    display: block;
+    width: 200px;
+    height: 113px;
+    border: 1px solid #cdcdcd
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap {
+    float: left;
+    margin-left: 20px;
+    width: 600px;
+    height: 113px;
+    position: relative
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap a.button:hover {
+    color: #fff!important
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #4a993e;
+    outline: 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#8add6d),to(#569e3d));
+    background-image: -webkit-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -moz-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -ms-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -o-linear-gradient(top,#8add6d,#569e3d);
+    background-image: linear-gradient(to bottom,#8add6d,#569e3d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8ADD6D', endColorstr='#FF569E3D', GradientType=0)
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#79d858),to(#60b044));
+    background-image: -webkit-linear-gradient(top,#79d858,#60b044);
+    background-image: -moz-linear-gradient(top,#79d858,#60b044);
+    background-image: -ms-linear-gradient(top,#79d858,#60b044);
+    background-image: -o-linear-gradient(top,#79d858,#60b044);
+    background-image: linear-gradient(to bottom,#79d858,#60b044);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF79D858', endColorstr='#FF60B044', GradientType=0)
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#569e3d),to(#8add6d));
+    background-image: -webkit-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -moz-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -ms-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -o-linear-gradient(top,#569e3d,#8add6d);
+    background-image: linear-gradient(to bottom,#569e3d,#8add6d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF569E3D', endColorstr='#FF8ADD6D', GradientType=0)
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button.disabled,#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button:visited {
+    color: #fff
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+#accountWrap .pod.purchasedApps .purchasedItem .infoWrap .button {
+    padding: 10px;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    width: 150px;
+    position: absolute;
+    bottom: 0
+}
+
+#appsOuterWrap .appsGrid {
+    margin-top: 0!important
+}
+
+#appsOuterWrap hr.sectionDivider {
+    margin: 20px 0
+}
+
+#appsOuterWrap #infiniteLoader {
+    display: none
+}
+
+#appsOuterWrap #infiniteLoader .loader {
+    float: none;
+    margin: 0 auto;
+    display: block
+}
+
+#appsOuterWrap .appIcon {
+    float: right
+}
+
+#appsOuterWrap .backIcon {
+    float: left;
+    margin: 7px 5px 0 0
+}
+
+#appsOuterWrap .appsHeader h1 {
+    font-size: 18px;
+    margin-bottom: 10px!important;
+    height: 30px
+}
+
+#appsOuterWrap .appWrap #videoLoaderImage {
+    width: 700px;
+    height: 394px
+}
+
+#appsOuterWrap .appWrap .previewModeSocialBumper {
+    height: 30px
+}
+
+#appsOuterWrap .appWrap #socialWidgets {
+    margin-top: 5px;
+    width: 265px!important
+}
+
+#appsOuterWrap .appWrap #socialWidgets .twitterShareButton {
+    width: 95px!important
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap {
+    height: 121px;
+    overflow-y: hidden;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    display: none;
+    padding: 0 0 3px!important
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap.noScroller {
+    height: 105px
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews {
+    height: 79px;
+    overflow-y: hidden;
+    padding: 10px
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews .videoPreview span {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 5px;
+    top: 40px;
+    left: 65px;
+    opacity: .5
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews .videoPreview:hover span {
+    opacity: 1
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews a {
+    display: block;
+    width: 142px;
+    height: 81px;
+    float: left;
+    padding: 3px;
+    position: relative
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews a.active {
+    background: #70bde7
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews a.active img {
+    border: 1px solid #70bde7
+}
+
+#appsOuterWrap .appWrap #screenPreviewsWrap #screenPreviews a img {
+    width: 140px;
+    height: 79px;
+    border: 1px solid #cdcdcd
+}
+
+#appsOuterWrap .appWrap .mediaOuterWrap {
+    width: 708px;
+    height: 399px;
+    position: relative;
+    overflow: hidden
+}
+
+#appsOuterWrap .appWrap .mediaOuterWrap .mediaInnerWrap {
+    position: relative;
+    height: 394px;
+    width: 700px
+}
+
+#appsOuterWrap .appWrap .mediaOuterWrap .mediaInnerWrap .videoWrap {
+    position: relative
+}
+
+#appsOuterWrap .appWrap .appDesc {
+    border-left: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    margin: 0 0 15px;
+    padding: 10px;
+    background: #fff
+}
+
+#appsOuterWrap .appWrap .appDesc b {
+    font-weight: 700
+}
+
+#appsOuterWrap .appWrap .appDesc ol,#appsOuterWrap .appWrap .appDesc ul {
+    list-style-type: disc;
+    margin-left: 10px
+}
+
+#appsOuterWrap .appWrap .appDesc ol li,#appsOuterWrap .appWrap .appDesc ul li {
+    margin-left: 10px;
+    margin-bottom: 5px
+}
+
+#appsOuterWrap .appWrap .appDesc ol {
+    list-style-type: decimal
+}
+
+#appsOuterWrap .appWrap .appCredits,#appsOuterWrap .appWrap .appLegal {
+    border-left: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    margin: 15px 0;
+    padding: 10px;
+    background: #fff
+}
+
+#appsOuterWrap .appWrap .techWrap {
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    margin-bottom: 10px;
+    background: #fff
+}
+
+#appsOuterWrap .appWrap .techWrap .tabBox {
+    height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+#appsOuterWrap .appWrap .techWrap .tabBox .jspVerticalBar {
+    width: 8px
+}
+
+#appsOuterWrap .appWrap .techWrap .tabBox .tabBoxInner {
+    padding: 10px
+}
+
+#appsOuterWrap .appWrap .techWrap ol,#appsOuterWrap .appWrap .techWrap ul {
+    list-style-type: disc;
+    margin-left: 10px
+}
+
+#appsOuterWrap .appWrap .techWrap ol li,#appsOuterWrap .appWrap .techWrap ul li {
+    margin-left: 10px;
+    margin-bottom: 5px
+}
+
+#appsOuterWrap .appWrap .techWrap ol {
+    list-style-type: decimal
+}
+
+#appsOuterWrap .appWrap .appScreens {
+    overflow: hidden;
+    max-width: 700px;
+    position: relative
+}
+
+#appsOuterWrap .appWrap .appScreens:hover .scroller {
+    display: block
+}
+
+#appsOuterWrap .appWrap .appScreens .scroller {
+    height: 50px;
+    width: 30px;
+    background: #f7f7f7;
+    position: absolute;
+    top: 40%;
+    display: none;
+    opacity: .8;
+    border: 1px solid #cdcdcd
+}
+
+#appsOuterWrap .appWrap .appScreens .scroller span {
+    margin-top: 17px
+}
+
+#appsOuterWrap .appWrap .appScreens .scroller.left {
+    left: 0;
+    border-left: none
+}
+
+#appsOuterWrap .appWrap .appScreens .scroller.left span {
+    margin-left: 5px
+}
+
+#appsOuterWrap .appWrap .appScreens .scroller.right {
+    right: 0;
+    border-right: none
+}
+
+#appsOuterWrap .appWrap .appScreens .scroller.right span {
+    margin-left: 7px
+}
+
+#appsOuterWrap .appWrap .appScreens img {
+    width: 700px;
+    height: 394px
+}
+
+#appsOuterWrap .appWrap .appScreens {
+    height: 394px
+}
+
+#appsOuterWrap .appWrap #commentWrapper {
+    margin-top: 5px;
+    border-left: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    padding: 10px;
+    background: #fff
+}
+
+#appsOuterWrap .appWrap #commentWrapper #postingWrap {
+    display: none
+}
+
+#appsOuterWrap .appWrap #commentWrapper .commentAvatar {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #cdcdcd;
+    display: block;
+    height: 50px;
+    width: 50px
+}
+
+#appsOuterWrap .appWrap #commentWrapper .commentAvatar.sprite-rift {
+    border: none
+}
+
+#appsOuterWrap .appWrap #commentWrapper .commentAvatar img {
+    width: 50px;
+    height: 50px
+}
+
+#appsOuterWrap .appWrap #commentWrapper .commentAvatar img.sprite-rift {
+    width: 52px;
+    height: 52px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #generalErrors {
+    margin: 0 0 10px 60px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #postingAvatar {
+    margin-top: 7px;
+    height: 50px;
+    width: 50px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentBox {
+    width: 605px;
+    height: 55px;
+    display: block
+}
+
+#appsOuterWrap .appWrap #commentWrapper #limitText {
+    margin-left: 60px;
+    float: left;
+    display: none
+}
+
+#appsOuterWrap .appWrap #commentWrapper .button {
+    float: right;
+    margin-top: 5px
+}
+
+#appsOuterWrap .appWrap #commentWrapper .loader {
+    float: right;
+    margin: 8px 10px 0 0
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows {
+    width: 680px;
+    overflow: visible!important
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .loader {
+    display: block;
+    margin: 0 auto;
+    float: none
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow {
+    margin-bottom: 5px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow:nth-child(even) .rowRight {
+    background: #f7f7f7
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight {
+    float: left;
+    width: 606px;
+    padding: 5px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight .rowTop {
+    margin-bottom: 5px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight .rowTop .username {
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 10px;
+    float: left
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight .rowTop .deleteComment {
+    float: right;
+    display: none
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight .rowTop .dot {
+    float: left;
+    margin-top: 3px
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight .rowTop .commentTimestamp {
+    color: #999;
+    margin-left: 10px;
+    margin-top: 4px;
+    display: block;
+    float: left
+}
+
+#appsOuterWrap .appWrap #commentWrapper #commentRows .commentRow .rowRight .commentText {
+    white-space: pre-wrap
+}
+
+#appsOuterWrap .appWrap #moreComments {
+    display: none;
+    width: 50px;
+    border: 1px solid #cdcdcd;
+    margin: 0 auto;
+    border-top: 0;
+    background: #fff
+}
+
+#appsOuterWrap .appWrap #moreComments a {
+    margin: 0 auto
+}
+
+#appsOuterWrap #appContent {
+    padding-right: 10px
+}
+
+#appsOuterWrap h3 {
+    margin: 0
+}
+
+#appsOuterWrap .appsWrap {
+    margin-top: 20px
+}
+
+#appsOuterWrap .appsWrap .appPod {
+    background: #fff;
+    margin-bottom: 20px
+}
+
+#appsOuterWrap .appsWrap .appPod .appPodInner {
+    padding: 5px;
+    border: 1px solid #cdcdcd
+}
+
+#appsOuterWrap .appsWrap .appPod:nth-child(even) {
+    margin-right: 0!important
+}
+
+#appsOuterWrap .appsWrap .appPod:nth-child(odd) {
+    margin-left: 0!important
+}
+
+#appsOuterWrap .appsWrap .appPod .imageWrap {
+    width: 170px;
+    float: left
+}
+
+#appsOuterWrap .appsWrap .appPod .imageWrap a {
+    height: 96px;
+    width: 170px;
+    border: 1px solid #cdcdcd;
+    background: #cdcdcd;
+    display: block
+}
+
+#appsOuterWrap .appsWrap .appPod .imageWrap a img {
+    height: 96px;
+    width: 170px
+}
+
+#appsOuterWrap .appsWrap .appPod .infoWrap {
+    width: 147px;
+    float: left;
+    padding: 0 0 0 10px
+}
+
+#appsOuterWrap .appsWrap .appPod .infoWrap .nameWrap {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px
+}
+
+#appsOuterWrap .appsWrap .appPod .infoWrap .nameWrap a {
+    display: block;
+    width: 150px;
+    max-width: 150px;
+    white-space: nowrap;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+#appsOuterWrap .appsWrap .appPod .infoWrap .downloadCountWrap {
+    margin-top: 10px
+}
+
+#appsOuterWrap .appsWrap .appPod .infoWrap .ratingsWrap {
+    margin-top: 20px
+}
+
+#appsOuterWrap .appsWrap .appPod .infoWrap .ratingsWrap span {
+    float: left;
+    margin-right: 3px
+}
+
+#appsOuterWrap #appCopyrightWrap {
+    margin-top: 40px
+}
+
+.sidebar.rateApp .scoreWrap {
+    padding: 5px 0;
+    font-weight: 700
+}
+
+.sidebar.rateApp .scoreWrap .score {
+    font-size: 18px;
+    float: right;
+    display: block;
+    border: 1px solid #cdcdcd;
+    padding: 5px;
+    background: #f5e9be;
+    text-align: center
+}
+
+.sidebar.rateApp .scoreWrap .score .outOf {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-left: 2px
+}
+
+.sidebar.rateApp .scoreWrap .info {
+    font-size: 10px;
+    font-weight: 400
+}
+
+.sidebar.rateApp .ratingStars {
+    margin-top: 10px;
+    height: 20px
+}
+
+.sidebar.rateApp .ratingStars p {
+    float: left;
+    margin-right: 23px;
+    padding: 0
+}
+
+.sidebar.rateApp .ratingStars span {
+    float: left;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.sidebar.rateApp .ratingStars .noMarginRight {
+    margin-right: 0
+}
+
+.sidebar.comfortRateApp .comfortScoreWrap {
+    padding: 5px 0
+}
+
+.sidebar.comfortRateApp .comfortScoreWrap .comfortScoreIcon {
+    float: left;
+    margin-right: 10px
+}
+
+.sidebar.comfortRateApp .comfortScoreWrap .comfortScore {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    float: left;
+    width: 15px;
+    text-align: center
+}
+
+.sidebar.comfortRateApp .comfortScoreWrap .comfortScoreExplanation {
+    width: 157px;
+    float: left;
+    font-size: 10px
+}
+
+.sidebar.comfortRateApp .comfortScoreRateIcons {
+    margin-top: 10px;
+    height: 20px
+}
+
+.sidebar.comfortRateApp .comfortScoreRateIcons p {
+    float: left;
+    margin-right: 10px;
+    padding: 0
+}
+
+.sidebar.comfortRateApp .comfortScoreRateIcons span {
+    float: left;
+    margin-right: 4px;
+    cursor: pointer
+}
+
+.sidebar.comfortRateApp .comfortScoreRateIcons span.sprite-star-off,.sidebar.comfortRateApp .comfortScoreRateIcons span.sprite-star-on {
+    cursor: default
+}
+
+.sidebar.comfortRateApp .comfortScoreRateIcons .noMarginRight {
+    margin-right: 0
+}
+
+.sidebarBody p.innerTitle {
+    background: #f7f7f7;
+    padding: 4px 5px;
+    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    font-weight: 700
+}
+
+.sidebarBody.metaData {
+    background: #fff
+}
+
+.sidebarBody.metaData table {
+    width: 100%
+}
+
+.sidebarBody.metaData table tr {
+    border-bottom: 1px solid #cdcdcd
+}
+
+.sidebarBody.metaData table tr:last-child {
+    border-bottom: none
+}
+
+.sidebarBody.metaData table tr td {
+    vertical-align: top
+}
+
+.sidebarBody.metaData table tr td:first-child {
+    font-weight: 700;
+    width: 75px
+}
+
+.sidebar.appVideos .loggedoutMessage {
+    display: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 5px
+}
+
+.sidebar.appVideos .videoSuccess {
+    font-size: 11px;
+    padding: 3px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #f5e9be;
+    display: none
+}
+
+.sidebar.appVideos .fieldWrap {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cdcdcd;
+    display: none
+}
+
+.sidebar.appVideos .fieldWrap label {
+    font-size: 11px;
+    float: left
+}
+
+.sidebar.appVideos .fieldWrap .hint--info {
+    float: right
+}
+
+.sidebar.appVideos .fieldWrap .url {
+    float: left;
+    font-size: 11px;
+    display: block
+}
+
+.sidebar.appVideos .fieldWrap .input {
+    padding: 1px;
+    width: 141px;
+    font-size: 11px;
+    float: left;
+    margin: 2px 5px 0 0
+}
+
+.sidebar.appVideos .fieldWrap .button {
+    float: left;
+    margin-top: 1px
+}
+
+.sidebar.appVideos .loader {
+    margin: 0 auto;
+    float: none;
+    display: block
+}
+
+.sidebar.appVideos .videosWrap .videoPod {
+    margin-bottom: 10px
+}
+
+.sidebar.appVideos .videosWrap .videoPod:last-child {
+    margin-bottom: 0
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoImageWrap {
+    width: 100px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    height: 57px;
+    float: left
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoImageWrap .videoInnerWrap {
+    position: absolute;
+    top: -9px
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoImageWrap .videoInnerWrap img {
+    width: 100%;
+    cursor: pointer
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoImageWrap .videoInnerWrap .videoDuration {
+    position: absolute;
+    top: 44px;
+    right: 3px;
+    background: #000;
+    height: 18px;
+    color: #cdcdcd;
+    padding: 0 2px;
+    font-size: 11px
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoDataWrap {
+    float: left;
+    margin-left: 5px;
+    font-size: 11px;
+    max-width: 86px;
+    overflow: hidden
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoDataWrap .videoTitle {
+    padding-top: 0
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoDataWrap .videoTitle a {
+    word-wrap: break-word
+}
+
+.sidebar.appVideos .videosWrap .videoPod .videoDataWrap .videoOwner {
+    color: #999;
+    white-space: nowrap
+}
+
+.sidebar.appVideos .paginationWrap {
+    margin-top: 5px;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    display: none
+}
+
+.sidebar.appVideos .paginationWrap a {
+    padding: 3px 5px
+}
+
+.sidebar.appVideos .paginationWrap a.active {
+    background: #cdcdcd
+}
+
+#appThumbWrap {
+    margin-bottom: 10px;
+    border: 1px solid #cdcdcd;
+    width: 218px;
+    height: 123px
+}
+
+#appThumbWrap img {
+    width: 218px;
+    height: 123px
+}
+
+.sidebar.developer {
+    margin-bottom: 0!important
+}
+
+.sidebar.developer .displayName {
+    font-weight: 700
+}
+
+.sidebar.developer #submitterAvatar {
+    float: left;
+    margin: 0 10px 10px 0
+}
+
+.sidebar.developer .submittedDate {
+    float: right
+}
+
+.sidebar.developer hr {
+    margin: 5px 0
+}
+
+.sidebar.developer .socialIcons {
+    padding: 10px;
+    border-top: 1px solid #cdcdcd
+}
+
+.sidebar.developer .socialIcons a {
+    float: left;
+    margin: 0 9px 0 0
+}
+
+.sidebar.developer .socialIcons a:nth-child(6) {
+    margin-right: 0
+}
+
+.sidebar.developer .contactWrap {
+    padding-top: 0
+}
+
+.sidebar.developer .contactWrap a {
+    display: block;
+    padding-bottom: 2px
+}
+
+.sidebar.developer .contactWrap a .ui-icon {
+    float: left;
+    margin-right: 5px
+}
+
+.navSidebar .sidebarBody.appCategories,.navSidebar .sidebarBody.appGenres {
+    overflow-y: none!important;
+    height: auto!important
+}
+
+.sidebarBody.appCategories li a.selected,.sidebarBody.appGenres li a.selected {
+    border-left: 5px solid #0084cc;
+    padding-left: 3px!important
+}
+
+.sidebar.download p {
+    padding: 0
+}
+
+.sidebar.download #downloadPlatforms {
+    margin: 0 0 10px
+}
+
+.sidebar.download #downloadPlatforms .platformSelect {
+    float: left;
+    margin-right: 8px
+}
+
+.sidebar.download #downloadPlatforms .platformSelect .radio {
+    float: left;
+    margin: 5px 5px 0 0
+}
+
+.sidebar.download #downloadPlatforms .platformSelect .sprite {
+    float: left
+}
+
+.sidebar.download #downloadPlatforms span:last-of-type {
+    margin-right: 0
+}
+
+.sidebar.download a.button:hover {
+    color: #fff!important
+}
+
+.sidebar.download .button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #4a993e;
+    outline: 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#8add6d),to(#569e3d));
+    background-image: -webkit-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -moz-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -ms-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -o-linear-gradient(top,#8add6d,#569e3d);
+    background-image: linear-gradient(to bottom,#8add6d,#569e3d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8ADD6D', endColorstr='#FF569E3D', GradientType=0)
+}
+
+.sidebar.download .button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#79d858),to(#60b044));
+    background-image: -webkit-linear-gradient(top,#79d858,#60b044);
+    background-image: -moz-linear-gradient(top,#79d858,#60b044);
+    background-image: -ms-linear-gradient(top,#79d858,#60b044);
+    background-image: -o-linear-gradient(top,#79d858,#60b044);
+    background-image: linear-gradient(to bottom,#79d858,#60b044);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF79D858', endColorstr='#FF60B044', GradientType=0)
+}
+
+.sidebar.download .button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#569e3d),to(#8add6d));
+    background-image: -webkit-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -moz-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -ms-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -o-linear-gradient(top,#569e3d,#8add6d);
+    background-image: linear-gradient(to bottom,#569e3d,#8add6d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF569E3D', endColorstr='#FF8ADD6D', GradientType=0)
+}
+
+.sidebar.download .button.disabled,.sidebar.download .button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+.sidebar.download .button:visited {
+    color: #fff
+}
+
+.sidebar.download .button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+.sidebar.download .button {
+    padding: 10px;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    margin-bottom: 10px
+}
+
+.sidebar.download #versionWrap #version,.sidebar.download .totalDownloads .downloadCount {
+    float: right;
+    font-weight: 700
+}
+
+.sidebar.addToCart {
+    display: none
+}
+
+.sidebar.addToCart .buyApp {
+    font-size: 15px;
+    font-weight: 700;
+    display: none
+}
+
+.sidebar.addToCart .addToCartButton {
+    display: none;
+    padding: 10px;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    margin-bottom: 5px
+}
+
+.sidebar.addToCart .viewCart {
+    text-align: center
+}
+
+.sidebar.addToCart .itemAlreadyInCart {
+    display: none;
+    text-align: center;
+    padding: 5px;
+    background: #e0f4ff;
+    border: 1px solid #70bde7
+}
+
+.sidebar.addToCart #cartItemCount {
+    margin-left: 5px
+}
+
+.sidebar.reportApp {
+    display: none
+}
+
+.sidebar.reportApp .ui-icon-flag {
+    float: left;
+    margin-right: 5px
+}
+
+#authWrap #loginErrors {
+    display: none
+}
+
+#authWrap .leftPod {
+    float: left;
+    padding-right: 50px;
+    border-right: 1px solid #CDCDCD
+}
+
+#authWrap .leftPod #email {
+    width: 200px
+}
+
+#authWrap .leftPod .button {
+    float: left
+}
+
+#authWrap .rightPod {
+    margin-left: 20px;
+    float: left
+}
+
+#forgotPasswordWrap #forgotPasswordErrors,#forgotPasswordWrap .message {
+    display: none
+}
+
+#forgotPasswordWrap #email {
+    width: 200px
+}
+
+#forgotPasswordWrap .button {
+    float: left
+}
+
+.noChrome #darkWrap {
+    height: 472px
+}
+
+#darkWrap {
+    height: 550px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ececec;
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+    min-width: 960px;
+    display: none
+}
+
+#homeOuterWrap h2 {
+    padding: 10px 0 0 10px
+}
+
+#homeOuterWrap #heroWrap {
+    margin-bottom: 10px;
+    height: 394px;
+    width: 700px;
+    overflow: hidden;
+    border: 2px solid #cdcdcd
+}
+
+#homeOuterWrap #heroWrap #hero {
+    position: relative
+}
+
+#homeOuterWrap #heroWrap #hero .heroInner {
+    position: absolute;
+    top: 0;
+    display: none
+}
+
+#homeOuterWrap #heroWrap #hero .heroInner img {
+    height: 394px;
+    width: 700px
+}
+
+#homeOuterWrap #heroWrap #hero .heroInner span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 690px;
+    height: 40px;
+    opacity: .75;
+    font-size: 18px;
+    line-height: 40px;
+    color: #666;
+    padding-right: 10px;
+    text-align: right
+}
+
+#homeOuterWrap #heroNav {
+    height: 25px;
+    width: 400px;
+    float: left;
+    display: none
+}
+
+#homeOuterWrap #heroNav span {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #cdcdcd
+}
+
+#homeOuterWrap #heroNav span.active,#homeOuterWrap #heroNav span:hover {
+    background-color: #cdcdcd;
+    border: 1px solid #999
+}
+
+#homeOuterWrap #heroNav span:last-child {
+    margin-right: 0
+}
+
+#homeOuterWrap #heroNav span a {
+    display: block;
+    color: #666;
+    height: 20px;
+    width: 20px
+}
+
+#homeOuterWrap .contentBg {
+    background: #fff
+}
+
+#homeOuterWrap #CTA {
+    margin-top: 20px
+}
+
+#homeOuterWrap #CTA a {
+    display: block;
+    height: 68px;
+    width: 465px;
+    float: left
+}
+
+#homeOuterWrap #CTA a.bannerOrder {
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/order_rift_banner.jpg) no-repeat;
+    margin-right: 10px
+}
+
+#homeOuterWrap #CTA a.bannerSubmit {
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/submit_app_banner.png) no-repeat
+}
+
+#homeOuterWrap #featuredsAppWrap {
+    margin-top: 15px
+}
+
+#homeOuterWrap #featuredsAppWrap h2 {
+    margin-bottom: 0
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp {
+    float: left;
+    width: 313px;
+    margin-bottom: 10px
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp:nth-child(odd) {
+    margin-left: 0!important
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp:nth-child(even) {
+    margin-right: 0!important
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad {
+    padding: 10px;
+    max-height: 420px
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad h3 {
+    margin-bottom: 0
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad h3 a {
+    color: #404040;
+    max-width: 293px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad h3 a:hover {
+    color: #0084cc
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad .screenshot {
+    width: 292px;
+    height: 165px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    overflow: hidden
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad .screenshot a {
+    display: block;
+    border: 1px solid #cdcdcd
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad .screenshot a img {
+    width: 290px;
+    height: 163px;
+    display: block;
+    margin: 0 auto
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad .description {
+    height: 90px;
+    margin-bottom: 5px
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad .readMore {
+    width: 82px;
+    display: block
+}
+
+#homeOuterWrap #featuredsAppWrap .featuredApp .pad .readMore span {
+    float: right;
+    margin-top: 2px
+}
+
+#homeOuterWrap #popularWrap {
+    margin-top: 20px
+}
+
+#homeOuterWrap #popularWrap .moreLink {
+    margin-top: 10px;
+    display: block;
+    text-align: center
+}
+
+#homeOuterWrap #popularWrap h2 {
+    margin-bottom: 0
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps {
+    border: 1px solid #cdcdcd;
+    background: #fff
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod:last-child {
+    border-bottom: none
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .appInfoWrap {
+    float: left;
+    max-width: 260px
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .appInfoWrap a {
+    height: 75px;
+    width: 133px;
+    display: block
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .appInfoWrap a span {
+    display: none;
+    font-weight: 700;
+    margin-bottom: 3px
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .appInfoWrap a img {
+    height: 75px;
+    width: 133px;
+    border: 1px solid #cdcdcd
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .scoreWrap {
+    width: 285px;
+    float: right
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .scoreWrap a {
+    display: block;
+    margin-bottom: 8px;
+    background: #ececec;
+    padding: 2px 0 2px 4px;
+    border: 1px solid #cdcdcd;
+    width: 279px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .scoreWrap .scoreWrapInner {
+    width: 175px;
+    float: right
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .scoreWrap .scoreWrapInner .score {
+    font-size: 18px;
+    float: right;
+    display: block;
+    border: 1px solid #cdcdcd;
+    padding: 5px;
+    background: #f5e9be;
+    text-align: center;
+    margin-top: 2px
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .scoreWrap .scoreWrapInner .score .outOf {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-left: 2px
+}
+
+#homeOuterWrap #popularWrap #topRatedWrap #topRatedApps .mainRatingPod .scoreWrap .scoreWrapInner .info {
+    font-size: 10px;
+    font-weight: 400
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap {
+    width: 430px;
+    float: left
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps {
+    border: 1px solid #cdcdcd;
+    background: #fff
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod:last-child {
+    border-bottom: none
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .appInfoWrap {
+    float: left;
+    max-width: 260px
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .appInfoWrap a {
+    height: 75px;
+    width: 133px;
+    display: block
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .appInfoWrap a span {
+    display: none;
+    font-weight: 700;
+    margin-bottom: 3px
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .appInfoWrap a img {
+    height: 75px;
+    width: 133px;
+    border: 1px solid #cdcdcd
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .counterWrap {
+    width: 285px;
+    float: right
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .counterWrap a {
+    display: block;
+    background: #ececec;
+    padding: 2px 0 2px 4px;
+    margin-bottom: 9px;
+    border: 1px solid #cdcdcd
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .counterWrap .counter {
+    width: 175px;
+    float: right;
+    margin-bottom: 2px
+}
+
+#homeOuterWrap #popularWrap #mostDownloadedWrap #mostDownloadedApps .mostDownlodedAppPod .counterWrap .counter span {
+    font-size: 18px;
+    float: right;
+    display: block;
+    border: 1px solid #cdcdcd;
+    padding: 5px;
+    background: #ececec;
+    width: 50px;
+    text-align: center;
+    margin-top: 2px
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps {
+    border: 1px solid #cdcdcd;
+    background: #fff
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod:last-child {
+    border-bottom: none
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .appInfoWrap {
+    float: left;
+    max-width: 260px;
+    margin-bottom: 2px
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .appInfoWrap a {
+    height: 75px;
+    width: 133px;
+    display: block
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .appInfoWrap a span {
+    display: none;
+    font-weight: 700;
+    margin-bottom: 3px
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .appInfoWrap a img {
+    height: 75px;
+    width: 133px;
+    border: 1px solid #cdcdcd
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .osWrap {
+    width: 285px;
+    float: right
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .osWrap a.head {
+    display: block;
+    margin-bottom: 8px;
+    background: #ececec;
+    padding: 2px 0 2px 4px;
+    border: 1px solid #cdcdcd;
+    width: 279px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .osWrap .osWrapInner .os {
+    font-size: 18px;
+    float: right;
+    display: block;
+    border: 1px solid #cdcdcd;
+    padding: 5px;
+    background: #e0f4ff;
+    text-align: center;
+    margin-top: 2px
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .osWrap .osWrapInner .os span {
+    float: left;
+    margin-right: 5px
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .osWrap .osWrapInner .os span:last-child {
+    margin-right: 0
+}
+
+#homeOuterWrap #popularWrap #newestWrap #newestApps .mainRatingPod .osWrap .osWrapInner .info {
+    font-size: 10px;
+    font-weight: 400
+}
+
+.profileOuter .message {
+    display: block!important
+}
+
+.profileOuter h1 {
+    line-height: 50px
+}
+
+.profileOuter h1 img {
+    float: left;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    margin-right: 20px
+}
+
+.profileOuter h1 .sprite-rift {
+    float: left;
+    margin-bottom: 2px;
+    margin-right: 20px
+}
+
+.profileOuter .pod.details {
+    float: left
+}
+
+.profileOuter .pod.favorites {
+    float: right
+}
+
+.profileOuter .pod.submissions .appWrap {
+    width: 180px;
+    float: left;
+    margin: 0 4px 10px 0
+}
+
+.profileOuter .pod.submissions .appWrap:nth-child(5) {
+    margin-right: 0
+}
+
+.profileOuter .pod.submissions .appWrap .header {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.profileOuter .pod.submissions .appWrap img {
+    height: 96px;
+    width: 170px;
+    border: 1px solid #cdcdcd;
+    display: block;
+    margin: 0 auto 5px
+}
+
+#resendWrap #email {
+    width: 200px
+}
+
+#resetPasswordWrap #resetPasswordErrors {
+    display: none
+}
+
+#resetPasswordWrap .button {
+    float: left
+}
+
+.searchResultsWrap .result {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+    background: #fff
+}
+
+.searchResultsWrap .result .imageWrap {
+    float: left;
+    padding: 5px;
+    margin-right: 5px
+}
+
+.searchResultsWrap .result .imageWrap img {
+    width: 220px;
+    border: 1px solid #cdcdcd
+}
+
+.searchResultsWrap .result .infoWrap {
+    padding: 5px 0 0 5px
+}
+
+#signupOuterWrap .mainContentWrap {
+    display: none
+}
+
+#signupOuterWrap #signupInner #email {
+    width: 200px
+}
+
+#signupOuterWrap #signupInner .button {
+    float: left
+}
+
+#signupOuterWrap #signupInner .pod #requiredNotice {
+    float: right
+}
+
+#signupOuterWrap #signupInner .pod.terms {
+    position: relative
+}
+
+#signupOuterWrap #signupInner .pod.terms .buttonWrap {
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 10px
+}
+
+#signupOuterWrap #signupInner .pod.terms .buttonWrap button {
+    float: right
+}
+
+#signupOuterWrap #signupInner .pod.terms .buttonWrap .loader {
+    margin-right: 10px
+}
+
+#signupOuterWrap #signupInner .pod.terms #termsWrap {
+    width: 325px;
+    float: left
+}
+
+#signupOuterWrap #signupInner .pod.terms label a {
+    margin-left: -23px;
+    padding-left: 23px
+}
+
+#signupOuterWrap #signupInner .pod.terms .checkbox {
+    float: left;
+    margin: 4px 10px 0 0
+}
+
+#submitAppWrap .input,#submitAppWrap .textarea {
+    background: #fff
+}
+
+#submitAppWrap #continueButton {
+    float: right
+}
+
+#submitAppWrap #guidelinesPre .mainContentWrap {
+    max-height: 400px;
+    overflow-y: auto;
+    width: 920px
+}
+
+#submitAppWrap .tabs {
+    border-bottom: none!important
+}
+
+#submitAppWrap .tabs .error {
+    color: #cb2d36;
+    margin-left: 5px
+}
+
+#submitAppWrap h4 {
+    margin-bottom: 10px
+}
+
+#submitAppWrap .accordionWrap h3 {
+    border: 1px solid #70bde7;
+    cursor: pointer;
+    background: #e0f4ff;
+    padding: 0 0 0 5px;
+    margin-bottom: 1px
+}
+
+#submitAppWrap .accordionWrap .accordionPart {
+    padding: 10px 20px 20px;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    margin-bottom: 10px;
+    background: #f7f7f7
+}
+
+#submitAppWrap .accordionWrap .accordionPart #technicalLeft {
+    width: 510px!important
+}
+
+#submitAppWrap .pod .podBody .floatLeft {
+    float: left
+}
+
+#submitAppWrap .pod .podBody .leftColumn {
+    margin-right: 20px
+}
+
+#submitAppWrap .pod .podBody #requiredNotice {
+    float: right
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes {
+    margin-top: 10px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes .highlightLabel {
+    border-bottom: 1px solid #cdcdcd;
+    width: 99%;
+    padding: 1px 0;
+    margin-top: 10px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes .textarea {
+    width: 410px;
+    height: 140px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes .upDown {
+    float: left;
+    margin: 6px 5px 0 0
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #hostedFilesWrap .fieldWrap,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #platformWrap .fieldWrap {
+    float: left;
+    margin-right: 20px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #hostedFilesWrap label,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #platformWrap label {
+    float: left
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #hostedFilesWrap .checkbox,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #platformWrap .checkbox {
+    margin: 3px 5px 0 0;
+    float: left
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #appName {
+    width: 350px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #descWrap .fieldWrap {
+    float: left;
+    margin-right: 15px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #descWrap #appShortDescription {
+    height: 100px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #sevenHundred {
+    width: 705px!important
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #sevenHundred .textarea {
+    height: 300px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #reqsWrap .fieldWrap {
+    float: left;
+    margin-right: 15px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #controllerWrap .fieldWrap,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #gameModeWrap .fieldWrap,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #restrictedWrap .fieldWrap,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #riftVersionsWrap .fieldWrap {
+    float: left;
+    margin-right: 10px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #controllerWrap label,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #gameModeWrap label,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #restrictedWrap label,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #riftVersionsWrap label {
+    float: left
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #controllerWrap .checkbox,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #gameModeWrap .checkbox,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #restrictedWrap .checkbox,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #riftVersionsWrap .checkbox {
+    margin: 3px 5px 0 0;
+    float: left
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #appSetupInstructions {
+    width: 390px;
+    height: 175px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #metaWrap .metaRow {
+    margin: 10px 0 0
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #metaWrap .metaRow span {
+    width: 100px;
+    display: block;
+    float: left;
+    font-weight: 700
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #metaWrap .input {
+    margin-left: 10px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #metaWrap label span {
+    margin-right: 10px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #genresWrap {
+    width: 455px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #genresWrap .fieldWrap {
+    float: left;
+    margin-right: 10px;
+    width: 130px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #genresWrap label {
+    float: left;
+    white-space: nowrap
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #genresWrap .checkbox {
+    margin: 3px 5px 0 0;
+    float: left
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #appCopyright {
+    width: 410px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #creditsWrap .fieldWrap,#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #revisionWrap .fieldWrap {
+    float: left;
+    margin-right: 15px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #appDataBox #appVersionNumber {
+    width: 50px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #developerContactEmail {
+    width: 300px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #dialCode {
+    margin-right: 8px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #paypalLabel {
+    width: 130px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #paypalLabel a {
+    float: right
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #developerAddress,#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #developerAddress2 {
+    width: 300px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #developerCity {
+    width: 200px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #developerDataBox #developerProvinceWrap {
+    display: none
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox #publicSupportEmail,#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox #publicWebsite {
+    width: 300px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks .domainHint {
+    position: absolute;
+    top: 1px;
+    left: 36px;
+    padding: 6px 5px 4px;
+    background: #ececec;
+    border-right: 1px solid #cdcdcd;
+    width: 164px;
+    font-size: 10px;
+    cursor: default
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks.thinner .domainHint {
+    width: 120px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks.thinner .input {
+    padding-left: 140px!important
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks .fieldWrap {
+    width: 420px;
+    position: relative;
+    margin-bottom: 20px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks .fieldWrap label {
+    margin-left: 36px;
+    display: none
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks .fieldWrap .input {
+    padding-left: 185px
+}
+
+#submitAppWrap .pod .podBody #appInfoBoxes #publicDataBox .publicLinks .fieldWrap .sprite {
+    margin: 2px 10px 0 0;
+    float: left
+}
+
+#submitAppWrap .pod.terms {
+    position: relative
+}
+
+#submitAppWrap .pod.terms #termsWrap {
+    width: 670px
+}
+
+#submitAppWrap .pod.terms #termsWrap .fieldWrap:last-of-type {
+    margin-bottom: 0!important
+}
+
+#submitAppWrap .pod.terms #termsWrap label[for=termsEval] {
+    margin-left: 21px
+}
+
+#submitAppWrap .pod.terms label a {
+    margin-left: -23px;
+    padding-left: 23px
+}
+
+#submitAppWrap .pod.terms .checkbox {
+    float: left;
+    margin: 4px 10px 0 0
+}
+
+#submitAppWrap .buttonWrap {
+    margin-bottom: 0
+}
+
+#submitAppWrap .buttonWrap .button {
+    float: right
+}
+
+#submitAppWrap .buttonWrap #saveButton {
+    margin-right: 10px;
+    display: none
+}
+
+#submitAppWrap .buttonWrap .loader {
+    float: right;
+    margin-right: 10px
+}
+
+#uploadAppWrap .mainContentWrap {
+    display: none
+}
+
+#uploadAppWrap #errors {
+    display: none;
+    border: 1px solid #FC0;
+    padding: 5px;
+    margin: 0 0 10px;
+    background: #f5e9be
+}
+
+#uploadAppWrap #errors p {
+    font-weight: 700
+}
+
+#uploadAppWrap span.error {
+    margin-left: 22px;
+    float: left
+}
+
+#uploadAppWrap .pod .podBody {
+    position: relative
+}
+
+#uploadAppWrap .pod #urlsThirdParty .input {
+    width: 400px
+}
+
+#uploadAppWrap .pod .uploadPod {
+    float: left;
+    width: 439px;
+    margin: 0 20px 10px 0
+}
+
+#uploadAppWrap .pod .uploadPod h3 {
+    float: left
+}
+
+#uploadAppWrap .pod .uploadPod .verifyUpload {
+    float: left;
+    margin-left: 10px;
+    display: none
+}
+
+#uploadAppWrap .pod .uploadPod .verifyUpload .ui-icon-check {
+    float: left;
+    margin: 1px 5px 0 0
+}
+
+#uploadAppWrap .pod .uploadPod:first-child {
+    margin-right: 40px
+}
+
+#uploadAppWrap .pod .uploadPod .frameWrap {
+    border: 1px solid #cdcdcd;
+    height: 150px;
+    width: 439px
+}
+
+#uploadAppWrap .pod .uploadPod .frameWrap iframe {
+    height: 150px;
+    width: 439px;
+    border: 0;
+    overflow: hidden
+}
+
+#uploadAppWrap .pod.appInfo p span {
+    display: block;
+    width: 100px;
+    float: left;
+    font-weight: 700
+}
+
+#uploadAppWrap .buttonWrap {
+    float: right;
+    margin-bottom: 0
+}
+
+#uploadAppWrap .buttonWrap .button {
+    float: right
+}
+
+#uploadAppWrap .buttonWrap .loader {
+    float: left;
+    margin: 2px 10px 0 0
+}
+
+.ghostWrap .screenPod,.ghostWrap .videoPod {
+    margin: 0 30px 15px 0;
+    float: left;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    position: relative;
+    height: 87px;
+    width: 110px
+}
+
+.ghostWrap .screenPod.active,.ghostWrap .videoPod.active {
+    background: #f5e9be
+}
+
+.ghostWrap .screenPod:nth-child(5n),.ghostWrap .videoPod:nth-child(5n) {
+    margin-right: 0
+}
+
+.ghostWrap .screenPod p,.ghostWrap .videoPod p {
+    padding: 5px!important
+}
+
+.ghostWrap .screenPod.dragging,.ghostWrap .videoPod.dragging {
+    opacity: .5;
+    background: #8add6d
+}
+
+.ghostWrap .screenPod.dragging *,.ghostWrap .videoPod.dragging * {
+    display: none
+}
+
+.ghostWrap .screenPod.dragGhost,.ghostWrap .videoPod.dragGhost {
+    position: absolute;
+    z-index: 2;
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+.ghostWrap .screenPod .header,.ghostWrap .videoPod .header {
+    display: block;
+    border-bottom: 1px solid #cdcdcd;
+    background: #ececec;
+    cursor: move;
+    padding: 2px 0 2px 3px
+}
+
+.ghostWrap .screenPod .header .deleteScreen,.ghostWrap .screenPod .header .deleteVideo,.ghostWrap .videoPod .header .deleteScreen,.ghostWrap .videoPod .header .deleteVideo {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.ghostWrap .screenPod .header .name,.ghostWrap .videoPod .header .name {
+    display: block;
+    max-width: 90px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px
+}
+
+.ghostWrap .screenPod .screenWrap,.ghostWrap .screenPod .videoScreenWrap,.ghostWrap .videoPod .screenWrap,.ghostWrap .videoPod .videoScreenWrap {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 56px
+}
+
+.ghostWrap .screenPod .screenWrap img,.ghostWrap .screenPod .videoScreenWrap img,.ghostWrap .videoPod .screenWrap img,.ghostWrap .videoPod .videoScreenWrap img {
+    width: 100px;
+    height: 56px
+}
+
+#uploadMultimediaWrap .mainContentWrap {
+    margin-bottom: 10px!important
+}
+
+#uploadMultimediaWrap #errors {
+    display: none;
+    border: 1px solid #FC0;
+    padding: 5px;
+    margin: 0 0 10px;
+    background: #f5e9be
+}
+
+#uploadMultimediaWrap #errors p {
+    font-weight: 700
+}
+
+#uploadMultimediaWrap span.error {
+    margin-left: 22px;
+    float: left
+}
+
+#uploadMultimediaWrap .pod .podBody {
+    position: relative
+}
+
+#uploadMultimediaWrap .pod.appInfo p span {
+    display: block;
+    width: 100px;
+    float: left;
+    font-weight: 700
+}
+
+#uploadMultimediaWrap .message {
+    margin-bottom: 20px!important
+}
+
+#uploadMultimediaWrap .message #acceptedBrowsers {
+    margin-top: 10px
+}
+
+#uploadMultimediaWrap .message #acceptedBrowsers a {
+    display: block;
+    float: left;
+    margin-right: 10px
+}
+
+#uploadMultimediaWrap .message #acceptedBrowsers a span {
+    float: left;
+    display: block;
+    margin: -2px 5px 0 0
+}
+
+#uploadMultimediaWrap .appMedia h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+#uploadMultimediaWrap .appMedia .previewTarget {
+    display: none
+}
+
+#uploadMultimediaWrap .appMedia .dropbox {
+    opacity: .85;
+    filter: alpha(opacity=85);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    border: 5px #cdcdcd dashed;
+    background: #fff;
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #999;
+    text-align: center;
+    line-height: 148px
+}
+
+#uploadMultimediaWrap .appMedia .dropbox.droppable {
+    background: #e0f4ff
+}
+
+#uploadMultimediaWrap .appMedia .holderInner {
+    float: left
+}
+
+#uploadMultimediaWrap .appMedia #thumbHolder {
+    margin: 10px 0 20px;
+    position: relative;
+    width: 290px;
+    height: 163px;
+    max-height: 163px;
+    overflow-y: hidden
+}
+
+#uploadMultimediaWrap .appMedia #thumbHolder img {
+    width: 290px;
+    height: 163px
+}
+
+#uploadMultimediaWrap .appMedia #thumbHolder .dropbox {
+    width: 280px;
+    height: 153px
+}
+
+#uploadMultimediaWrap .appMedia #thumbHolder .preview {
+    width: 258px!important;
+    position: absolute!important;
+    top: 10px!important;
+    left: 10px!important
+}
+
+#uploadMultimediaWrap .appMedia #primaryHolder {
+    margin: 10px 0 20px;
+    position: relative;
+    width: 700px;
+    height: 394px;
+    max-height: 394px;
+    overflow-y: hidden
+}
+
+#uploadMultimediaWrap .appMedia #primaryHolder img {
+    width: 700px;
+    height: 394px
+}
+
+#uploadMultimediaWrap .appMedia #primaryHolder .dropbox {
+    width: 690px;
+    height: 384px;
+    line-height: 380px
+}
+
+#uploadMultimediaWrap .appMedia #primaryHolder .preview {
+    width: 668px!important;
+    position: absolute!important;
+    top: 10px!important;
+    left: 10px!important
+}
+
+#uploadMultimediaWrap .appMedia #appsHolder {
+    margin: 10px 0 20px;
+    position: relative;
+    width: 700px
+}
+
+#uploadMultimediaWrap .appMedia #appsHolder #progressWrap {
+    position: relative;
+    height: 374px;
+    max-height: 374px;
+    width: 680px;
+    padding: 10px;
+    overflow-y: hidden
+}
+
+#uploadMultimediaWrap .appMedia #appsHolder #progressWrap #firstScreen {
+    width: 700px;
+    height: 394px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+#uploadMultimediaWrap .appMedia #appsHolder #progressWrap #firstScreen img {
+    width: 700px;
+    height: 394px
+}
+
+#uploadMultimediaWrap .appMedia #appsHolder .dropbox {
+    width: 691px;
+    height: 384px;
+    line-height: 380px
+}
+
+#uploadMultimediaWrap .appMedia #appsHolder .preview {
+    width: 668px!important
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder {
+    margin: 10px 0 20px
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder .input {
+    float: left;
+    margin-right: 10px;
+    width: 260px;
+    padding: 2px;
+    font-size: 11px
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder .button {
+    padding: 2px 3px;
+    font-size: 11px;
+    float: left
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder .loader {
+    float: left;
+    margin-top: -4px
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder #firstVideo {
+    width: 700px;
+    height: 394px;
+    margin-bottom: 10px
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder #firstVideo #noVideos {
+    width: 700px;
+    height: 394px;
+    display: none;
+    background: #fff;
+    opacity: .85;
+    filter: alpha(opacity=85)
+}
+
+#uploadMultimediaWrap .appMedia #videoHolder #firstVideo #noVideos img {
+    padding: 150px 0 0 200px
+}
+
+#uploadMultimediaWrap .appMedia .appScreens,#uploadMultimediaWrap .appMedia .videoScreens {
+    margin-top: 10px;
+    padding: 25px 10px 10px;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    width: 680px
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod,#uploadMultimediaWrap .appMedia .appScreens .videoPod,#uploadMultimediaWrap .appMedia .videoScreens .screenPod,#uploadMultimediaWrap .appMedia .videoScreens .videoPod {
+    margin: 0 30px 15px 0;
+    float: left;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    position: relative;
+    height: 87px;
+    width: 110px
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod.active,#uploadMultimediaWrap .appMedia .appScreens .videoPod.active,#uploadMultimediaWrap .appMedia .videoScreens .screenPod.active,#uploadMultimediaWrap .appMedia .videoScreens .videoPod.active {
+    background: #f5e9be
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod:nth-child(5n),#uploadMultimediaWrap .appMedia .appScreens .videoPod:nth-child(5n),#uploadMultimediaWrap .appMedia .videoScreens .screenPod:nth-child(5n),#uploadMultimediaWrap .appMedia .videoScreens .videoPod:nth-child(5n) {
+    margin-right: 0
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod p,#uploadMultimediaWrap .appMedia .appScreens .videoPod p,#uploadMultimediaWrap .appMedia .videoScreens .screenPod p,#uploadMultimediaWrap .appMedia .videoScreens .videoPod p {
+    padding: 5px!important
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod.dragging,#uploadMultimediaWrap .appMedia .appScreens .videoPod.dragging,#uploadMultimediaWrap .appMedia .videoScreens .screenPod.dragging,#uploadMultimediaWrap .appMedia .videoScreens .videoPod.dragging {
+    opacity: .5;
+    background: #8add6d
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod.dragging *,#uploadMultimediaWrap .appMedia .appScreens .videoPod.dragging *,#uploadMultimediaWrap .appMedia .videoScreens .screenPod.dragging *,#uploadMultimediaWrap .appMedia .videoScreens .videoPod.dragging * {
+    display: none
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod.dragGhost,#uploadMultimediaWrap .appMedia .appScreens .videoPod.dragGhost,#uploadMultimediaWrap .appMedia .videoScreens .screenPod.dragGhost,#uploadMultimediaWrap .appMedia .videoScreens .videoPod.dragGhost {
+    position: absolute;
+    z-index: 2;
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod .header,#uploadMultimediaWrap .appMedia .appScreens .videoPod .header,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .header,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .header {
+    display: block;
+    border-bottom: 1px solid #cdcdcd;
+    background: #ececec;
+    cursor: move;
+    padding: 2px 0 2px 3px
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod .header .deleteScreen,#uploadMultimediaWrap .appMedia .appScreens .screenPod .header .deleteVideo,#uploadMultimediaWrap .appMedia .appScreens .videoPod .header .deleteScreen,#uploadMultimediaWrap .appMedia .appScreens .videoPod .header .deleteVideo,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .header .deleteScreen,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .header .deleteVideo,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .header .deleteScreen,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .header .deleteVideo {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod .header .name,#uploadMultimediaWrap .appMedia .appScreens .videoPod .header .name,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .header .name,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .header .name {
+    display: block;
+    max-width: 90px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod .screenWrap,#uploadMultimediaWrap .appMedia .appScreens .screenPod .videoScreenWrap,#uploadMultimediaWrap .appMedia .appScreens .videoPod .screenWrap,#uploadMultimediaWrap .appMedia .appScreens .videoPod .videoScreenWrap,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .screenWrap,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .videoScreenWrap,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .screenWrap,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .videoScreenWrap {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 56px
+}
+
+#uploadMultimediaWrap .appMedia .appScreens .screenPod .screenWrap img,#uploadMultimediaWrap .appMedia .appScreens .screenPod .videoScreenWrap img,#uploadMultimediaWrap .appMedia .appScreens .videoPod .screenWrap img,#uploadMultimediaWrap .appMedia .appScreens .videoPod .videoScreenWrap img,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .screenWrap img,#uploadMultimediaWrap .appMedia .videoScreens .screenPod .videoScreenWrap img,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .screenWrap img,#uploadMultimediaWrap .appMedia .videoScreens .videoPod .videoScreenWrap img {
+    width: 100px;
+    height: 56px
+}
+
+#uploadMultimediaWrap .appMedia .videoScreens {
+    margin-top: 0!important
+}
+
+#uploadMultimediaWrap .appMedia .preview {
+    min-width: 120px;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    padding: 5px;
+    position: relative;
+    z-index: 11;
+    margin: 0 0 10px
+}
+
+#uploadMultimediaWrap .appMedia .preview .imageTitle {
+    display: block;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+    margin: 0 auto 3px;
+    overflow: hidden;
+    text-align: center
+}
+
+#uploadMultimediaWrap .appMedia .preview .progressHolder {
+    background: #ececec
+}
+
+#uploadMultimediaWrap .appMedia .preview .progressHolder .progress {
+    height: 5px;
+    background: #70bde7
+}
+
+#uploadMultimediaWrap .appMedia .preview .progressHolder .progress.complete {
+    background: #60b044
+}
+
+#uploadMultimediaWrap .appMedia .sidebarWrap {
+    overflow: hidden;
+    float: right!important;
+    margin-bottom: 10px
+}
+
+#uploadMultimediaWrap .appMedia .sidebarWrap .sidebar {
+    margin: 0!important
+}
+
+#uploadMultimediaWrap .appMedia .sidebarWrap .sidebar .sidebarBody .ui-icon-info {
+    float: left;
+    margin: 6px 5px 0 0
+}
+
+#uploadMultimediaWrap .buttonWrap {
+    float: right;
+    margin-bottom: 0!important
+}
+
+#uploadMultimediaWrap .buttonWrap #appButton {
+    margin-right: 10px
+}
+
+#uploadMultimediaWrap .buttonWrap .button {
+    float: right
+}
+
+#uploadMultimediaWrap .buttonWrap #previewButton {
+    margin-right: 10px
+}
+
+#uploadMultimediaWrap .buttonPush {
+    margin-top: 10px
+}
+
+#uploadMultimediaWrap .buttonPush .button,#uploadMultimediaWrap .buttonPush .loader {
+    float: left
+}
+
+#uploadAppFileWrap {
+    width: 400px
+}
+
+#uploadAppFileWrap #errors {
+    display: none;
+    border: 1px solid #FC0;
+    padding: 5px;
+    margin: 0 0 10px;
+    background: #f5e9be
+}
+
+#uploadAppFileWrap #errors p {
+    font-weight: 700
+}
+
+#uploadAppFileWrap.message #acceptedBrowsers {
+    margin-top: 10px
+}
+
+#uploadAppFileWrap.message #acceptedBrowsers a {
+    display: block;
+    float: left;
+    margin-right: 10px
+}
+
+#uploadAppFileWrap.message #acceptedBrowsers a span {
+    float: left;
+    display: block;
+    margin: -2px 5px 0 0
+}
+
+#uploadAppFileWrap span.error {
+    margin-left: 22px;
+    float: left
+}
+
+#uploadAppFileWrap #fileFormWrap {
+    width: 419px
+}
+
+#uploadAppFileWrap #fileFormWrap #file {
+    display: none
+}
+
+#uploadAppFileWrap #fileFormWrap #fileInfo {
+    font-weight: 700;
+    margin: 0 0 0 10px;
+    float: left;
+    border: 1px solid #0084cc;
+    background: #e0f4ff;
+    padding: 3px 5px;
+    display: none
+}
+
+#uploadAppFileWrap #fileFormWrap #chooseFile {
+    float: left
+}
+
+#uploadAppFileWrap #fileFormWrap #progressWrap {
+    float: left;
+    margin-left: 10px;
+    display: none
+}
+
+#uploadAppFileWrap #fileFormWrap #progressWrap #progress {
+    width: 245px;
+    border: 1px solid #cdcdcd;
+    background: #8add6d;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec)
+}
+
+#uploadAppFileWrap #fileFormWrap #progressWrap #progress span {
+    background: #60b044;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    height: 20px;
+    display: block;
+    width: 0;
+    text-align: center;
+    color: #fff;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#79d858),to(#4a993e));
+    background-image: -webkit-linear-gradient(top,#79d858,#4a993e);
+    background-image: -moz-linear-gradient(top,#79d858,#4a993e);
+    background-image: -ms-linear-gradient(top,#79d858,#4a993e);
+    background-image: -o-linear-gradient(top,#79d858,#4a993e);
+    background-image: linear-gradient(to bottom,#79d858,#4a993e)
+}
+
+#uploadAppFileWrap #fileFormWrap .buttonWrap {
+    margin: 10px 0 0
+}
+
+#uploadAppFileWrap #fileFormWrap .buttonWrap .button,#uploadAppFileWrap #fileFormWrap .buttonWrap .loader {
+    float: left
+}
+
+#uploadSuccessWrap .mainContentWrap {
+    display: none
+}
+
+#submissionCompleteWrap .submissionInfoPod {
+    border: 1px solid #cdcdcd;
+    float: right;
+    margin-left: 20px
+}
+
+#submissionCompleteWrap .submissionInfoPod .header {
+    background: #ececec;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 3px 5px;
+    font-weight: 700
+}
+
+#submissionCompleteWrap .submissionInfoPod p {
+    padding: 0 5px 5px
+}
+
+#submissionCompleteWrap .submissionInfoPod p span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#submissionCompleteWrap .submissionInfoPod p span:first-child {
+    width: 120px
+}
+
+#submissionCompleteWrap #submissionDataPod {
+    float: left
+}
+
+#submissionCompleteWrap #submissionDataPod p:first-child {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+    font-weight: 700
+}
+
+#submissionCompleteWrap #submissionDataPod span {
+    font-weight: 700;
+    width: 65px;
+    display: block;
+    float: left
+}
+
+#submissionCompleteWrap #submissionDataPod .statusColor {
+    font-weight: 700
+}
+
+#submissionCompleteWrap #submissionDataPod .New {
+    color: #fe9102
+}
+
+#submissionCompleteWrap #submissionDataPod .Edited {
+    color: #e16724
+}
+
+#submissionCompleteWrap #submissionDataPod .Submitted {
+    color: #70bde7
+}
+
+#submissionCompleteWrap #submissionDataPod .Approved {
+    color: #60b044
+}
+
+#submissionCompleteWrap #submissionDataPod .Rejected {
+    color: red
+}
+
+#submissionCompleteWrap .completeContent p {
+    padding-bottom: 0
+}
+
+#submissionCompleteWrap .completeContent p:first-child {
+    padding-top: 0
+}
+
+#submissionCompleteWrap .error {
+    display: none
+}
+
+#submissionCompleteWrap .buttonWrap .button,#submissionCompleteWrap .buttonWrap .loader {
+    margin-left: 10px;
+    float: right
+}
+
+#submissionCompleteWrap .buttonWrap .subtext {
+    float: right
+}
+
+#cartInner {
+    background: #fff;
+    padding: 10px
+}
+
+#cartInner table {
+    width: 100%
+}
+
+#cartInner table thead {
+    background: #ececec;
+    border: 1px solid #cdcdcd;
+    border-bottom: none
+}
+
+#cartInner table thead th {
+    font-weight: 700
+}
+
+#cartInner table thead th.priceHead {
+    text-align: center
+}
+
+#cartInner #noItemsRow {
+    display: none
+}
+
+#cartInner #noItemsRow td {
+    background: #f5e9be
+}
+
+#cartInner .cartItem {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+    background: #fff
+}
+
+#cartInner .cartItem td {
+    vertical-align: top
+}
+
+#cartInner .cartItem td.imageWrap {
+    vertical-align: middle;
+    width: 210px
+}
+
+#cartInner .cartItem td.imageWrap img {
+    display: block;
+    width: 200px;
+    height: 113px;
+    border: 1px solid #cdcdcd
+}
+
+#cartInner .cartItem td.priceCell {
+    width: 75px;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: center;
+    color: #4a993e
+}
+
+#cartInner .subtotalLine {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.sidebar.checkout .subtotal {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.sidebar.checkout a.button:hover {
+    color: #fff!important
+}
+
+.sidebar.checkout .button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #e16724;
+    outline: 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8a406),to(#f67d0c));
+    background-image: -webkit-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: -moz-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: -ms-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: -o-linear-gradient(top,#f8a406,#f67d0c);
+    background-image: linear-gradient(to bottom,#f8a406,#f67d0c);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF8A406', endColorstr='#FFF67D0C', GradientType=0)
+}
+
+.sidebar.checkout .button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fe9102),to(#f67d0c));
+    background-image: -webkit-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: -moz-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: -ms-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: -o-linear-gradient(top,#fe9102,#f67d0c);
+    background-image: linear-gradient(to bottom,#fe9102,#f67d0c);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFE9102', endColorstr='#FFF67D0C', GradientType=0)
+}
+
+.sidebar.checkout .button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f67d0c),to(#f8a406));
+    background-image: -webkit-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: -moz-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: -ms-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: -o-linear-gradient(top,#f67d0c,#f8a406);
+    background-image: linear-gradient(to bottom,#f67d0c,#f8a406);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF67D0C', endColorstr='#FFF8A406', GradientType=0)
+}
+
+.sidebar.checkout .button.disabled,.sidebar.checkout .button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+.sidebar.checkout .button:visited {
+    color: #fff
+}
+
+.sidebar.checkout .button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+.sidebar.checkout .button {
+    padding: 10px;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    margin-bottom: 5px
+}
+
+#checkoutInner {
+    background: #fff
+}
+
+#checkoutInner .checkbox {
+    float: left;
+    margin: 3px 5px 0 0
+}
+
+#checkoutInner #nothingInCart {
+    display: none
+}
+
+#checkoutInner #checkoutInformation {
+    position: relative;
+    display: none
+}
+
+#checkoutInner #checkoutInformation h4 {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px
+}
+
+#checkoutInner #checkoutInformation #cardInformation {
+    float: left
+}
+
+#checkoutInner #checkoutInformation #cardInformation #nameOnCard {
+    width: 200px
+}
+
+#checkoutInner #checkoutInformation #cardInformation #cardNumber {
+    width: 130px
+}
+
+#checkoutInner #checkoutInformation #cardInformation #cardExpirationMonth {
+    margin-right: 10px
+}
+
+#checkoutInner #checkoutInformation #cardInformation #cardCVV {
+    width: 50px
+}
+
+#checkoutInner #billingInformation {
+    margin-left: 60px;
+    float: left;
+    width: 408px
+}
+
+#checkoutInner #billingInformation #billingName {
+    width: 250px
+}
+
+#checkoutInner #billingInformation .subtext {
+    display: block
+}
+
+#checkoutInner #billingInformation #billingAddress1,#checkoutInner #billingInformation #billingAddress2 {
+    width: 357px
+}
+
+#checkoutInner #billingInformation #cityWrap {
+    float: left
+}
+
+#checkoutInner #billingInformation #stateWrap {
+    float: left;
+    margin-left: 10px
+}
+
+#checkoutInner #billingInformation #stateWrap input {
+    width: 185px
+}
+
+#checkoutInner #billingInformation #billingState {
+    display: none
+}
+
+#checkoutInner #billingInformation #postalCodeWrap {
+    float: left
+}
+
+#checkoutInner #billingInformation #postalCodeWrap input {
+    width: 75px
+}
+
+#checkoutInner #itemWrapper {
+    display: none
+}
+
+#checkoutInner #itemWrapper #editCartLink span {
+    float: left;
+    margin-top: 1px
+}
+
+#checkoutInner #itemWrapper table {
+    width: 100%;
+    margin-top: 10px
+}
+
+#checkoutInner #itemWrapper table thead {
+    background: #ececec;
+    border: 1px solid #cdcdcd;
+    border-bottom: none
+}
+
+#checkoutInner #itemWrapper table thead th {
+    font-weight: 700
+}
+
+#checkoutInner #itemWrapper table thead th.priceHead {
+    text-align: center
+}
+
+#checkoutInner #itemWrapper .checkoutItem {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+    background: #fff
+}
+
+#checkoutInner #itemWrapper .checkoutItem td {
+    vertical-align: top
+}
+
+#checkoutInner #itemWrapper .checkoutItem td.imageWrap {
+    vertical-align: middle;
+    width: 210px
+}
+
+#checkoutInner #itemWrapper .checkoutItem td.imageWrap img {
+    display: block;
+    width: 200px;
+    height: 113px;
+    border: 1px solid #cdcdcd
+}
+
+#checkoutInner #itemWrapper .checkoutItem td.priceCell {
+    width: 75px;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: center;
+    color: #4a993e
+}
+
+.sidebarWrap .sidebar.checkoutPay {
+    position: fixed!important
+}
+
+.sidebarWrap .sidebar.checkoutPay .totalLine {
+    font-size: 14px;
+    border: 1px solid #cdcdcd;
+    background: #f7f7f7
+}
+
+.sidebarWrap .sidebar.checkoutPay .totalLine table {
+    width: 100%
+}
+
+.sidebarWrap .sidebar.checkoutPay .totalLine table td:nth-child(2n) {
+    text-align: right;
+    font-weight: 700
+}
+
+.sidebarWrap .sidebar.checkoutPay .totalLine table #subtotalRow td {
+    border-bottom: 1px solid #cdcdcd
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap {
+    margin-top: 10px
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap a.button:hover {
+    color: #fff!important
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #4a993e;
+    outline: 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#8add6d),to(#569e3d));
+    background-image: -webkit-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -moz-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -ms-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -o-linear-gradient(top,#8add6d,#569e3d);
+    background-image: linear-gradient(to bottom,#8add6d,#569e3d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8ADD6D', endColorstr='#FF569E3D', GradientType=0)
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#79d858),to(#60b044));
+    background-image: -webkit-linear-gradient(top,#79d858,#60b044);
+    background-image: -moz-linear-gradient(top,#79d858,#60b044);
+    background-image: -ms-linear-gradient(top,#79d858,#60b044);
+    background-image: -o-linear-gradient(top,#79d858,#60b044);
+    background-image: linear-gradient(to bottom,#79d858,#60b044);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF79D858', endColorstr='#FF60B044', GradientType=0)
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#569e3d),to(#8add6d));
+    background-image: -webkit-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -moz-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -ms-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -o-linear-gradient(top,#569e3d,#8add6d);
+    background-image: linear-gradient(to bottom,#569e3d,#8add6d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF569E3D', endColorstr='#FF8ADD6D', GradientType=0)
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button.disabled,.sidebarWrap .sidebar.checkoutPay .buttonWrap .button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button:visited {
+    color: #fff
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .button {
+    padding: 10px;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    margin-bottom: 5px
+}
+
+.sidebarWrap .sidebar.checkoutPay .buttonWrap .loader {
+    float: right
+}
+
+#checkoutSuccessInner {
+    background: #fff
+}
+
+#checkoutSuccessInner .itemWrapper {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+    padding: 5px
+}
+
+#checkoutSuccessInner .itemWrapper .imageWrap {
+    width: 202px;
+    float: left
+}
+
+#checkoutSuccessInner .itemWrapper .imageWrap img {
+    display: block;
+    width: 200px;
+    height: 113px;
+    border: 1px solid #cdcdcd
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap {
+    float: left;
+    margin-left: 20px;
+    width: 150px;
+    height: 113px;
+    position: relative
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap a.button:hover {
+    color: #fff!important
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button {
+    zoom: 1;
+    display: block;
+    margin: 0;
+    border: 1px solid #4a993e;
+    outline: 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,.24706)0 -1px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#8add6d),to(#569e3d));
+    background-image: -webkit-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -moz-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -ms-linear-gradient(top,#8add6d,#569e3d);
+    background-image: -o-linear-gradient(top,#8add6d,#569e3d);
+    background-image: linear-gradient(to bottom,#8add6d,#569e3d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8ADD6D', endColorstr='#FF569E3D', GradientType=0)
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#79d858),to(#60b044));
+    background-image: -webkit-linear-gradient(top,#79d858,#60b044);
+    background-image: -moz-linear-gradient(top,#79d858,#60b044);
+    background-image: -ms-linear-gradient(top,#79d858,#60b044);
+    background-image: -o-linear-gradient(top,#79d858,#60b044);
+    background-image: linear-gradient(to bottom,#79d858,#60b044);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF79D858', endColorstr='#FF60B044', GradientType=0)
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button:active {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#569e3d),to(#8add6d));
+    background-image: -webkit-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -moz-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -ms-linear-gradient(top,#569e3d,#8add6d);
+    background-image: -o-linear-gradient(top,#569e3d,#8add6d);
+    background-image: linear-gradient(to bottom,#569e3d,#8add6d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF569E3D', endColorstr='#FF8ADD6D', GradientType=0)
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button.disabled,#checkoutSuccessInner .itemWrapper .infoWrap .button:disabled {
+    border: 1px solid #999;
+    color: #999;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cdcdcd),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -moz-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -ms-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: -o-linear-gradient(top,#cdcdcd,#ececec);
+    background-image: linear-gradient(to bottom,#cdcdcd,#ececec);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFECECEC', GradientType=0)
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button:visited {
+    color: #fff
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button.small {
+    padding: 2px 5px;
+    font-size: 10px
+}
+
+#checkoutSuccessInner .itemWrapper .infoWrap .button {
+    padding: 10px;
+    box-shadow: rgba(0,0,0,.54706)0 1px 3px 0;
+    width: 150px;
+    position: absolute;
+    bottom: 0
+}
+
+.Zebra_DatePicker {
+    position: absolute;
+    background: #373737;
+    border: 3px solid #373737;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: none;
+    z-index: 9999;
+    font-family: Geneva,'Lucida Sans','Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+    font-size: 13px
+}
+
+.Zebra_DatePicker * {
+    margin: 0;
+    padding: 0;
+    color: #666
+}
+
+.Zebra_DatePicker table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.Zebra_DatePicker table td,.Zebra_DatePicker table th {
+    text-align: center;
+    padding: 5px 0
+}
+
+.Zebra_DatePicker table td {
+    cursor: pointer
+}
+
+.Zebra_DatePicker table td.dp_not_in_month,.Zebra_DatePicker table td.dp_weekend_disabled {
+    background: #ececec url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/metallic/disabled-date.png);
+    color: #E0E0E0;
+    cursor: default
+}
+
+.Zebra_DatePicker table td.dp_weekend {
+    background: #dedede url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/metallic/default-date.png) repeat-x top;
+    color: #666
+}
+
+.Zebra_DatePicker table td.dp_selected {
+    background: #E26262;
+    color: #E0E0E0!important
+}
+
+.Zebra_DatePicker table td.dp_current {
+    color: #E26261
+}
+
+.Zebra_DatePicker table td.dp_disabled_current {
+    color: #E38585
+}
+
+.Zebra_DatePicker table td.dp_hover {
+    background: #67aabb url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/metallic/selected-date.png) repeat-x top;
+    color: #E0E0E0
+}
+
+.Zebra_DatePicker table td.dp_disabled {
+    background: #ececec url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/metallic/disabled-date.png) repeat-x top;
+    color: #DDD;
+    cursor: default
+}
+
+.Zebra_DatePicker .dp_daypicker,.Zebra_DatePicker .dp_monthpicker,.Zebra_DatePicker .dp_yearpicker {
+    margin-top: 3px
+}
+
+.Zebra_DatePicker .dp_daypicker td,.Zebra_DatePicker .dp_daypicker th,.Zebra_DatePicker .dp_monthpicker td,.Zebra_DatePicker .dp_yearpicker td {
+    width: 30px;
+    border: 1px solid #BBB;
+    background: #dedede url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/metallic/default-date.png) repeat-x top;
+    color: #666
+}
+
+.Zebra_DatePicker .dp_header td {
+    color: #E0E0E0;
+    background: #373737
+}
+
+.Zebra_DatePicker .dp_header .dp_next,.Zebra_DatePicker .dp_header .dp_previous {
+    width: 30px
+}
+
+.Zebra_DatePicker .dp_header .dp_caption {
+    font-weight: 700
+}
+
+.Zebra_DatePicker .dp_header .dp_hover {
+    background: #222;
+    color: #FFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px
+}
+
+.Zebra_DatePicker .dp_header .dp_blocked {
+    color: #888;
+    cursor: default
+}
+
+.Zebra_DatePicker .dp_daypicker th,.Zebra_DatePicker td.dp_week_number {
+    font-size: 9px;
+    padding-top: 7px
+}
+
+.Zebra_DatePicker .dp_monthpicker td,.Zebra_DatePicker .dp_yearpicker td {
+    width: 33%
+}
+
+button.Zebra_DatePicker_Icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/calendar.png) no-repeat left top;
+    text-indent: -9000px;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 5px;
+    padding: 0;
+    line-height: 0
+}
+
+button.Zebra_DatePicker_Icon_Disabled {
+    background-image: url(https://s3.amazonaws.com/static.oculusvr.com/appsimages/production/calendar/calendar-disabled.png)
+}
+
+button.Zebra_DatePicker_Icon_Inside {
+    margin: 0 3px 0 0
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.Zebra_DatePicker_Icon_Inside {
+        margin: 0 5px 0 0
+    }
+}
+
+.hint,[data-hint] {
+    position: relative;
+    display: inline-block
+}
+
+.hint:after,.hint:before,[data-hint]:after,[data-hint]:before {
+    position: absolute;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    transition: .3s ease
+}
+
+.hint:hover:after,.hint:hover:before,[data-hint]:hover:after,[data-hint]:hover:before {
+    visibility: visible;
+    opacity: 1
+}
+
+.hint:before,[data-hint]:before {
+    content: '';
+    position: absolute;
+    background: 0 0;
+    border: 6px solid transparent;
+    z-index: 1000001
+}
+
+.hint:after,[data-hint]:after {
+    content: attr(data-hint);
+    background: #383838;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.3)
+}
+
+.hint--top:before {
+    border-top-color: #383838
+}
+
+.hint--bottom:before {
+    border-bottom-color: #383838
+}
+
+.hint--left:before {
+    border-left-color: #383838
+}
+
+.hint--right:before {
+    border-right-color: #383838
+}
+
+.hint--top:before {
+    margin-bottom: -12px
+}
+
+.hint--top:after {
+    margin-left: -18px
+}
+
+.hint--top:after,.hint--top:before {
+    bottom: 100%;
+    left: 50%
+}
+
+.hint--top:hover:after,.hint--top:hover:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+.hint--bottom:before {
+    margin-top: -12px
+}
+
+.hint--bottom:after {
+    margin-left: -18px
+}
+
+.hint--bottom:after,.hint--bottom:before {
+    top: 100%;
+    left: 50%
+}
+
+.hint--bottom:hover:after,.hint--bottom:hover:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px)
+}
+
+.hint--right:before {
+    margin-left: -12px;
+    margin-bottom: -6px
+}
+
+.hint--right:after {
+    margin-bottom: -14px
+}
+
+.hint--right:after,.hint--right:before {
+    left: 100%;
+    bottom: 50%
+}
+
+.hint--right:hover:after,.hint--right:hover:before {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px)
+}
+
+.hint--left:before {
+    margin-right: -12px;
+    margin-bottom: -6px
+}
+
+.hint--left:after {
+    margin-bottom: -14px
+}
+
+.hint--left:after,.hint--left:before {
+    right: 100%;
+    bottom: 50%
+}
+
+.hint--left:hover:after,.hint--left:hover:before {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    transform: translateX(-8px)
+}
+
+.hint--error:after {
+    background-color: #b34e4d;
+    text-shadow: 0 -1px 0 #592726
+}
+
+.hint--error.hint--top:before {
+    border-top-color: #b34e4d
+}
+
+.hint--error.hint--bottom:before {
+    border-bottom-color: #b34e4d
+}
+
+.hint--error.hint--left:before {
+    border-left-color: #b34e4d
+}
+
+.hint--error.hint--right:before {
+    border-right-color: #b34e4d
+}
+
+.hint--warning:after {
+    background-color: #c09854;
+    text-shadow: 0 -1px 0 #6c5328
+}
+
+.hint--warning.hint--top:before {
+    border-top-color: #c09854
+}
+
+.hint--warning.hint--bottom:before {
+    border-bottom-color: #c09854
+}
+
+.hint--warning.hint--left:before {
+    border-left-color: #c09854
+}
+
+.hint--warning.hint--right:before {
+    border-right-color: #c09854
+}
+
+.hint--info:after {
+    background-color: #3986ac;
+    text-shadow: 0 -1px 0 #193b4d
+}
+
+.hint--info.hint--top:before {
+    border-top-color: #3986ac
+}
+
+.hint--info.hint--bottom:before {
+    border-bottom-color: #3986ac
+}
+
+.hint--info.hint--left:before {
+    border-left-color: #3986ac
+}
+
+.hint--info.hint--right:before {
+    border-right-color: #3986ac
+}
+
+.hint--success:after {
+    background-color: #458746;
+    text-shadow: 0 -1px 0 #1a321a
+}
+
+.hint--success.hint--top:before {
+    border-top-color: #458746
+}
+
+.hint--success.hint--bottom:before {
+    border-bottom-color: #458746
+}
+
+.hint--success.hint--left:before {
+    border-left-color: #458746
+}
+
+.hint--success.hint--right:before {
+    border-right-color: #458746
+}
+
+.hint--always:after,.hint--always:before {
+    opacity: 1;
+    visibility: visible
+}
+
+.hint--always.hint--top:after,.hint--always.hint--top:before {
+    -webkit-transform: translateY-8px;
+    -moz-transform: translateY-8px;
+    transform: translateY-8px
+}
+
+.hint--always.hint--bottom:after,.hint--always.hint--bottom:before {
+    -webkit-transform: translateY8px;
+    -moz-transform: translateY8px;
+    transform: translateY8px
+}
+
+.hint--always.hint--left:after,.hint--always.hint--left:before {
+    -webkit-transform: translateX-8px;
+    -moz-transform: translateX-8px;
+    transform: translateX-8px
+}
+
+.hint--always.hint--right:after,.hint--always.hint--right:before {
+    -webkit-transform: translateX8px;
+    -moz-transform: translateX8px;
+    transform: translateX8px
+}
+
+.hint--rounded:after {
+    border-radius: 4px
+}
+
+#acceptRevisedTermsWrap #termsFrame {
+    width: 938px;
+    height: 500px;
+    border: 1px solid #cdcdcd
+}
+
+#acceptRevisedTermsWrap .termsCheckWrap {
+    width: 375px;
+    float: left;
+    margin-top: 4px
+}
+
+#acceptRevisedTermsWrap .termsCheckWrap .fieldWrap {
+    margin-bottom: 0
+}
+
+#acceptRevisedTermsWrap .termsCheckWrap label {
+    margin-left: -23px;
+    padding-left: 23px
+}
+
+#acceptRevisedTermsWrap .termsCheckWrap .checkbox {
+    float: left;
+    margin: 3px 10px 0 0
+}
+
+#acceptRevisedTermsWrap .termsOverlayButtonWrap {
+    width: 155px;
+    float: right
+}
+
+#acceptRevisedTermsWrap .termsOverlayButtonWrap .button {
+    float: right;
+    margin-top: 2px
+}
+
+#submissionGuidelinesWrap h3 {
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    background: #e0f4ff
+}
