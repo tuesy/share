@@ -44,6 +44,11 @@
             = link_to 'Forums', '#'
             = link_to 'Order a Rift', '#'
             .pull-right= link_to 'Support', 'http://support.oculusvr.com', class: 'supportNavItem'
+      #mainWrap
+        #innerWrap
+          .innerPad
+            #contentWrap{class: 'sixCol'}= yield
+            = yield :home
     #footer
       #footerInner
         #footerNav

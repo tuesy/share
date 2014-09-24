@@ -1,1 +1,99 @@
-VR is here
+- @heroes = [1]
+- @featured = Array.new(6, 1)
+- @categories = Array.new(5, 1)
+- @genres = Array.new(5, 1)
+- @top_rated = Array.new(5, 1)
+- @newest = Array.new(5, 1)
+- content_for :home do
+  #homeSidebar{class: 'twoCol'}
+    .shadow.sidebarWrap
+      .sidebar
+        .sidebarHeader Categories
+        .sidebarBody.appcategories.jspScrollable{style: 'overflow: hidden; padding: 0px; width: 218px;'}
+          %ul
+            - @categories.each do |x|
+              %li= link_to 'All', '#'
+    .shadow.sidebarWrap
+      .sidebar
+        .sidebarHeader Genres
+        .sidebarBody.appcategories.jspScrollable{style: 'overflow: hidden; padding: 0px; width: 218px;'}
+          %ul
+            - @genres.each do |x|
+              %li= link_to 'Action', '#'
+    .shadow.sidebarWrap
+      .sidebar
+        .sidebarHeader Platforms
+        .sidebarBody.appPlatforms
+          .appPlatformsCenter
+            = link_to content_tag(:span, '', class: 'sprite sprite-pc'), 'platform/pc'
+            = link_to content_tag(:span, '', class: 'sprite sprite-mac'), 'platform/mac'
+            = link_to content_tag(:span, '', class: 'sprite sprite-linux'), 'platform/linux'
+          .clearfix
+#homeOuterWrap
+  #heroWrap
+    #hero
+      - @heroes.each do |x|
+        .heroInner{style: 'display: block'}= link_to image_tag('https://d39nlaid7cu5vo.cloudfront.net/shareuploads/apps/1411087626930bxvt68byb9/screens/14109329283405hnhbathuxr_1410933249435.jpg') + content_tag(:span, 'Faceted Flight'), '#'
+  #heroNav{style: 'display:block;'}
+    - @heroes.each do |x|
+      %span{class: 'shadow'}= link_to '', '#'
+  #socialWidgets
+    //TODO
+  .clearfix
+  #CTA{class: 'eightCol pullRight pullLeft'}
+    =link_to '', "https://www.oculusvr.com/rift/", class: "bannerOrder shadow"
+    =link_to '', '/submission-guidelines', class: "bannerSubmit shadow"
+  #featuredsAppWrap{class: 'contentBg eightCol pullLeft pullRight shadow'}
+    %h2 Featured
+    #featuredApps
+      - @featured.each do |x|
+        .featuredApp
+          .pad
+            .screenshot
+              = link_to image_tag('https://d39nlaid7cu5vo.cloudfront.net/shareuploads/apps/1411087626930bxvt68byb9/screens/14109329283405hnhbathuxr_1410933223335.jpg'), 'app/faceted-flight'
+            %h3= link_to 'Faceted Flight', 'app/faceted-flight'
+            .description Take control of a Hover Jet and race through three beautifully stylized environments. This demo features Ring Attack: fly through as many rings as possible before time runs out!
+            = link_to content_tag(:span, '', class: 'ui-icon ui-icon-triangle-1-e') + 'Read More', '/app/faceted-flight', class: 'readMore'
+  .clearfix
+  #popularWrap{class: 'eightCol pullLeft pullRight'}
+    #topRatedWrap{class: 'contentBg fourCol pullLeft shadow'}
+      .pad
+        %h3 Top Rated
+        #topRatedApps
+          - @top_rated.each do |x|
+            .mainRatingPod
+              .appInfoWrap
+                = link_to image_tag('https://d39nlaid7cu5vo.cloudfront.net/shareuploads/apps/1410381244121pn0zm5nrk9/screens/1410039700490p9xiveipb9_1410041407707.png'), 'app/laserface'
+              .scoreWrap
+                = link_to 'LASERFACE', 'app/laserface'
+                .scoreWrapInner
+                  Average User Rating:
+                  %span.score
+                    4.8
+                    %span.outOf /5
+                  %p.info
+                    Based on
+                    %span#ratingTotal 18
+                    ratings
+                .clearfix
+              .clearfix
+        .moreLink= link_to 'More', '#'
+    #newestWrap{class: 'contentBg fourCol pullRight shadow'}
+      .pad
+        %h3
+        #newestApps
+          - @newest.each do |x|
+            .mainRatingPod
+              .appInfoWrap
+                = link_to image_tag('https://d39nlaid7cu5vo.cloudfront.net/shareuploads/apps/1410381244121pn0zm5nrk9/screens/1410039700490p9xiveipb9_1410041407707.png'), 'app/laserface'
+              .osWrap
+                = link_to "Rift's Cave Demo : How everything begun", '#', class: 'head'
+                .osWrapInner
+                  = link_to 'Experience', '#'
+                  .os
+                    %span.sprite.sprite-pc
+                    %span.sprite.sprite-linux
+                .clearfix
+              .clearfix
+        .moreLink
+    .clearfix
