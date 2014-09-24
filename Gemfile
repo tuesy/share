@@ -35,4 +35,7 @@ group :development, :test do
   gem 'factory_girl_rails', "~> 4.0"
   gem 'database_cleaner'
   gem 'faker'
+  gem 'selenium-webdriver'
+  gem 'patron'
+  gem 'nokogiri'
 end

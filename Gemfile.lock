@@ -38,6 +38,8 @@ GEM
     builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
+    childprocess (0.5.3)
+      ffi (~> 1.0, >= 1.0.11)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -138,6 +140,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    patron (0.4.18)
     pg (0.17.1)
     polyglot (0.3.5)
     pry (0.10.1)
@@ -210,6 +213,7 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
+    rubyzip (1.1.6)
     safe_yaml (1.0.3)
     sass (3.2.19)
     sass-rails (4.0.3)
@@ -217,6 +221,11 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+    selenium-webdriver (2.42.0)
+      childprocess (>= 0.5.0)
+      multi_json (~> 1.0)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0.4)
     slop (3.6.0)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -254,6 +263,7 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    websocket (1.0.7)
     yajl-ruby (1.2.1)
 
 PLATFORMS
@@ -274,8 +284,10 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   newrelic_rpm
+  nokogiri
   paper_trail (~> 3.0.0)
   paperclip
+  patron
   pg
   rails (= 4.1.1)
   rails_12factor
@@ -283,6 +295,7 @@ DEPENDENCIES
   rspec (~> 3.0.0)
   rspec-rails (~> 3.0.0)
   sass-rails (~> 4.0.0)
+  selenium-webdriver
   therubyracer
   thin
   turbolinks
