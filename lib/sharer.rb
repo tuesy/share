@@ -24,7 +24,7 @@ class Sharer
         @@driver = Selenium::WebDriver.for :chrome
         path = 'data/app_urls.csv'
         CSV.read(path, encoding: "UTF-8").each_with_index do |row,i|
-          next if i > 0 # for debugging
+          #next if i > 0 # for debugging
           @@driver.navigate.to row[0].strip
           doc = Nokogiri::HTML(@@driver.page_source)
           a = App.new
@@ -65,16 +65,17 @@ class Sharer
           a.controllers = doc.css('.metaData .pad')[1].text rescue nil
           a.modes = doc.css('.metaData .pad')[2].text rescue nil
 
-          category = Category.find_by_title(doc.css('.metaData ul a')[0].text)
-          a.category = category
+          category = Category.find_by_title(doc.css('.metaData ul a')[0].text) rescue nil
+          a.category = category if category
 
           a.credits = doc.css('.appCredits').first.to_html rescue nil
 
           a.save!
 
           # TODO: handle more than 1 genre
-          genre = Genre.find_by_title(doc.css('.metaData ul a')[1].text)
-          a.genres << genre
+          genre = Genre.find_by_title(doc.css('.metaData ul a')[1].text) rescue nil
+          a.genres << genre if genre
+          puts "#{i} - #{a.title}"
         end
       ensure
         @@driver.quit if @@driver

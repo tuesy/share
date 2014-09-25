@@ -70,7 +70,7 @@
         .tabBoxInner= @app.setup_instructions.html_safe
     .clearfix
     %h3 Credits
-    = @app.credits.html_safe
+    = @app.credits.try(:html_safe)
     .clear_fix
     #socialwidgets
     .clearfix
