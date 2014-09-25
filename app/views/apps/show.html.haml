@@ -31,6 +31,12 @@
         .sidebarBody
           .pad
             #downloadPlatforms
+              %span.platformSelect
+                - @app.platforms_array.each_with_index do |x,i|
+                  - name = "download_#{x}"
+                  %input{type: :radio, class: :radio, name: name, id: name, value: x, checked: i == 0 ? 'checked' : nil}
+                  %label{class: "sprite sprite-#{x}", for: name}
+              .clearfix
             = link_to 'Download Now', download_app_path(@app), class: 'button', id: 'platformDownloadButton'
             %p.totalDownloads
               %span.downloadCount= rand(200000) # just an example...looks like it's done async today
