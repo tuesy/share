@@ -62,8 +62,8 @@
                 .osWrapInner
                   = link_to x.category.title, apps_path(category: x.category.title)
                   .os
-                    %span.sprite.sprite-pc
-                    %span.sprite.sprite-linux
+                    - x.platforms_array.each do |x|
+                      %span{class: "sprite sprite-#{x}"}
                 .clearfix
               .clearfix
         .moreLink= link_to 'More', apps_path(sort: 'created_at')
