@@ -21,6 +21,7 @@ class App < ActiveRecord::Base
 
   # overriding this for now
   def short_description
-    self.long_description.gsub(/<.*>/, '')
+    x = self.read_attribute(:short_description)
+    x.blank? ? self.long_description.gsub(/<.*>/, '') : x
   end
 end
