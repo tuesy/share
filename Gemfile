@@ -21,6 +21,7 @@ gem 'pg'
 gem 'newrelic_rpm'
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'kaminari'
 
 group :production do
   gem 'rails_12factor'

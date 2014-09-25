@@ -1,0 +1,29 @@
+- content_for :apps do
+  = render :partial => 'shared/sidebar'
+  .clearfix
+#appsOuterWrap
+  .appsHeader.eightCol
+    %h1= @filter
+  .sixCol.appsWrap.appsGrid
+    - @apps.each do |x|
+      .appPod.shadow.threeCol
+        .appPodInner
+          .imageWrap
+            = link_to image_tag(x.primary_screenshot), app_path(x)
+          .infoWrap
+            .nameWrap= link_to x.title, app_path(x)
+            .downloadCountWrap
+              = rand(1000)
+              downloads
+            .ratingsWrap{'data-rating' => x.rating}
+              - stars = x.rating.to_i
+              - stars.times do
+                %span.sprite.sprite-star-off-grey.sprite-star-on
+              - (5 - stars).times do
+                %span.sprite.sprite-star-off-grey
+              %span (#{rand(20)})
+              .clearfix
+          .clearfix
+    .paginationWrap{style: 'width:100%;text-align:center'}
+      .pagination= paginate @apps
+

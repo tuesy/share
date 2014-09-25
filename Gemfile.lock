@@ -283,6 +283,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
+  kaminari
   newrelic_rpm
   nokogiri
   paper_trail (~> 3.0.0)

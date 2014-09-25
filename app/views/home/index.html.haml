@@ -1,31 +1,5 @@
 - content_for :home do
-  #homeSidebar{class: 'twoCol'}
-    .shadow.sidebarWrap
-      .sidebar
-        .sidebarHeader Categories
-        .sidebarBody.appcategories.jspScrollable{style: 'overflow: scroll; height: 148px;'}
-          %ul
-            - @categories.each do |x|
-              - if x.kind_of?(Category)
-                %li= link_to x.title, apps_path(category: x.title)
-              - else
-                %li= link_to x.first, apps_path(sort: x.last)
-    .shadow.sidebarWrap
-      .sidebar
-        .sidebarHeader Genres
-        .sidebarBody.appcategories.jspScrollable{style: 'height: 148px; overflow: scroll'}
-          %ul
-            - @genres.each do |x|
-              %li= link_to x.title, apps_path(genre: x.title)
-    .shadow.sidebarWrap
-      .sidebar
-        .sidebarHeader Platforms
-        .sidebarBody.appPlatforms
-          .appPlatformsCenter
-            = link_to content_tag(:span, '', class: 'sprite sprite-pc'), apps_path(platform: 'pc')
-            = link_to content_tag(:span, '', class: 'sprite sprite-mac'), apps_path(platform: 'mac')
-            = link_to content_tag(:span, '', class: 'sprite sprite-linux'), apps_path(platform: 'linux')
-          .clearfix
+  = render :partial => 'shared/sidebar'
 #homeOuterWrap
   #heroWrap
     #hero
