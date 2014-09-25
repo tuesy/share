@@ -8,10 +8,10 @@ Oculus Share is a place for Virtual Reality (VR) developers to showcase their ap
 
 ### Suggested Improvements
 * Advanced Filtering - It'd be great to mix and match filters like category, genre, and platform with bi-directional sorting.
-* Trends and Related - Suggest apps to users based on recent popularity and clustering of user behavior
-* Developer features - For example, analytics or messaging other developers
-* Integrations - For example, Twitch.
-* Custom Video Player - Adding VR-tailored controls because you can assume users are using an HMD
+* Trends and Related - Suggest apps to users based on recent popularity and clustering of user behavior.
+* Developer Features - e.g. analytics or messaging other developers.
+* Integrations - e.g. Twitch.
+* Custom Video Player - Add VR-tailored controls because you can assume users are using an HMD.
 * VR Developer Meetups - This would be pretty sweet.
 * Many more things I could suggest...
 
