@@ -27,7 +27,6 @@ class Sharer
           next if i > 0 # for debugging
           @@driver.navigate.to row[0].strip
           doc = Nokogiri::HTML(@@driver.page_source)
-          debugger
           a = App.new
           a.title = doc.css('#appsOuterWrap .appsHeader h1').text
           a.version_and_notes = doc.css('#version').text
@@ -38,11 +37,13 @@ class Sharer
           platforms << 'linux' if doc.css('#download_linux').size > 0
           a.platforms = platforms.join(',')
 
-          # TODO:
-          # youtube embed url
-          # screenshot if there's no video
-          # screenshots
-          #
+          a.youtube_url = "https://www.youtube.com/watch?v=#{doc.css('.videoPreview img').first[:src].gsub(/^.*vi\/([^\/]+)\/.*$/, '\1')}" rescue nil
+          a.primary_screenshot = doc.css('#appThumbWrap img').first[:src] rescue nil
+          a.screenshot1 = doc.css('#screenPreviews img')[0][:src] rescue nil
+          a.screenshot2 = doc.css('#screenPreviews img')[1][:src] rescue nil
+          a.screenshot3 = doc.css('#screenPreviews img')[2][:src] rescue nil
+          a.screenshot4 = doc.css('#screenPreviews img')[3][:src] rescue nil
+          a.screenshot5 = doc.css('#screenPreviews img')[4][:src] rescue nil
 
           username = doc.css('.displayName').text
           unless (user = User.find_by_name(username))
@@ -58,7 +59,7 @@ class Sharer
           a.setup_instructions = doc.css('.tabBoxInner').last.to_html rescue nil
 
           a.developer = doc.css('.metaData table tr')[0].css('td')[1].text rescue nil
-          a.publisher =doc.css('.metaData table tr')[1].css('td')[1].text rescue nil
+          a.publisher = doc.css('.metaData table tr')[1].css('td')[1].text rescue nil
           a.released_at = Time.parse(doc.css('.metaData table tr')[2].css('td')[1].text) rescue nil
           a.rift_versions = doc.css('.metaData .pad')[0].text rescue nil
           a.controllers = doc.css('.metaData .pad')[1].text rescue nil
@@ -74,8 +75,6 @@ class Sharer
           # TODO: handle more than 1 genre
           genre = Genre.find_by_title(doc.css('.metaData ul a')[1].text)
           a.genres << genre
-
-          p 'done'
         end
       ensure
         @@driver.quit if @@driver

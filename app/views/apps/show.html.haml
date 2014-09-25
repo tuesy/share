@@ -5,22 +5,18 @@
   .appWrap.sixCol
     .mediaOuterWrap
       .mediaInnerWrap.shadow#mediaVideosWrap{'data-type' => 'videos'}
-        <img id=​"videoLoaderImage" src=​"https:​/​/​img.youtube.com/​vi/​ej7wHJ7k4Mk/​0.jpg" style=​"display:​ none;​">​
-        / <iframe id=​"ytapiplayer" class=​"videoWrap" frameborder=​"0" allowfullscreen=​"1" title=​"YouTube video player" width=​"700" height=​"394" src=​"https:​/​/​www.youtube.com/​embed/​ej7wHJ7k4Mk?autoplay=0&modestbranding=1&…e=light&wmode=opaque&enablejsapi=1&origin=https%3A%2F%2Fshare.oculusvr.com">​</iframe>​
+        - if @app.youtube_url
+          .videoPreview
+            %iframe{:allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "394", :src => "http://www.youtube.com/embed/#{@app.youtube_url.gsub(/^.*v=(.*)$/, '\1')}", :title => "YouTube video player", :width => "700"}
+        - else
+          = image_tag @app.primary_screenshot, width: '700', height: '394'
       .mediaInnerWrap.hide{'data-type' => 'images'}
         .appScreens.shadow
-    #screenPreviewsWrap.sixCol.pullLeft.shadow{style: 'display: block; overflow: hidden; padding: 0px; width: 700px;', tabindex: 0}
-      .jspContainer
-        .jspPane
-          #screenPreviews
-            .videoPreview
-              <a href title=​"Επιλογή in Crisis (Choice in Crisis)​ with Oculus Rift" class=​"active">
-              %span.ui-icon.ui-icon-play
-              <img src=​"https:​/​/​img.youtube.com/​vi/​ej7wHJ7k4Mk/​0.jpg" data-type=​"video" data-videoid=​"ej7wHJ7k4Mk">​
-              </a>​
-            - [@app.screenshot1, @app.screenshot2, @app.screenshot3, @app.screenshot4, @app.screenshot5].each do |x|
-              - next if x.blank?
-              = link_to image_tag(x), '#', 'data-type' => 'screen'
+    #screenPreviewsWrap.sixCol.pullLeft.shadow{style: 'display: block; overflow: scroll; padding: 0px; width: 700px;', tabindex: 0}
+      #screenPreviews{style: 'width:720px;padding:3px;margin:0;height:100%'}
+        - [@app.screenshot1, @app.screenshot2, @app.screenshot3, @app.screenshot4, @app.screenshot5].each do |x|
+          - next if x.blank?
+          = link_to image_tag(x,'data-type' => 'screen'), '#'
     .clearfix
   .navSidebar.twoCol
     #appThumbWrap.shadow
