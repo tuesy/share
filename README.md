@@ -8,6 +8,7 @@ Oculus Share is a place for Virtual Reality (VR) developers to showcase their ap
 
 ### Suggested Improvements
 * Advanced Filtering - It'd be great to mix and match filters like category, genre, and platform with bi-directional sorting.
+* Trends and Related - Suggest apps to users based on recent popularity and clustering of user behavior
 * Developer features - For example, analytics or messaging other developers
 * Integrations - For example, Twitch.
 * Custom Video Player - Adding VR-tailored controls because you can assume users are using an HMD
@@ -15,7 +16,7 @@ Oculus Share is a place for Virtual Reality (VR) developers to showcase their ap
 * Many more things I could suggest...
 
 ### Performance and Scaling
-The first bottlenecks will likely be the homepage and the apps browser. As the number of apps grow, I'll want to cache as much as possible using a combination of page and fragment caching. It looks like there's already an asynchronous solution in place to insert download counts after DOM-ready so that's good. New Relic is in place the Heroku Add-on and the slowest page is probably the apps browser (old path is /category/all).
+The first bottlenecks will likely be the homepage and the apps browser. As the number of apps grow, beyond simple query optimization, I'll want to cache as much as possible using a combination of page and fragment caching. It looks like there's already an asynchronous solution in place to insert download counts after DOM-ready so that's good. New Relic is in place the Heroku Add-on and the slowest page is probably the apps browser (old path is /category/all). It would probably be necessary for a long time, but sharding the database would be necessary eventually.
 
 ### Testing
 No tests yet but generally I like to use Rspec for unit testing of models and Cucumber for integration tests for websites. Continuous integration can be added later as necesssary. For the integration tests, I'd make sure first and foremost that the developers can always upload and users can always download. I may even want to test for maximum completion times on those flows.
