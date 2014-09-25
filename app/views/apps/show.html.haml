@@ -53,14 +53,14 @@
   .eightCol
     %hr.sectionDivider
   .appWrap.sixCol
-    .appDesc.shadow= @app.long_description.html_safe
+    = @app.long_description.html_safe
     %nav#techNav.tabs{'data-target' => 'techBoxes'}
       %ul
         %li= link_to 'Minimum System Requirements', '#', class: 'active', 'data-box' => 'minSysReqs'
         %li= link_to 'Setup Instructions', '#', 'data-box' => 'setup'
     .clearfix
     #techBoxes.techWrap.shadow
-      .tabBox.jaspScrolable{'data-box' => 'minSysReqs', style: 'overflow: hidden; padding: 0px; width: 698px;', tabindex: 0}
+      .tabBox{'data-box' => 'minSysReqs', style: 'overflow: scroll; padding: 0px; width: 698px;', tabindex: 0}
         .jspContainer{style: 'width: 698px; height: 200px;'}
           .jspPane{style: 'padding: 0px; width: 686px; top: 0px;'}
             .tabBoxInner= @app.minimum_system_requirements.html_safe
@@ -68,7 +68,7 @@
         .tabBoxInner= @app.setup_instructions.html_safe
     .clearfix
     %h3 Credits
-    .appCredits.shadow= @app.credits.html_safe
+    = @app.credits.html_safe
     .clear_fix
     #socialwidgets
     %h3#commentTotal
@@ -95,14 +95,14 @@
             .ratingStarsWrap.hide{style: 'display:none'}
               %hr
     .sidebarWrap.notSelectable
-      .sidebar.comfortrateApp.shadow
+      .sidebar.comfortRateApp.shadow
         .sidebarHeader Comfort Level
         .sidebarBody
           .pad
-          .comfortScoreWrap
-            %span.comfortScoreIcon.sprite.sprite-comfort_4_l
-            %span.comfortScoreExplanation A moderately comfortable VR experience.
-            .clearfix
+            .comfortScoreWrap
+              %span.comfortScoreIcon.sprite.sprite-comfort_4_l
+              %span.comfortScoreExplanation A moderately comfortable VR experience.
+              .clearfix
           .comfortIconWrap.hide{style: 'display:none'}
             %hr
     .sidebarWrap
@@ -110,10 +110,23 @@
         .sidebarHeader Information
         .sidebarBody.metaData
           %table
+            %tbody
+              %tr
+                %td Developer
+                %td= @app.developer
+              %tr
+                %td Publisher
+                %td= @app.publisher
+              %tr
+                %td Release Date
+                %td= @app.released_at
           %p.innerTitle Category
           %ul
+            %li= link_to @app.category.title, category_path(@app.category)
           %p.innerTitle Genres
           %ul
+            - @app.genres.each do |genre|
+              %li= link_to genre.title, genre_path(genre)
           %p.innerTitle Supported Rift Versions
           .pad= @app.rift_versions
           %p.innerTitle Supported Controllers
