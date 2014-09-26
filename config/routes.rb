@@ -10,5 +10,18 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api do
+    resources :apps do
+      resources :comments
+      collection do
+        post :search
+      end
+      member do
+        get :download
+      end
+    end
+  end
+
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 end

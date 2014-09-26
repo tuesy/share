@@ -22,6 +22,7 @@ gem 'newrelic_rpm'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'kaminari'
+gem 'inherited_resources', :git => 'git://github.com/tuesy/inherited_resources.git'
 
 group :production do
   gem 'rails_12factor'
@@ -39,4 +40,5 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'patron'
   gem 'nokogiri'
+  gem 'activeresource', require: 'active_resource'
 end

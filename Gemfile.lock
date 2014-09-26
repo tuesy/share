@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/tuesy/inherited_resources.git
+  revision: 559161287cd705def4868d3c0de6ddc2d8a8564c
+  specs:
+    inherited_resources (1.4.1)
+      has_scope (~> 0.6.0.rc)
+      responders (~> 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -21,6 +29,10 @@ GEM
       activemodel (= 4.1.1)
       activesupport (= 4.1.1)
       arel (~> 5.0.0)
+    activeresource (4.0.0)
+      activemodel (~> 4.0)
+      activesupport (~> 4.0)
+      rails-observers (~> 0.1.1)
     activesupport (4.1.1)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
@@ -98,6 +110,9 @@ GEM
       activesupport (>= 4.0.1)
       haml (>= 3.1, < 5.0)
       railties (>= 4.0.1)
+    has_scope (0.6.0.rc)
+      actionpack (>= 3.2, < 5)
+      activesupport (>= 3.2, < 5)
     hike (1.2.3)
     hitimes (1.2.2)
     http_parser.rb (0.6.0)
@@ -163,6 +178,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.1)
       sprockets-rails (~> 2.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
@@ -193,6 +210,8 @@ GEM
       ffi (>= 0.5.0)
     ref (1.0.5)
     remotipart (1.2.1)
+    responders (1.0.0)
+      railties (>= 3.2, < 5)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
@@ -270,6 +289,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activeresource
   autoprefixer-rails
   aws-sdk
   coffee-rails (~> 4.0.0)
@@ -281,6 +301,7 @@ DEPENDENCIES
   guard-livereload
   guard-rails
   haml-rails
+  inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails
   kaminari
