@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     member do
       get :download
     end
+    collection do
+      post :search
+    end
   end
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'

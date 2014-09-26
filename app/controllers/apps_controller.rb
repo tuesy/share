@@ -1,7 +1,7 @@
 class AppsController < ApplicationController
+  before_filter :find_categories_and_genres, only: [:index, :search]
+
   def index
-    @categories = [['All', 'title'], ['Newest', 'created_at'], ['Top Rated', 'rating']] + Category.all
-    @genres = Genre.all
     @page = params[:page]
     if params[:category]
       @filter = "Browse Category: #{params[:category]}"
@@ -29,4 +29,19 @@ class AppsController < ApplicationController
   def download
     render :nothing => true
   end
+
+  def search
+    @query = params[:q]
+    @apps = App.where("lower(title) LIKE ?", "%#{@query.downcase}%")
+    @apps = @apps.page params[:page]
+    @filter = "Searching for '#{@query}'"
+    @filter += ' (No Results)' if @apps.blank?
+    render :action => :index
+  end
+
+  private
+    def find_categories_and_genres
+      @categories = [['All', 'title'], ['Newest', 'created_at'], ['Top Rated', 'rating']] + Category.all
+      @genres = Genre.all
+    end
 end
