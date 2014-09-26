@@ -198,7 +198,7 @@ hr {
 }
 
 .bodyXopy p.underline,.bodyXopy span.underline {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .sprite {
