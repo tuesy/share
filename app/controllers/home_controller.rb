@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       App.find_by_title('Half Life 2'),
       App.find_by_title('Ocean Rift')
     ]
-    @heroes = [App.find_by_title('Faceted Flight')]
+    @heroes = [App.find_by_title('Star Conflict')]
     @top_rated = App.all.order('rating DESC').limit(5)
     @newest = App.all.order('created_at DESC').limit(5)
   end

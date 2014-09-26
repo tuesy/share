@@ -87,10 +87,12 @@ a {
 
 a:visited {
     color: #0084cc
+    text-decoration: none;
 }
 
 a:hover {
     color: #999
+    text-decoration: none;
 }
 
 h1 {
