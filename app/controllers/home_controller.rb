@@ -7,7 +7,7 @@ class HomeController < ApplicationController
       App.find_by_title('SightLine: The Chair'),
       App.find_by_title('Blocked In'),
       App.find_by_title('VR Cinema'),
-      App.find_by_title('Half Life 2'),
+      App.find_by_title('Half-Life 2'),
       App.find_by_title('Ocean Rift')
     ]
     @heroes = [App.find_by_title('Star Conflict')]
