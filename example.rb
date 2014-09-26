@@ -1,8 +1,11 @@
 =begin
-a simple Ruby wrapper for the Share API (see API.md)
+A simple Ruby wrapper for the Share API (see API.md)
+using ActiveResource, which likes RESTful APIs
 
 TODO: make a gem
 TODO: make cucumber tests for these flows
+
+Prereqs: bundle install
 
 Usage: bundle exec ruby example.rb
 =end

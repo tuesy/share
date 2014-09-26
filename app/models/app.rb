@@ -16,7 +16,7 @@ class App < ActiveRecord::Base
   end
 
   def platforms_array
-    self.platforms.split(',').map(&:strip)
+    self.platforms.split(',').map(&:strip) rescue []
   end
 
   # overriding this for now

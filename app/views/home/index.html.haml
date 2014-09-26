@@ -60,7 +60,8 @@
               .osWrap
                 = link_to x.title, app_path(x), class: 'head'
                 .osWrapInner
-                  = link_to x.category.title, apps_path(category: x.category.title)
+                  - if x.category
+                    = link_to x.category.title, apps_path(category: x.category.title)
                   .os
                     - x.platforms_array.each do |x|
                       %span{class: "sprite sprite-#{x}"}

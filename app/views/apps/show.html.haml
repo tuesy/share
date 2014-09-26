@@ -44,18 +44,18 @@
         .sidebarHeader Developer
         .sidebarBody
           .pad
-            = link_to content_tag(:span, '', class: 'sprite sprite-rift', id: 'submitterAvatar'), user_path(@user)
+            = link_to content_tag(:span, '', class: 'sprite sprite-rift', id: 'submitterAvatar'), user_path(@user) if @user
             %p.displayName
-              = link_to @user.name, user_path(@user)
+              = link_to @user.name, user_path(@user) if @user
           .clearfix
           .pad.contactWrap
-            = link_to content_tag(:span, '', class: 'ui-icon ui-icon-home') + 'Website', @user.website, target: '_blank'
+            = link_to content_tag(:span, '', class: 'ui-icon ui-icon-home') + 'Website', @user.website, target: '_blank' if @user
             = link_to content_tag(:span, '', class: 'ui-icon ui-icon-mail-closed') + 'Email', '#', id: 'emailDeveloperTrigger'
   .clearfix
   .eightCol
     %hr.sectionDivider
   .appWrap.sixCol
-    = @app.long_description.html_safe
+    = @app.long_description.try(:html_safe)
     %nav#techNav.tabs{'data-target' => 'techBoxes'}
       %ul
         %li= link_to 'Minimum System Requirements', '#', class: 'active', 'data-box' => 'minSysReqs'
@@ -65,9 +65,9 @@
       .tabBox{'data-box' => 'minSysReqs', style: 'overflow: scroll; padding: 0px; width: 698px;', tabindex: 0}
         .jspContainer{style: 'width: 698px; height: 200px;'}
           .jspPane{style: 'padding: 0px; width: 686px; top: 0px;'}
-            .tabBoxInner= @app.minimum_system_requirements.html_safe
+            .tabBoxInner= @app.minimum_system_requirements.try(:html_safe)
       .tabBox.hide{'data-box' => 'setup'}
-        .tabBoxInner= @app.setup_instructions.html_safe
+        .tabBoxInner= @app.setup_instructions.try(:html_safe)
     .clearfix
     %h3 Credits
     = @app.credits.try(:html_safe)
@@ -121,7 +121,7 @@
                 %td= @app.released_at
           %p.innerTitle Category
           %ul
-            %li= link_to @app.category.title, category_path(@app.category)
+            %li= link_to @app.category.title, category_path(@app.category) if @app.category
           %p.innerTitle Genres
           %ul
             - @app.genres.each do |genre|
