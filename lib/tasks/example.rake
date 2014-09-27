@@ -52,6 +52,15 @@ task :example, [] => :environment do |task, args|
   comment.save
   puts "comments for this app: #{app.get(:comments)}"
 
+  # delete the comment
+  puts '> updating the comment'
+  comment.destroy
+  begin
+    app = CommentResource.find(app.id)
+  rescue ActiveResource::ResourceNotFound => e
+    puts "and a nice message saying the server couldn't find it: \"#{e.message}\""
+  end
+
   # finally, delete it and verify that it's gone
   puts '> deleting the app'
   app.destroy
