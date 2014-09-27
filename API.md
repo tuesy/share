@@ -4,8 +4,8 @@ This RESTful API provides programmatic access to read and write Oculus Share dat
 ### General Topics
 * Authentication and Authorization - In the future, authorization may be handled with OAuth and developers will be restricted to only managing apps they own.
 * Pagination - Responses are paginated with a default page size of 10 for performance. However, you may specify a page size of up to 50 for your convenience.
-* Rate Limiting - In the future, you may be limited to a number of API calls per hour/day.
-* Versioning - This API may change from time to time. Major changes to likely necessitate a separate version.
+* Rate Limiting - In the future, you may be limited to a number of API calls per hour or per day.
+* Versioning - This API may change from time to time. Major changes may require creating separate versions.
 
 ### Notes
 * While comments are designed as a nested resource of apps, they are implemented as a top-level resource for now. The responses would be the same.
@@ -16,20 +16,22 @@ There will be a Ruby library using ActiveResource that wraps the API for ease of
 
     bundle exec rake -t example
 
-Here's some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539) for this command running in development and the accompanying [server log](https://gist.github.com/tuesy/2b865a6daebf8be299c4).
+Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539) for this command running in development and the accompanying [server log](https://gist.github.com/tuesy/2b865a6daebf8be299c4).
 
 # Endpoints
-* POST /api/apps.json
-* GET /api/apps/:id
-* PUT /api/apps/:id
-* DELETE /api/apps/:id
-* GET /api/apps/:id/download
-* GET /api/apps/search
-* POST /api/apps/:id/comments
-* GET /api/apps/:app_id/comments/:comment_id
-* PUT /api/apps/:app_id/comments/:comment_id
-* DELETE /api/apps/:app_id/comments/:comment_id
-* GET /api/apps/:app_id/comments
+* Apps
+    * POST /api/apps.json
+    * GET /api/apps/:id
+    * PUT /api/apps/:id
+    * DELETE /api/apps/:id
+    * GET /api/apps/:id/download
+    * GET /api/apps/search
+* Comments
+    * POST /api/apps/:id/comments
+    * GET /api/apps/:app_id/comments/:comment_id
+    * PUT /api/apps/:app_id/comments/:comment_id
+    * DELETE /api/apps/:app_id/comments/:comment_id
+    * GET /api/apps/:app_id/comments
 
 ### POST /api/apps.json
 Create an app
