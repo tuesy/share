@@ -10,6 +10,14 @@ This RESTful API provides programmatic access to read and write Oculus Share dat
 ### Notes
 * While comments are designed as a nested resource of apps, they are implemented as a top-level resource for now. The responses would be the same.
 
+### Sample Client Libraries
+##### Ruby
+There will be a Ruby library using ActiveResource that wraps the API for ease of use. A beta version of this library is built into this app and can be tested with this rake task:
+
+    bundle exec rake -t example
+
+Here's some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539) for this command running in development and the accompanying [server log](https://gist.github.com/tuesy/2b865a6daebf8be299c4).
+
 # Endpoints
 ### POST /api/apps.json
 Create an app
@@ -181,11 +189,3 @@ Listing all comments for an app
 ##### Example Response
 
     [{"id"=>27, "text"=>"too fast", "app_id"=>594, "created_at"=>"2014-09-27T22:20:03.248Z", "updated_at"=>"2014-09-27T22:20:03.366Z"}]
-
-# Sample Client Libraries
-### Ruby
-There will be a Ruby library using ActiveResource that wraps the API for ease of use. A beta version of this library is built into this app and can be tested with this rake task:
-
-    bundle exec rake -t example
-
-Here's some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539) for this command running in development and the accompanying [server log](https://gist.github.com/tuesy/2b865a6daebf8be299c4).
