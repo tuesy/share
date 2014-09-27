@@ -25,9 +25,10 @@ Apps have four fields:
 * Can sort results by title, author or price (e.g. sort=title, dir=desc)
 * Results are paginated at 10 results per page, which is configurable (e.g. page=1, per_page=15) and max results per page is 50
 
-#### Listing Comments for an App
 #### Creating Comments for an App
+#### Reading Comments for an App
 #### Updating Comments for an App
+#### Listing Comments for an App
 
 ## Sample Clients
 ### Ruby
