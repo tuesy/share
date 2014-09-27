@@ -4,7 +4,7 @@ class Api::CommentsController < InheritedResources::Base
 
   def index
     @app = App.find(params[:app_id])
-    respond_with @app.comments
+    respond_with @app.comments.page(params[:page]).per(params[:per_page])
   end
 
   def create

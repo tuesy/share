@@ -33,10 +33,10 @@ task :example, [] => :environment do |task, args|
   app = AppResource.find(app.id)
   puts "title should have changed: #{app.title}"
 
-  # # download the app (robots.zip) to the local directory
-  # puts '> downloading the app'
-  # app.download
-  # puts "there should now be a robots.zip file here: #{File.exists?('robots.zip')}"
+  # download the app (robots.zip) to the local directory
+  puts '> downloading the app'
+  app.download
+  puts "there should now be a robots.zip file here: #{File.exists?('robots.zip')}"
 
   # create a comment for this app
   puts '> creating a comment'
@@ -60,4 +60,37 @@ task :example, [] => :environment do |task, args|
   rescue ActiveResource::ResourceNotFound => e
     puts "and a nice message saying the server couldn't find it: \"#{e.message}\""
   end
+
+  # search
+  puts '> searching in title'
+  apps = AppResource.search(q: 'ungalow') # Half-Life 2
+  puts apps.collect{|x| "#{x.title}-$#{x.price}"}.join(' , ')
+
+  puts '> searching in description'
+  apps = AppResource.search(q: 'shark') # Ocean Rift
+  puts apps.collect{|x| "#{x.title}-$#{x.price}"}.join(' , ')
+
+  puts '> searching in author'
+  apps = AppResource.search(q: 'udh') # Cloudhead
+  puts apps.collect{|x| "#{x.title}-$#{x.price}"}.join(' , ')
+
+  puts '> searching with price range'
+  apps = AppResource.search(q: 'shark', max_price: 26, min_price: 12)
+  puts apps.collect{|x| "#{x.title}-$#{x.price}"}.join(' , ')
+
+  puts '> searching with sorting'
+  apps = AppResource.search(q: 'shark', sorting: {sort: :price})
+  puts apps.collect{|x| "#{x.title}-$#{x.price}"}.join(' , ')
+
+  puts '> searching with sorting direction'
+  apps = AppResource.search(q: 'shark', sorting: {sort: :price, dir: :desc})
+  puts apps.collect{|x| "#{x.title}-$#{x.price}"}.join(' , ')
+
+  puts '> searching with sorting by title'
+  apps = AppResource.search(q: 'shark', sorting: {sort: :title})
+  puts apps.collect(&:title).join(' , ')
+
+  puts '> searching with custom pagination--1 per page and grab the second page'
+  apps = AppResource.search(q: 'shark', per_page: 1, page: 2)
+  puts apps.collect(&:title).join(' , ')
 end

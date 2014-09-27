@@ -3,6 +3,12 @@ class App < ActiveRecord::Base
   belongs_to :category
   has_and_belongs_to_many :genres
   has_many :comments
+  paginates_per 10
+  max_paginates_per 100
+
+  scope :with_max_price, -> x {where("price <= ?", x.to_f)}
+  scope :with_min_price, -> x {where("price >= ?", x.to_f)}
+  scope :with_sorting, -> x,y {order("#{x} #{y}")}
 
   class << self
      def random(number)

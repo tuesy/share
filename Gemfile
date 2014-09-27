@@ -23,6 +23,7 @@ gem 'paperclip'
 gem 'aws-sdk'
 gem 'kaminari'
 gem 'inherited_resources', :git => 'git://github.com/tuesy/inherited_resources.git'
+gem 'has_scope'
 
 group :production do
   gem 'rails_12factor'

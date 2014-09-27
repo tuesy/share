@@ -301,6 +301,7 @@ DEPENDENCIES
   guard-livereload
   guard-rails
   haml-rails
+  has_scope
   inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails
