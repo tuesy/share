@@ -39,7 +39,7 @@ Here is a sample [output file](https://gist.github.com/tuesy/809b92981656fa5e153
 
 ##### Parameters
 | Parameter | Description | Example |
----------|-----------
+---------|-----------|-----------------
 | title | max 255 characters |
 | short_description | max 1024 characters
 | author | max 255 characters |
@@ -162,7 +162,7 @@ Here is a sample [output file](https://gist.github.com/tuesy/809b92981656fa5e153
 
 ##### Parameters
 | Parameter | Description | Example |
----------|-----------
+---------|-----------|--------------
 | title | max 255 characters | VeRy Angry Birds |
 | short_description | max 1024 characters | flying is fun |
 | author | max 255 characters | Parzival |
@@ -203,7 +203,7 @@ Here is a sample [output file](https://gist.github.com/tuesy/809b92981656fa5e153
 
 ##### Parameters
 | Parameter | Example |
----------|-----------
+---------|---------
 | app_id | 594 |
 
 ##### Example Request
@@ -222,7 +222,7 @@ Here is a sample [output file](https://gist.github.com/tuesy/809b92981656fa5e153
 You can search by **title**, **short_description**, **author**, or by **price range**. Queries are case insensitive (e.g. "awe" in "Angry Birds is Awesome") and can match anywhere in the fields. Sorting and pagination are also supported. All parameters are optional.
 
 | Parameter | Description | Example |
----------|-----------
+---------|-----------|---------------
 | q | search query | "awe" for Awesome) |
 | max_price | highest price, inclusive, as a float | 49.99 |
 | min_price | lowest price, inclusive, as a float | 0.99 |
