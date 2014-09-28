@@ -39,11 +39,11 @@ Here is a sample [output file](https://gist.github.com/tuesy/809b92981656fa5e153
 
 ##### Parameters
 | Parameter | Description | Example |
----------|-----------|-----------------
-| title | max 255 characters |
-| short_description | max 1024 characters
-| author | max 255 characters |
-| price | in dollars and cents (e.g. 5.00 for $5) |
+---------|-----------|--------------
+| title | max 255 characters | VeRy Angry Birds |
+| short_description | max 1024 characters | flying is fun |
+| author | max 255 characters | Parzival |
+| price | in dollars and cents  | 5.00 for $5 |
 
 ##### Example Request
 
