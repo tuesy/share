@@ -223,7 +223,7 @@ You can search by **title**, **short_description**, **author**, or by **price ra
 
 | Parameter | Description | Example |
 ---------|-----------|---------------
-| q | search query | "awe" for Awesome) |
+| q | search query | "awe" for Awesome. |
 | max_price | highest price, inclusive, as a float | 49.99 |
 | min_price | lowest price, inclusive, as a float | 0.99 |
 | sorting[sort] | sort field | title (default), author, price |
