@@ -25,7 +25,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
     * [PUT /api/apps/:id](#appsupdate)
     * [DELETE /api/apps/:id](#appsdelete)
     * [GET /api/apps/:id/download](#appsdownload)
-    * [GET /api/apps/search](#appsearch)
+    * [GET /api/apps/search](#appssearch)
 * Comments
     * [POST /api/apps/:id/comments](#commentscreate)
     * [GET /api/apps/:app_id/comments/:comment_id](#commentsread)
@@ -437,7 +437,7 @@ You can search by title, short_description, author, or by price range. Queries a
 {}
 ```
 
-<a name="appsdelete"></a>
+<a name="commentsdelete"></a>
 ### DELETE /api/apps/:app_id/comments/:comment_id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Delete a comment.
 
