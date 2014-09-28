@@ -20,8 +20,8 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 
 # Endpoints
 * Apps
-    * POST /api/apps.json
-    * GET /api/apps/:id
+    * [POST /api/apps.json](#appscreate)
+    * [GET /api/apps/:id](#appsread)
     * PUT /api/apps/:id
     * DELETE /api/apps/:id
     * GET /api/apps/:id/download
@@ -33,6 +33,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
     * DELETE /api/apps/:app_id/comments/:comment_id
     * GET /api/apps/:app_id/comments
 
+<a name="appscreate"></a>
 ### POST /api/apps.json
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Create an app.
 
@@ -95,7 +96,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
     "price": 0.99
 }
 ```
-
+<a name="appsread"></a>
 ### GET /api/apps/:id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Get an app's metadata using its ID.
 
