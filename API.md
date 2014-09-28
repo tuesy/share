@@ -38,6 +38,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 
 ##### Parameters
 | Parameter | Notes |
+---------|-----------
 | title | max 255 characters |
 | short_description | max 1024 characters
 | author | max 255 characters |
@@ -55,7 +56,9 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Get an app's metadata using its ID.
 
 ##### Parameters
-* app_id - e.g. 594
+| Parameter | Notes |
+---------|-----------
+| app_id | e.g. 594 |
 
 ##### Example Request
 
@@ -69,10 +72,12 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Update an app's metdata using its ID.
 
 ##### Parameters
-* title - max 255 characters
-* short_description - max 1024 characters
-* author - max 255 characters
-* price - in dollars and cents (e.g. 5.00 for $5)
+| Parameter | Notes |
+---------|-----------
+| title | max 255 characters |
+| short_description | max 1024 characters |
+| author | max 255 characters |
+| price | in dollars and cents (e.g. 5.00 for $5) |
 
 ##### Example Request
 
@@ -86,7 +91,9 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Delete an app using its ID.
 
 ##### Parameters
-* app_id - e.g. 594
+| Parameter | Notes |
+---------|-----------
+| app_id | e.g. 594 |
 
 ##### Example Request
 
@@ -100,7 +107,9 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Download an app's binary file.
 
 ##### Parameters
-* app_id - e.g. 594
+| Parameter | Notes |
+---------|-----------
+| app_id | e.g. 594 |
 
 ##### Example Request
 
@@ -116,13 +125,15 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 ##### Parameters
 You can search by title, short_description, author, or by price range. Queries are case insensitive (e.g. "awe" in "Angry Birds is Awesome") and match anywhere in the fields. Sorting and pagination are also supported. All parameters are optional.
 
-* q - search query (e.g. "awe" for Awesome)
-* max_price - highest price, inclusive, as a float (e.g. 49.99)
-* min_price - lowest price, inclusive, as a float (e.g. 0.99)
-* sorting[sort] - title (default), author, price
-* sorting[dir] - asc (default), desc
-* page - integer page number (default is 1)
-* per_page - integer number of resources per page (default is 10, max is 50)
+| Parameter | Notes |
+---------|-----------
+| q | search query (e.g. "awe" for Awesome) |
+| max_price | highest price, inclusive, as a float (e.g. 49.99) |
+| min_price | lowest price, inclusive, as a float (e.g. 0.99) |
+| sorting[sort] | title (default), author, price |
+| sorting[dir] | asc (default), desc |
+| page | integer page number (default is 1) |
+| per_page | integer number of resources per page (default is 10, max is 50) |
 
 ##### Example Request
 
@@ -136,8 +147,10 @@ You can search by title, short_description, author, or by price range. Queries a
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Create a comment for an app using its ID.
 
 ##### Parameters
-* app_id - e.g. 594
-* text - e.g. "best app evar"
+| Parameter | Notes |
+---------|-----------
+| app_id | e.g. 594 |
+| text | e.g. "best app evar" |
 
 ##### Example Request
 
@@ -151,7 +164,9 @@ You can search by title, short_description, author, or by price range. Queries a
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Read a comment.
 
 ##### Parameters
-* comment_id
+| Parameter | Notes |
+---------|-----------
+| comment_id | e.g. 1 |
 
 ##### Example Request
 
@@ -165,7 +180,9 @@ You can search by title, short_description, author, or by price range. Queries a
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Update a comment.
 
 ##### Parameters
-* comment_id
+| Parameter | Notes |
+---------|-----------
+| comment_id | e.g. 1 |
 
 ##### Example Request
 
@@ -179,7 +196,9 @@ You can search by title, short_description, author, or by price range. Queries a
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Delete a comment.
 
 ##### Parameters
-* comment_id
+| Parameter | Notes |
+---------|-----------
+| comment_id | e.g. 1 |
 
 ##### Example Request
 
@@ -193,9 +212,11 @@ You can search by title, short_description, author, or by price range. Queries a
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) List all comments for an app.
 
 ##### Parameters
-* app_id
-* page - e.g. 2
-* per_page - e.g. 25
+| Parameter | Notes |
+---------|-----------
+| app_id | e.g. 594 |
+| page | e.g. 2 |
+| per_page | e.g. 25 |
 
 ##### Example Request
 
