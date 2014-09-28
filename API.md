@@ -22,16 +22,16 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 * Apps
     * [POST /api/apps.json](#appscreate)
     * [GET /api/apps/:id](#appsread)
-    * PUT /api/apps/:id
-    * DELETE /api/apps/:id
-    * GET /api/apps/:id/download
-    * GET /api/apps/search
+    * [PUT /api/apps/:id](#appsupdate)
+    * [DELETE /api/apps/:id](#appsdelete)
+    * [GET /api/apps/:id/download](#appsdownload)
+    * [GET /api/apps/search](#appsearch)
 * Comments
-    * POST /api/apps/:id/comments
-    * GET /api/apps/:app_id/comments/:comment_id
-    * PUT /api/apps/:app_id/comments/:comment_id
-    * DELETE /api/apps/:app_id/comments/:comment_id
-    * GET /api/apps/:app_id/comments
+    * [POST /api/apps/:id/comments](#commentscreate)
+    * [GET /api/apps/:app_id/comments/:comment_id](#commentsread)
+    * [PUT /api/apps/:app_id/comments/:comment_id](#commentsupdate)
+    * [DELETE /api/apps/:app_id/comments/:comment_id](#commentsdelete)
+    * [GET /api/apps/:app_id/comments](#commentslist)
 
 <a name="appscreate"></a>
 ### POST /api/apps.json
@@ -156,6 +156,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
     "price": 0.99
 }
 ```
+<a name="appsupdate"></a>
 ### PUT /api/apps/:id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Update an app's metdata using its ID.
 
@@ -177,6 +178,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 {}
 ```
 
+<a name="appsdelete"></a>
 ### DELETE /api/apps/:id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Delete an app using its ID.
 
@@ -195,6 +197,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 {}
 ```
 
+<a name="appsdownload"></a>
 ### GET /api/apps/:id/download
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Download an app's binary file.
 
@@ -211,6 +214,7 @@ Here are some [sample output](https://gist.github.com/tuesy/809b92981656fa5e1539
 
     (binary file - e.g. robots.zip)
 
+<a name="appssearch"></a>
 ### GET /api/apps/search
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Search apps.
 
@@ -363,6 +367,7 @@ You can search by title, short_description, author, or by price range. Queries a
 }]
 ```
 
+<a name="commentscreate"></a>
 ### POST /api/apps/:id/comments
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Create a comment for an app using its ID.
 
@@ -388,6 +393,7 @@ You can search by title, short_description, author, or by price range. Queries a
 }
 ```
 
+<a name="commentsread"></a>
 ### GET /api/apps/:app_id/comments/:comment_id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Read a comment.
 
@@ -412,6 +418,7 @@ You can search by title, short_description, author, or by price range. Queries a
 }
 ```
 
+<a name="commentsupdate"></a>
 ### PUT /api/apps/:app_id/comments/:comment_id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Update a comment.
 
@@ -430,6 +437,7 @@ You can search by title, short_description, author, or by price range. Queries a
 {}
 ```
 
+<a name="appsdelete"></a>
 ### DELETE /api/apps/:app_id/comments/:comment_id
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) Delete a comment.
 
@@ -448,6 +456,7 @@ You can search by title, short_description, author, or by price range. Queries a
 {}
 ```
 
+<a name="commentslist"></a>
 ### GET /api/apps/:app_id/comments
 ####![shuttle](https://mankindforward.files.wordpress.com/2014/09/screen-shot-2014-09-27-at-4-51-24-pm1.png) List all comments for an app.
 
