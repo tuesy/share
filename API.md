@@ -465,6 +465,10 @@ You can search by title, short_description, author, or by price range. Queries a
 
 ```json
 [{
-    "id" => 27, "text" => "too fast", "app_id" => 594, "created_at" => "2014-09-27T22:20:03.248Z", "updated_at" => "2014-09-27T22:20:03.366Z"
+    "id": 27,
+    "text": "too fast",
+    "app_id": 594,
+    "created_at": "2014-09-27T22:20:03.248Z",
+    "updated_at": "2014-09-27T22:20:03.366Z"
 }]
 ```
