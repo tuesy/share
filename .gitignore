@@ -19,7 +19,6 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-config/database.yml
 config/aws.yml
 logfile
 .DS_Store
